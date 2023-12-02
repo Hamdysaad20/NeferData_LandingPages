@@ -3,6 +3,7 @@ import React from 'react';
 import Gallery from '../Components/Gallery/Gallery';
 import Hero from '../Components/Hero/Hero';
 import Navbar from '../Components/Navbar/Navbar';
+import Footer from '../Components/Footer/Footer';
 import ProductCard from '../Components/Card/ProductCard';
 import PrivacyCertifications from '../Components/PrivacyCertifications/PrivacyCertifications'
 import video1 from '../assets/Videos/video1.mp4';
@@ -47,6 +48,7 @@ const App = () => {
         isReverse={true}
       />
       <PrivacyCertifications />
+      <Footer />
     </>
   )
 };

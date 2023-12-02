@@ -1,7 +1,7 @@
 import { FcGoogle } from "react-icons/fc";
 import { FaArrowRightLong } from "react-icons/fa6";
 import CertificationCard from './CertificationCard';
-import flyImg from '../assets/Images/image 12.png';
+import flyImg from '../../assets/Images/image 12.png';
 
 // Function to display the Google icon
 const GoogleIcon = () => (
