@@ -4,7 +4,7 @@ function Video({src}) {
   // Return video component
   return (
       // Outer container with rounded border
-      <div className='w-full bg-white rounded-2xl p-[22px] pt-[14px] flex flex-col shadow-[0px,4px,16px,2px,rgba(0,0,0,0.25)]'>
+      <div className='w-full bg-white rounded-2xl p-[22px] pt-[14px] flex flex-col shadow-custom-light'>
           
           {/* Dots decoration */}
           <div className="flex justify-start items-center gap-2 pb-[14px]">
