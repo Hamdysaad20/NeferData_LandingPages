@@ -57,6 +57,7 @@ const App = () => {
     jobTitle: 'Chief Technology Officer',
     companyName: 'SpotOn',
     message: "Neferdata has completely transformed my email experience. It efficiently filters out unwanted emails, ensuring my inbox remains clutter-free. I no longer waste time sifting through irrelevant emails, and I can focus on what's truly important.",
+    classes: 'mb-0',
   };
 
   // Returned JSX code is cleaner and easier to read

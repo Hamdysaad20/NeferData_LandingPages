@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FaQuoteRight } from "react-icons/fa";
 
-const Testimonials = ({ imgSrc, name, jobTitle, companyName, message }) => {
+const Testimonials = ({ imgSrc, name, jobTitle, companyName, message, classes }) => {
   // Sufficient and descriptive alternative text for image    
   const altText = `${name} from ${companyName}`;
 
   return (
-    <article className={`w-full bg-[#3092DB] text-white py-[112px] my-[112px] flex justify-center items-center`}>
+    <article className={`w-full bg-[#3092DB] text-white py-[112px] my-[112px] flex justify-center items-center ${classes}`}>
       <div className={`w-[80%] max-w-[1200px] flex gap-5 justify-center items-center`}>
         <div className="relative">
           {/* Proper alternative text for the image */}
@@ -38,6 +38,7 @@ Testimonials.propTypes = {
   jobTitle: PropTypes.string.isRequired,
   companyName: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,
+  classes: PropTypes.string,
 };
 
 export default Testimonials;
