@@ -4,6 +4,7 @@ import Gallery from '../Components/Gallery/Gallery';
 import Hero from '../Components/Hero/Hero';
 import Navbar from '../Components/Navbar/Navbar';
 import ProductCard from '../Components/Card/ProductCard';
+import PrivacyCertifications from '../Components/PrivacyCertifications/PrivacyCertifications'
 import video1 from '../assets/Videos/video1.mp4';
 import video2 from '../assets/Videos/video2.mp4';
 
@@ -45,6 +46,7 @@ const App = () => {
         videoSrc={video2}
         isReverse={true}
       />
+      <PrivacyCertifications />
     </>
   )
 };

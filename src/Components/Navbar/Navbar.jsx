@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logoImg from '../../assets/image 7.png';
+import logoImg from '../../assets/Images/image 7.png';
 import PrimaryButton from '../Button/PrimaryButton';
 import NavbarLink from './NavbarLink';
 
