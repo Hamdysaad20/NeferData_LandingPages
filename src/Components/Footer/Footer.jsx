@@ -54,7 +54,7 @@ const Footer = () => {
               <h4>Address:</h4>
               <p>Level 1, 12 Sample St, Ann Arbor MI 2000</p>
             </div>
-            <div>
+            <div className='flex flex-col'>
               <h4>Contact:</h4>
               <a href="tel:1800 123 4567" className="underline"
                 aria-label="Call Us at 1800 123 4567">1800 123 4567</a>
