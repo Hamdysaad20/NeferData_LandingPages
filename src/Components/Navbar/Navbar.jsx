@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     // Main navigation wrapper with role value for better semantics and accessibility
     <nav
-      className="fixed top-0 w-full bg-white h-[72px] font-roboto flex justify-between items-center px-16 border-b border-gray-300"
+      className="fixed top-0 w-full bg-white h-[72px] font-roboto z-50 flex justify-between items-center px-16 border-b border-gray-300"
       role="navigation"
     >
       {/* Logo */}
