@@ -13,7 +13,6 @@ import video1 from '../assets/Videos/video1.mp4';
 import video2 from '../assets/Videos/video2.mp4';
 
 const App = () => {
-  // Kept these data variables separately for clean coding, and can be refactored to separate json file if they grow more
   const productData = {
     subTitle: 'CHOOSE THE RIGHT TOOL WITH CONFIDENCE',
     title: 'Product Evaluation Tool',
@@ -27,7 +26,7 @@ const App = () => {
     videoSrc: video1,
     isReverse: false
   };
-  
+
   const emailAssistantData = {
     subTitle: 'TAKE BACK CONTROL OF YOUR INBOX',
     title: 'Email Assistant',
