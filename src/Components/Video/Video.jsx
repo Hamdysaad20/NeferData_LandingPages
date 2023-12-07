@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 // Video component
 const Video = ({ src }) => (
   // Video container with rounded border
-  <div className='w-full bg-white rounded-2xl p-[22px] max-md:p-4 pt-[14px] max-md:pt-3 flex flex-col shadow-custom-light'>
+  <div className='w-full bg-white rounded-2xl p-[22px] max-md:p-4  pt-[14px] max-md:pt-3 flex flex-col shadow-custom-light'>
 
     {/* Decorative elements */}
     <div className="flex justify-start items-center gap-2 pb-[14px] max-md:pb-3">
@@ -33,4 +33,4 @@ Video.propTypes = {
   src: PropTypes.string.isRequired
 };
 
-export default Video;
+export default Video; 

@@ -31,7 +31,7 @@ const CertificationCard = ({Icon, Description}) => {
   };
 
   return (
-    <div className='w-[300px] font-semibold mx-8 bg-white aspect-square rounded-lg flex flex-col justify-center items-center gap-4 text-center'>
+    <div className='w-[300px] max-sm:w-[200px] font-semibold mx-8 bg-white aspect-square rounded-lg flex flex-col justify-center items-center gap-4 text-center'>
       <span className='w-16 aspect-square'>
         <Icon aria-label="Certification Icon"/>
       </span>

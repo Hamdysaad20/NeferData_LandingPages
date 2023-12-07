@@ -6,12 +6,11 @@ import Gallery from '../Components/Gallery/Gallery';
 import ProductCard from '../Components/Card/ProductCard';
 import Testimonials from '../Components/Testimonials/Testimonials';
 import PrivacyCertifications from '../Components/PrivacyCertifications/PrivacyCertifications';
-import Footer from '../Components/Footer/Footer1';
 import Keith_Hadi_Avatar from '../assets/Images/Keith_Hadi_Avatar.png';
 import Mark_Walz_Avatar from '../assets/Images/Mark_Walz_Avatar.png';
 import video1 from '../assets/Videos/video1.mp4';
 import video2 from '../assets/Videos/video2.mp4';
-import FooterTemp from '../Components/Footer/Footer';
+import Footer from '../Components/Footer/Footer';
 
 const App = () => {
   const productData = {
@@ -71,7 +70,7 @@ const App = () => {
       <Testimonials {...testimonialData1} />
       <PrivacyCertifications />
       <Testimonials {...testimonialData2} />
-      <FooterTemp/> 
+      <Footer /> 
     </>
   )
 };

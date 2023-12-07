@@ -65,7 +65,7 @@ const PrivacyCertifications = () => {
 // Function to render section header and text
 const HeaderText = () => (
   <div className='max-w-[560px] box-border px-5 flex flex-col gap-6 justify-center items-center'>
-    <h1 className='text-5xl text-center font-semibold'>Privacy Certifications</h1>
+    <h1 className='text-5xl text-center font-semibold max-md:text-3xl'>Privacy Certifications</h1>
     <p className='text-lg text-center '>We’re continuously investing in security features & industry certifications for our customer’s safety.</p>
   </div>
 );

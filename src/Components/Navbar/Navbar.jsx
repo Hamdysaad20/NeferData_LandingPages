@@ -31,13 +31,13 @@ const Navbar = () => {
   return (
     // Main navigation wrapper with role value for better semantics and accessibility
     <nav
-      className="fixed top-0 w-screen bg-white h-[72px] font-roboto z-50 flex justify-between items-center px-16 border-b border-gray-300"
+      className="fixed top-0 w-screen bg-white h-[72px] font-roboto z-50 flex justify-between items-center px-16 max-sm:px-2 border-b border-gray-300"
       role="navigation"
     >
       {/* Logo */}
       <div className='flex items-center gap-2'>
-        <img src={logoImg} alt="Company Logo" className='aspect-square w-12 max-md:w-9' />
-        <span className='font-bold text-2xl font-gabarito max-md:text-xl'>Neferdata</span>
+        <img src={logoImg} alt="Company Logo" className='aspect-square w-12 max-md:w-9 max-sm:w-7' />
+        <span className='font-bold text-2xl font-gabarito max-md:text-xl max-sm:text-lg'>Neferdata</span>
       </div>
 
       {/* Navigation Links and Action Button  */}

@@ -53,7 +53,7 @@ const Hero = () => (
       </div>
     </div>
     {/* Video container */}
-    <div className="w-[90%] max-md:w-full box-border p-16 max-md:p-10 max-w-[1400px]">
+    <div className="w-[90%] max-md:w-full box-border p-16 max-sm:p-1 max-md:p-10 max-w-[1400px]">
       <Video src={videoSrc} />
     </div>
   </header>
