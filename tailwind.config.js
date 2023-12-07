@@ -17,7 +17,8 @@ export default {
         'gabarito': ['Gabarito', 'serif'],  
       },
       boxShadow: {
-        'custom-light': '0 4px 16px 2px rgba(0, 0, 0, .25)'
+        'custom-light': '0 4px 16px 2px rgba(0, 0, 0, .25)',
+        'custom-bottom': '0 15px 14px 1px rgba(0, 0, 0, .25)',
       },
     },
   },

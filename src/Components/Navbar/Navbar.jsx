@@ -36,8 +36,8 @@ const Navbar = () => {
     >
       {/* Logo */}
       <div className='flex items-center gap-2'>
-        <img src={logoImg} alt="Company Logo" className='aspect-square w-12' />
-        <span className='font-bold text-2xl font-gabarito'>Neferdata</span>
+        <img src={logoImg} alt="Company Logo" className='aspect-square w-12 max-md:w-9' />
+        <span className='font-bold text-2xl font-gabarito max-md:text-xl'>Neferdata</span>
       </div>
 
       {/* Navigation Links and Action Button  */}
@@ -53,19 +53,19 @@ const Navbar = () => {
         <PrimaryButton onClick={null} title='Sign Up' />
       </div>
 
-      <button className={`max-lg:flex hidden flex-col w-6 justify-between h-5 overflow-hidden`} onClick={toggleSideBarActivate}>
-        <span className={`h-[3px] w-full bg-black rounded-sm transition-all ${isSideBarActive?'rotate-45 translate-y-[8px]':'rotate-0 translate-y-0'}`}></span>
-        <span className={`h-[3px] w-full bg-black rounded-sm transition-all ${isSideBarActive?'translate-x-full':'translate-0-full'}`}></span>
-        <span className={`h-[3px] w-full bg-black rounded-sm transition-all ${isSideBarActive?'-rotate-45 -translate-y-[8px]':'rotate-0 translate-y-0'}`}></span>
+      <button className={`max-lg:flex hidden flex-col w-6 justify-between h-5 max-md:h-4 max-md:w-5 overflow-hidden`} onClick={toggleSideBarActivate}>
+        <span className={`h-[2.5px] w-full bg-black rounded-sm transition-all ${isSideBarActive?'rotate-45 translate-y-[8.5px] max-md:translate-y-[6.5px]':'rotate-0 translate-y-0'}`}></span>
+        <span className={`h-[2.5px] w-full bg-black rounded-sm transition-all ${isSideBarActive?'translate-x-[105%]':'translate-x-0'}`}></span>
+        <span className={`h-[2.5px] w-full bg-black rounded-sm transition-all ${isSideBarActive?'-rotate-45 -translate-y-[8.5px] max-md:-translate-y-[6.5px]':'rotate-0 translate-y-0'}`}></span>
       </button>
 
       {/*
         The total hieght is 44px for btn and 16px for gap, 40px for link, padding top and buttom 32px 
         44 + 16 + 4 * 40 + 32 = 252px = 16rem = h-64
       */}
-      <div className={`hidden max-lg:flex flex-col gap-4 rounded-lg absolute right-16 top-full bg-white shadow-custom-light p-4 z-40 ${isSideBarActive?'h-64 translate-y-0':'h-0 py-0 translate-y-32'} overflow-hidden transition-all`}>
+      <div className={`hidden max-lg:flex flex-col gap-4 rounded-lg max-sm:rounded-t-none absolute right-16 top-full bg-white shadow-custom-light max-sm:shadow-custom-bottom p-4 z-40 max-sm:w-full max-sm:right-0  ${isSideBarActive?'h-64 translate-y-0':'h-0 py-0 translate-y-32 max-sm:translate-y-0'} overflow-hidden transition-all`}>
         {/* Navigation Links */}
-        <div className='flex items-center justify-start flex-col w-[15rem] text-lg capitalize'>
+        <div className='flex items-center justify-start flex-col w-[15rem] max-sm:w-full text-lg capitalize'>
           {LINKS.map((link, idx) => (
             <NavbarLink main={link.main} links={link.subLinks} key={idx} hasDropDown={link.hasDropDown} />
           ))}
