@@ -53,7 +53,7 @@ const PrivacyCertifications = () => {
   return (
     <section className='flex flex-col w-[90%] max-w-[1200px] justify-center items-center py-[112px] gap-20 m-auto'>
       <HeaderText />
-      <div className='flex justify-center items-center gap-12'>
+      <div className='flex justify-center items-center gap-12 flex-wrap'>
         {certificationList.map((certification, index) => (
           <CertificationCard key={index} Icon={certification.icon} Description={certification.certDescription} />
         ))}
