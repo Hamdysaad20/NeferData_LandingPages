@@ -8,7 +8,7 @@ const Testimonials = ({ imgSrc, name, jobTitle, companyName, message, classes })
 
   return (
     <article className={`w-full bg-[#3092DB] text-white py-[112px] my-[112px] flex justify-center items-center ${classes}`}>
-      <div className={`w-[80%] max-w-[1200px] flex gap-5 justify-center items-center`}>
+      <div className={`w-[80%] max-w-[1200px] flex gap-5 justify-center items-center max-md:flex-col`}>
         <div className="relative">
           {/* Proper alternative text for the image */}
           <img src={imgSrc} alt={altText} className='rounded-full w-[300px]' />
