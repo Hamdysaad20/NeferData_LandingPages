@@ -11,6 +11,7 @@ import Keith_Hadi_Avatar from '../assets/Images/Keith_Hadi_Avatar.png';
 import Mark_Walz_Avatar from '../assets/Images/Mark_Walz_Avatar.png';
 import video1 from '../assets/Videos/video1.mp4';
 import video2 from '../assets/Videos/video2.mp4';
+import FooterTemp from '../Components/CompAssets/FooterTemp';
 
 const App = () => {
   const productData = {
@@ -71,6 +72,7 @@ const App = () => {
       <PrivacyCertifications />
       <Testimonials {...testimonialData2} />
       <Footer />
+      <FooterTemp/> 
     </>
   )
 };
