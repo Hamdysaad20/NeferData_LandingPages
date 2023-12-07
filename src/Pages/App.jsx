@@ -24,7 +24,7 @@ const App = () => {
       'Learn what tools others like you considered; or define your list',
     ],
     videoSrc: video1,
-    isReverse: false
+    isReverse: true
   };
 
   const emailAssistantData = {
@@ -39,7 +39,7 @@ const App = () => {
       'Full control of mail metadata stored',
     ],
     videoSrc: video2,
-    isReverse: true
+    isReverse: false
   };
 
   const testimonialData1 = {

@@ -15,7 +15,7 @@ const Gallery = () => (
   // Section container
   <section className="w-[90%] max-md:w-full max-w-[1200px] flex justify-center flex-col items-center mx-auto py-32 px-16 max-lg:px-8 max-md:px-6 gap-8 font-roboto box-border">
     {/* Title */}
-    <h2 className="text-5xl font-bold text-center max-md:text-3xl max-sm:text-xl">
+    <h2 className="text-5xl font-bold text-center max-md:text-3xl">
       Finding the right tool for your business is critical
     </h2>
 
