@@ -4,20 +4,18 @@ import SecondComponent from "./Components/SecondComponent";
 import ThirdComponent from "./Components/ThirdComponent";
 import FourthComponent from "./Components/FourthComponent";
 import FifthComponent from "./Components/FifthComponent";
-const App = () => {
+const MissionPage = () => {
 
   // Returned JSX code is cleaner and easier to read
   return (
-    
-     
-     <>
-        <FirstComponent/>
-        <SecondComponent/>
-        <ThirdComponent/>
-        <FourthComponent/>
-        <FifthComponent/>
-     </>
+    <>
+      <FirstComponent />
+      <SecondComponent />
+      <ThirdComponent />
+      <FourthComponent />
+      <FifthComponent />
+    </>
   )
 };
 
-export default App;
+export default MissionPage;

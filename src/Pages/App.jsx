@@ -1,78 +1,28 @@
-// We're beginning by importing necessary libraries, components, images, and videos
 import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
-import Hero from '../Components/Hero/Hero';
-import Gallery from '../Components/Gallery/Gallery';
-import ProductCard from '../Components/Card/ProductCard';
-import Testimonials from '../Components/Testimonials/Testimonials';
-import PrivacyCertifications from '../Components/PrivacyCertifications/PrivacyCertifications';
-import Keith_Hadi_Avatar from '../assets/Images/Keith_Hadi_Avatar.png';
-import Mark_Walz_Avatar from '../assets/Images/Mark_Walz_Avatar.png';
-import video1 from '../assets/Videos/video1.mp4';
-import video2 from '../assets/Videos/video2.mp4';
 import Footer from '../Components/Footer/Footer';
+import { Outlet } from 'react-router-dom';
 
-const App = () => {
-  const productData = {
-    subTitle: 'CHOOSE THE RIGHT TOOL WITH CONFIDENCE',
-    title: 'Product Evaluation Tool',
-    list: [
-      'Find alternatives for tools you use or suggestions of new ones',
-      'Discover new product categories you might want to consider next',
-      'Build product assessment matrices',
-      'AI suggestions of evaluation criteria (CTQs) & weights; or define your own',
-      'Learn what tools others like you considered; or define your list',
-    ],
-    videoSrc: video1,
-    isReverse: true
-  };
+/**
+ * This App component constructs the basic layout of the application
+ * It includes the Navbar, Footer, and an Outlet. The Outlet dynamically
+ * displays content depending on the active App route
+ * 
+ * The App adheres to WCAG's section 1.3.2 (Meaningful Sequence) guideline
+ * by arranging elements in a logical and purposeful order to deliver a good
+ * experience.
+ * */
+const App = () => (
+  <>
+    {/* The top navigation bar of the application */}
+    <Navbar />
 
-  const emailAssistantData = {
-    subTitle: 'TAKE BACK CONTROL OF YOUR INBOX',
-    title: 'Email Assistant',
-    list: [
-      'Intuitive UI to manage blocked items',
-      'Personalized whitelists with smart AI-generated suggestions',
-      'Companion Mode for smooth onboarding and worry-free setup',
-      'Notification levels aligned to your needs, including never-miss-out',
-      'Bite-sized insights on sender companies',
-      'Full control of mail metadata stored',
-    ],
-    videoSrc: video2,
-    isReverse: false
-  };
+    {/* A placeholder for the main content that will vary based on routing */}
+    <Outlet />
 
-  const testimonialData1 = {
-    imgSrc: Keith_Hadi_Avatar,
-    name: 'Keith Hadi',
-    jobTitle: 'VP of Vehicle Engineering',
-    companyName: 'May Mobility',
-    message: "Neferdata has completely transformed my email experience. It efficiently filters out unwanted emails, ensuring my inbox remains clutter-free. I no longer waste time sifting through irrelevant emails, and I can focus on what's truly important.",
-  };
-
-  const testimonialData2 = {
-    imgSrc: Mark_Walz_Avatar,
-    name: 'Mark Walz',
-    jobTitle: 'Chief Technology Officer',
-    companyName: 'SpotOn',
-    message: "Neferdata has completely transformed my email experience. It efficiently filters out unwanted emails, ensuring my inbox remains clutter-free. I no longer waste time sifting through irrelevant emails, and I can focus on what's truly important.",
-    classes: 'mb-0',
-  };
-
-  // Returned JSX code is cleaner and easier to read
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Gallery />
-      <ProductCard {...productData} />
-      <ProductCard {...emailAssistantData} />
-      <Testimonials {...testimonialData1} />
-      <PrivacyCertifications />
-      <Testimonials {...testimonialData2} />
-      <Footer /> 
-    </>
-  )
-};
+    {/* The footer of the application */}
+    <Footer />
+  </>
+);
 
 export default App;
