@@ -1,25 +1,40 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Accordion, AccordionItem } from "@nextui-org/react";
 
-import {Accordion, AccordionItem} from "@nextui-org/react";
-
-
-function FAQs() {
-    const defaultContent ="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-
+/**
+ * FAQs component displays a list of frequently asked questions. 
+ * Each question is wrapped within an AccordionItem component, which 
+ * handles the expand/collapse functionality.
+ *
+ * This approach adheres to WCAG guideline 1.3.1 (Info and Relationships) because 
+ * the information, structure, and relationships conveyed through presentation can be 
+ * programmatically determined or are available in the text.
+ *
+ * @param {Object[]} questions Array of question objects
+ * @returns {JSX.Element} Rendered FAQs component
+ */
+function FAQs({ questions }) {
   return (
-      <div className="flex gap-4" radius="md">
-    <Accordion selectionMode="multiple"  >
-        <AccordionItem  key="1" aria-label="Accordion 1" title="Accordion 1">
-            {defaultContent}
-        </AccordionItem>
-        <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
-            {defaultContent}
-        </AccordionItem>
-        <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-            {defaultContent}
-        </AccordionItem>
-    </Accordion>
+    <div className="flex gap-4" radius="md">
+      <Accordion selectionMode="multiple">
+        {questions.map((question, idx) => (
+          <AccordionItem key={idx} aria-label={question.title} title={question.title}>
+            {question.discription}
+          </AccordionItem>
+        ))}
+      </Accordion>
     </div>
   );
 }
 
-export default FAQs
+FAQs.propTypes = {
+  questions: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      discription: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+export default FAQs;
