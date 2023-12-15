@@ -7,8 +7,8 @@ const SecondaryButton = ({ title, onClick, Icon, theme }) => {
   
   // Determine button background base on 'theme' prop
   const backgroundColors = {
-    dark: 'bg-dark-1',
-    primary: 'bg-[#5383EC]',
+    dark: 'bg-[#121212]',
+    primary: 'bg-[#121212]',
     default: 'bg-white'
   };
 
@@ -18,12 +18,13 @@ const SecondaryButton = ({ title, onClick, Icon, theme }) => {
   return (
     <button
       onClick={onClick} 
-      className={`text-center font-bold capitalize text-white flex justify-start gap-[26px] max-lg:gap-[20px] p-2 items-center text-[16px] max-lg:text-[14px] w-[271px] max-lg:w-[261px] box-border rounded-[4px] ${bg} hover:bg-opacity-80 bg-opacity-100 transition-all`}
+      className={`text-center font-bold capitalize py-4 text-white grid place-items-center  max-lg:gap-[20px] p-2 items-center text-[16px] max-lg:text-[14px] w-[271px] max-lg:w-[261px] box-border rounded-full ${bg} hover:bg-opacity-80 bg-opacity-100 transition-all`}
     >
-      <span className="aspect-square flex justify-center items-center">
+      <span className="grid grid-cols-4 gap-2 place-items-center">
         <Icon />
+        <span className='col-span-3'>{title}</span>
       </span>
-      <span>{title}</span>
+
     </button>
   );
 };
