@@ -3,6 +3,7 @@ import logoImg from '../../assets/Images/image 7.png';
 import PrimaryButton from '../Button/PrimaryButton';
 import NavbarLink from './NavbarLink';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Define navigation links and their configurations as constants out of Navbar component for better performance
 const LINKS = [
@@ -31,16 +32,22 @@ const Navbar = () => {
   return (
     // Main navigation wrapper with role value for better semantics and accessibility
     <nav
-      className="fixed top-0 w-screen bg-white h-[72px] z-50 border-b border-gray-300 flex justify-center"
+    style={{fontFamily: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',  fontSize: '3.5rem', lineHeight: '120%'}}
+
+      className="fixed top-0 w-screen bg-white h-[63px] z-50  flex justify-center"
       role="navigation"
     >
-      <div className='max-w-[1920px] w-screen h-full font-roboto flex justify-between items-center px-16 max-sm:px-2'>
+      <div className=' max-w-[1500px] w-screen h-full font-roboto flex justify-between items-center px-[1.5rem] max-sm:px-2'>
 
-        {/* Logo */}
-        <div className='flex items-center gap-2'>
-          <img src={logoImg} alt="Company Logo" className='aspect-square w-12 max-md:w-9 max-sm:w-7' />
-          <span className='font-bold text-2xl font-gabarito max-md:text-xl max-sm:text-lg'>Neferdata</span>
-        </div>
+      
+        <Link className='flex items-center gap-[1.5rem]' 
+        style={{fontFamily: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif', fontWeight: 'bold', fontSize: '3.5rem', lineHeight: '120%'}}
+        
+        >
+          <img src={logoImg} alt="Company Logo" className='aspect-square h-[40px] w-[40px] max-md:w-9 max-sm:w-7' />
+          <span className='font-[600] 
+        text-[#121212] max-md:text-[18px] max-sm:text-[16px] tracking-wide text-[24px]'>Neferdata</span>
+        </Link>
 
         {/* Navigation Links and Action Button  */}
         <div className='hidden lg:flex gap-8'>

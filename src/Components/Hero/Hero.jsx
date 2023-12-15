@@ -29,12 +29,14 @@ const MicrosoftIcon = () => (
 
 // Main Hero component
 const Hero = () => (
-  <header className="mt-[72px] bg-gradient-to-b from-[#3092DB] to-[#FBFCFF] flex flex-col items-center font-roboto">
+  <header className="mt-12 bg-gradient-to-b from-[#3092DB] to-[#FBFCFF] flex flex-col items-center font-roboto">
     {/* Hero content wrapper */}
-    <div className="w-[90%] max-md:w-[95%] max-sm:w-full max-w-[1200px] box-border px-16 py-28 m-16 h-[482px] flex flex-col justify-center items-center gap-6">
+    <div className="w-[90%]  max-md:w-[95%] max-sm:w-full  box-border px-2 lg:px-16 py-28 m-16 h-[482px] flex flex-col justify-center items-center gap-6">
       {/* Hero Texts */}
-      <div className="flex flex-col gap-6 text-white text-center box-border px-16 max-lg:px-2 max-md:px-0 max-w-[890px]">
-        <h1 className="text-[3.5rem] max-lg:text-[3rem] max-md:text-[2rem]  max-sm:text-[2rem] font-bold leading-[120%]">
+      <div className="flex flex-col gap-6 text-white text-center box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]">
+        <h1
+        style={{fontFamily: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif', fontWeight: 'bold', lineHeight: '120%'}}
+        className="text-3xl md:text-7xl font-bold leading-120%">
           AI and ML tools for your purchasing journey
         </h1>
         <p className="text-[18px] max-lg:text-[14px] max-mg:text-[12px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%]">
