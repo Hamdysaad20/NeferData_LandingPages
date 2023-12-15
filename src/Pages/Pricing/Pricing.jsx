@@ -1,21 +1,10 @@
 import { MdOutlineDone } from 'react-icons/md';
 import PricingCard from '../../Components/Card/PricingCard';
 
-/**
- * Pricing component renders the PricingCard component with data from
- * an array of card data objects. 
- * Each card data object contains details about each pricing plan.
- *
- * This approach complies with WCAG guideline 1.3.1 (Info and Relationships) 
- * because the information, structure, and relationships conveyed through 
- * the presentation can be programmatically determined or are available in text.
- */
 function Pricing() {
-  // Each object in array represents data filled in the PricingCard
   const pricingCardsData = [
-    // Standerd pricing data
     {
-      className: '!bg-sky-200',
+      className: '',
       title: 'Standerd',
       price: 'Free',
       renew: 'Always',
@@ -30,7 +19,6 @@ function Pricing() {
       ],
       buttonText: 'Create Account'
     },
-    // Self-hosted pricing data
     {
       className: '',
       title: 'Self-hosted',
@@ -45,7 +33,7 @@ function Pricing() {
         "Audit log & reports of extracted insights",
         "Access to upgrades & new features at your timeline",
       ],
-      buttonText: 'Try Now'
+      buttonText: 'See Documentation'
     },
     // Enterprise pricing data
     {
@@ -67,7 +55,7 @@ function Pricing() {
   ];
 
   return (
-    <div className="w-full bg-sky-400 py-40 flex flex-wrap box-border lg:flex-nowrap justify-center items-center gap-3 lg:gap-9">
+    <div className="w-full bg-gradient-to-b from-[#3092DB] to-[#FBFCFF] py-40 flex flex-wrap box-border lg:flex-nowrap justify-center items-center gap-3 lg:gap-9">
       {pricingCardsData.map((cardData, idx) => (
         // Using unique index as key for the mapped elements. And spread operator to pass props.
         <PricingCard {...cardData} key={idx} />
