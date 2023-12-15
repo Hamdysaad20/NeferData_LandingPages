@@ -1,0 +1,32 @@
+.animate-slide-out{
+    animation: slide-out 0.5s ease-in-out;
+}
+.animate-slide-in{
+    animation: slide-in 0.3s ease-in-out;
+}
+@keyframes slide-out {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+overflow: hidden;
+
+    z-index: 100;
+}
