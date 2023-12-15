@@ -54,7 +54,7 @@ const Hero = () => (
       <div className="flex flex-col gap-6 text-white text-center box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]">
         <h1
         style={{fontFamily: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif', fontWeight: 'bold', lineHeight: '120%'}}
-        className="text-3xl md:text-7xl font-bold leading-120%">
+        className="text-4xl md:text-7xl font-bold leading-120%">
           AI and ML tools for your purchasing journey
         </h1>
         <p className="text-[24px] max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-200">

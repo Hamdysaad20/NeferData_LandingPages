@@ -10,17 +10,7 @@ const LINKS = [
   { main: { link: "/", title: "Home" }, hasDropDown: false },
   { main: { link: "/pricing", title: "Pricing" }, hasDropDown: false },
   { main: { link: "/about", title: "about" }, hasDropDown: false },
-  {
-    main: { link: "/", title: "Link Four" },
-    subLinks: [
-      { link: "/", title: "Link Six" },
-      { link: "/", title: "Link Seven" },
-      { link: "/", title: "Link Eight" },
-      { link: "/", title: "Link Nine" },
-      { link: "/", title: "Link Ten" },
-    ],
-    hasDropDown: true,
-  },
+  
 ];
 
 // Functional component for Navbar
@@ -94,7 +84,7 @@ const Navbar = () => {
           </div>
         </Link>
        {/* Navigation Links and Action Button  */}
-<div className='md:flex gap-8'>
+<div className='md:flex hidden gap-8'>
   {/* Navigation Links */}
   <div
     style={{
@@ -102,7 +92,7 @@ const Navbar = () => {
         'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
       lineHeight: "120%",
     }}
-    className='flex items-center gap-8 text-lg capitalize'>
+    className=' items-center flex gap-8 text-[#121212] text-lg capitalize'>
     {LINKS.map((link, idx) => (
       <NavbarLink
         main={link.main}
