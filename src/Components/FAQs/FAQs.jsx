@@ -16,7 +16,8 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
  */
 function FAQs({ questions }) {
   return (
-    <div className="flex gap-4" radius="md">
+    <div className="flex gap-4 m-0  pb-12 justify-center" radius="md">
+      <div className='w-[700px]  '>
       <Accordion selectionMode="multiple">
         {questions.map((question, idx) => (
           <AccordionItem key={idx} aria-label={question.title} title={question.title}>
@@ -24,6 +25,8 @@ function FAQs({ questions }) {
           </AccordionItem>
         ))}
       </Accordion>
+      </div>
+    
     </div>
   );
 }
