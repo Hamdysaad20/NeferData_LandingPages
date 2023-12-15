@@ -74,35 +74,33 @@ function Footer() {
     {
       title: 'Service',
       links: [
-        { url: '/', title: 'Link one' },
-        { url: '/', title: 'Link two' },
-        { url: '/', title: 'Link three' },
-        { url: '/', title: 'Link four' },
-        { url: '/', title: 'Link five' },
+        { url: '/', title: 'Product Evaluation' },
+        { url: '/', title: 'Email Assistant' },
+
       ]
     },
     {
       title: 'Company',
       links: [
         { url: '/about', title: 'About' },
-        { url: '/', title: 'Meet the Team' },
-        { url: '/', title: 'Accounts Review' },
+        { url: '/about/Team', title: 'Meet the Team' },
+        { url: '/', title: 'Demo' },
       ]
     },
     {
       title: 'Helpful Links',
       links: [
-        { url: '/', title: 'Contact' },
-        { url: '/', title: 'FAQs' },
-        { url: '/', title: 'Live Chat' },
+        { url: '/contact', title: 'Contact' },
+        { url: '/help', title: 'FAQs' },
+        { url: '/pricing', title: 'Pricing' },
       ]
     },
     {
       title: 'Legal',
       links: [
         { url: '/', title: 'Accessibility' },
-        { url: '/', title: 'Returns Policy' },
-        { url: '/', title: 'Refund Policy' },
+        { url: '/', title: 'Privacy Policy' },
+        { url: '/', title: 'Security Policy' },
         { url: '/', title: 'Hiring Statistics' },
       ]
     },
@@ -140,7 +138,7 @@ function Footer() {
 
               <div className='flex items-center gap-2'>
                 <img src={logoImg} alt="Neferdata Company Logo" className='aspect-square w-8' />
-                <span className='font-bold text-2xl font-gabarito'>Neferdata</span>
+                <span className='font-bold text-2xl '>Neferdata</span>
               </div>
 
             </div>
@@ -185,7 +183,7 @@ function Footer() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
             {LINKS.map(({ title, links }, idx) => (
               <div key={idx}>
-                <p className="font-medium text-2xl text-teal-200">{title}</p>
+                <p className="font-medium text-2xl text-gray-200">{title}</p>
                 <ul className="mt-6 space-y-4 text-sm">
                   {renderLinks(links)}
                 </ul>

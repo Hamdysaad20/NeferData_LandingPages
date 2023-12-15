@@ -22,12 +22,16 @@ const Navbar = () => {
     setSideBarActivate(!isSideBarActive);
   };
   useEffect(() => {
+    let prevScrollY = window.scrollY;
+
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
+      const currentScrollY = window.scrollY;
+      if (currentScrollY < prevScrollY) {
+        setIsScrolled(false); // Scroll up detected
       } else {
-        setIsScrolled(false);
+        setIsScrolled(true);
       }
+      prevScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -64,9 +68,9 @@ const Navbar = () => {
           <img
             src={logoImg}
             alt='Company Logo'
-            className={`select-none aspect-square max-h-[40px] max-w-[40px] max-md:w-9 max-sm:w-7 ${
+            className={`select-none aspect-square duration-300  max-md:w-9 max-sm:w-7 ${
               isScrolled
-                ? "max-h-[50px] max-w-[50px] max-md:w-12 max-sm:w-10"
+                ? "max-h-[50px] max-w-[50px] scale-110  max-md:w-12 max-sm:w-10"
                 : ""
             }`}
           />
