@@ -1,9 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Lottie from "lottie-react";
 import groovyWalkAnimation from "../../Lottie/qkfCNGxSmo.json";
 import Keith_Hadi_Avatar from '../../assets/Images/Keith_Hadi_Avatar.png';
 import Mark_Walz_Avatar from '../../assets/Images/Mark_Walz_Avatar.png';
-const delay = 4000;
+const delay = 7000;
 
 function Slideshow() {
   const [index, setIndex] = useState(0);
@@ -31,12 +32,23 @@ function Slideshow() {
     }, delay);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [
+    testimonialData.length,
+
+  ]);
+
+  const transition = {
+    duration: 0.1,
+    type: "spring",
+    damping: 25,
+    stiffness: 120,
+  };
+
 
   const currentTestimonial = testimonialData[index];
 
   return (
-    <div className='slideshow w-full'>
+    <div className=' w-full'>
       <div className='slideshowDots'>
         {testimonialData.map((_, idx) => (
           <div
@@ -49,39 +61,69 @@ function Slideshow() {
       </div>
       <div className='slideshowSlider'>
         <div className='slide'>
-          <article
-            className={`w-full bg-[#3092DB] text-white py-[112px] my-[112px] flex justify-center items-center ${currentTestimonial.classes}`}>
-            <div className={`w-[80%] max-w-[1200px] flex gap-5 justify-center items-center max-md:flex-col`}>
-              <div className='relative hover:scale-95 duration-500 cursor-pointer select-none'>
-                <img
-                  src={currentTestimonial.imgSrc}
-                  alt={currentTestimonial.name}
-                  className='rounded-full  w-[300px]'
-                />
-                <span className='rounded-full p-2 bg-[#121212] w-12 aspect-square absolute right-[5%] top-[5%] flex justify-center items-center text-3xl'>
-                  <Lottie animationData={groovyWalkAnimation} loop={true} />
-                </span>
-              </div>
-              <div className={`flex flex-col box-border lg:p-10 gap-5`}>
-                <blockquote>
-                  <p className='text-2xl font-semibold max-w-[900px]'>
-                    {currentTestimonial.message}
-                  </p>
-                </blockquote>
-                <div className='flex flex-col'>
-                  <h3 className='text-2xl font-semibold text-[#efff55]'>
-                    {currentTestimonial.name}
-                  </h3>
-                  <p className='text-lg font-normal  opacity-70'>
-                    {currentTestimonial.jobTitle}
-                  </p>
-                  <p className='text-lg font-light opacity-70'>
-                    {currentTestimonial.companyName}
-                  </p>
+          <AnimatePresence mode='wait'>
+            <motion.article
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={transition}
+              className={`w-full  text-white pb-[52px] mt-[30px] mb-[70px] flex justify-center items-center ${currentTestimonial.classes}`}>
+              <div className={`w-[80%] max-w-[1200px] flex gap-5 justify-center items-center max-md:flex-col`}>
+                <div className='relative hover:scale-95 duration-500 cursor-pointer select-none'>
+                  <img
+                    src={currentTestimonial.imgSrc}
+                    alt={currentTestimonial.name}
+                    className='rounded-full  w-[300px]'
+                  />
+                  <span className='rounded-full p-2 bg-[#121212] w-12 aspect-square absolute right-[5%] top-[5%] flex justify-center items-center text-3xl'>
+                    <Lottie animationData={groovyWalkAnimation} loop={true} />
+                  </span>
+                </div>
+                <div className={`flex flex-col box-border lg:p-10 gap-5`}>
+                  <motion.blockquote
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={transition}
+                  >
+                    <p className='text-2xl font-semibold max-w-[900px]'>
+                      {currentTestimonial.message}
+                    </p>
+                  </motion.blockquote>
+                  <div className='flex flex-col'>
+                    <motion.h3
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={transition}
+                      className='text-2xl font-semibold text-[#efff55]'
+                    >
+                      {currentTestimonial.name}
+                    </motion.h3>
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={transition}
+                      className='text-lg font-normal  opacity-70'
+                    >
+                      {currentTestimonial.jobTitle}
+                    </motion.p>
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={transition}
+                      className='text-lg font-light opacity-70'
+                    >
+                      {currentTestimonial.companyName}
+                    </motion.p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
+            </motion.article>
+          </AnimatePresence>
         </div>
       </div>
     </div>
@@ -89,4 +131,3 @@ function Slideshow() {
 }
 
 export default Slideshow;
-

@@ -7,7 +7,7 @@ import Sparkels from "../Spark/spark";
 function FAQs({ questions }) {
   return (
     <div>
-      <div className='w-full justify-center flex pt-0 pb-12 '>
+      <div className='w-full justify-center flex pt-12'>
         <div className='flex flex-col gap-6 text-[#121212] text-center  box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]'>
           <div
             style={{
@@ -35,7 +35,7 @@ function FAQs({ questions }) {
       </div>
       
       <div className="flex gap-4 m-0  pb-12 justify-center" radius="md">
-      <div className='w-full max-w-[1000px] px-4  '>
+      <div className='w-full max-w-[1000px] px-4 pt-12  '>
       <Accordion  
        selectionMode="multiple"
         className='bg-[#F7F7F7]  border border-[#E5E5E5] rounded-lg outline-none focus:outline-none '
