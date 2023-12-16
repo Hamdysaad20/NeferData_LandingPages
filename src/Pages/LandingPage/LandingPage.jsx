@@ -6,8 +6,7 @@ import ProductCard from '../../Components/Card/ProductCard';
 import Testimonials from '../../Components/Testimonials/Testimonials';
 import PrivacyCertifications from '../../Components/PrivacyCertifications/PrivacyCertifications';
 import FAQs from '../../Components/FAQs/FAQs';
-import Keith_Hadi_Avatar from '../../assets/Images/Keith_Hadi_Avatar.png';
-import Mark_Walz_Avatar from '../../assets/Images/Mark_Walz_Avatar.png';
+
 import video1 from '../../assets/Videos/video1.mp4';
 import video2 from '../../assets/Videos/video2.mp4';
 
@@ -41,22 +40,10 @@ const App = () => {
     isReverse: false
   };
 
-  const testimonialData1 = {
-    imgSrc: Keith_Hadi_Avatar,
-    name: 'Keith Hadi',
-    jobTitle: 'VP of Vehicle Engineering',
-    companyName: 'May Mobility',
-    message: "Neferdata has completely transformed my email experience. It efficiently filters out unwanted emails, ensuring my inbox remains clutter-free. I no longer waste time sifting through irrelevant emails, and I can focus on what's truly important.",
-  };
+ 
 
-  const testimonialData2 = {
-    imgSrc: Mark_Walz_Avatar,
-    name: 'Mark Walz',
-    jobTitle: 'Chief Technology Officer',
-    companyName: 'SpotOn',
-    message: "Neferdata has completely transformed my email experience. It efficiently filters out unwanted emails, ensuring my inbox remains clutter-free. I no longer waste time sifting through irrelevant emails, and I can focus on what's truly important.",
-    classes: '',
-  };
+ 
+
 
   const questions = [
     {
@@ -83,9 +70,11 @@ const App = () => {
       <Gallery />
       <ProductCard {...productData} />
       <ProductCard {...emailAssistantData} />
-      <Testimonials {...testimonialData1} />
       <PrivacyCertifications />
-      <Testimonials {...testimonialData2} />
+      <Testimonials
+        
+        
+        />
       <FAQs questions={questions} />
     </>
   )
