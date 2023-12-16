@@ -77,7 +77,7 @@ const Navbar = () => {
           <div className='logo-container'>
             {!isScrolled && (
               <span
-                className={`logo-text font-semibold relative overflow-hidden text-[#121212] max-md:text-[18px] max-sm:text-[16px] select-none tracking-wide text-[24px] transition-all transform ${
+                className={`logo-text font-semibold relative overflow-hidden text-[#121212] max-md:text-[18px] max-sm:text-[20px] select-none tracking-wide text-[24px] transition-all transform ${
                   isScrolled
                     ? "-translate-x-full duration-500 animate-slide-out"
                     : "translate-x-0 duration-500 animate-slide-in"
