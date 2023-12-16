@@ -4,6 +4,8 @@ import Lottie from "lottie-react";
 import groovyWalkAnimation from "../../Lottie/qkfCNGxSmo.json";
 import Keith_Hadi_Avatar from '../../assets/Images/Keith_Hadi_Avatar.png';
 import Mark_Walz_Avatar from '../../assets/Images/Mark_Walz_Avatar.png';
+import maymobility from '/public/may-removebg-preview.png';
+import spoton from '/public/spoton.png';
 const delay = 7000;
 
 function Slideshow() {
@@ -16,6 +18,7 @@ function Slideshow() {
       companyName: 'SpotOn',
       message: "Neferdata has such a huge impact on my inbox. I don't have to filter through so much noise, and instead get personalized insights about potentially interesting companies. I wish I had access to the tool earlier.",
       classes: '',
+      companyLogo: maymobility
     },
     {
       imgSrc: Keith_Hadi_Avatar,
@@ -23,6 +26,8 @@ function Slideshow() {
       jobTitle: 'VP of Vehicle Engineering',
       companyName: 'May Mobility',
       message: "Neferdata has completely transformed my email experience. It efficiently filters out unwanted emails, ensuring my inbox remains clutter-free. I no longer waste time sifting through irrelevant emails, and I can focus on what's truly important.",
+    classes: '',
+    companyLogo: spoton
     }
   ];
 
@@ -74,7 +79,7 @@ function Slideshow() {
                   <img
                     src={currentTestimonial.imgSrc}
                     alt={currentTestimonial.name}
-                    className='rounded-full  w-[300px]'
+                    className='rounded-full ring-2 border-4 border-[#121212]  w-[300px]'
                   />
                   <span className='rounded-full p-2 bg-[#121212] w-12 aspect-square absolute right-[5%] top-[5%] flex justify-center items-center text-3xl'>
                     <Lottie animationData={groovyWalkAnimation} loop={true} />
@@ -115,9 +120,16 @@ function Slideshow() {
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={transition}
-                      className='text-lg font-light opacity-70'
+                      className='text-lg flex gap-2 font-light opacity-70'
                     >
-                      {currentTestimonial.companyName}
+<div className="flex gap-2 hover:bg-gray-900/20 p-2 rounded-full duration-300 cursor-pointer ">
+<span>
+                      <img src={currentTestimonial.companyLogo} alt={currentTestimonial.companyName} className='w-[30px] h-[30px] object-contain'/>
+                     </span>
+                    
+
+                    <span>  {currentTestimonial.companyName}</span>
+</div>
                     </motion.p>
                   </div>
                 </div>

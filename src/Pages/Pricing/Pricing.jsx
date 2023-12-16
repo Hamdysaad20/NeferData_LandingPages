@@ -111,6 +111,11 @@ function Pricing() {
                 "Neferdata uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
             },
           ]}
+
+
+          faqs="FAQs"
+          faqsP=" Here are some of the most common questions we get asked. If you have
+          other questions, please"
         />
         </div>
     </div>

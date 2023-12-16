@@ -66,7 +66,11 @@ const App = () => {
       <ProductCard {...emailAssistantData} />
       <PrivacyCertifications />
       <Testimonials />
-      <FAQs questions={questions} />
+      <FAQs 
+      faqs="FAQs"
+      faqsP=" Here are some of the most common questions we get asked. If you have
+      other questions, please"
+      questions={questions} />
     </>
   );
 };

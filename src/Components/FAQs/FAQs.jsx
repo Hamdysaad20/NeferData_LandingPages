@@ -4,7 +4,7 @@ import {Accordion, AccordionItem} from "@nextui-org/react";
 import Sparkels from "../Spark/spark";
 
 
-function FAQs({ questions }) {
+function FAQs({ questions ,...props}) {
   return (
     <div>
       <div className='w-full justify-center flex pt-12'>
@@ -17,13 +17,13 @@ function FAQs({ questions }) {
               lineHeight: "120%",
             }}
             className='text-4xl md:text-7xl  font-bold relative leading-120%'>
-            <span>Frequently Asked Questions</span>
+            <span>{props.faqs}</span>
             <div className="absolute  h-20 w-20   right-5 md:right-20 -bottom-10 md:-bottom-2"><Sparkels/></div>
 
           </div>
           <p className='text-[24px] max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
-            Here are some of the most common questions we get asked. If you have
-            other questions, please{" "}
+          {props.faqsP}
+            
             <a
             className='text-[#3092DB] hover:text-[#3092DB] transition underline underline-offset-2 duration-500 ease-in-out'
               href='mailto:info@neferdata.com ' 
@@ -64,6 +64,11 @@ FAQs.propTypes = {
       discription: PropTypes.string.isRequired,
     })
   ).isRequired,
+
+  props: PropTypes.shape({
+    faqs: PropTypes.string.isRequired,
+    faqsP: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default FAQs;
