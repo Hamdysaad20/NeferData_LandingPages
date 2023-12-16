@@ -13,7 +13,7 @@ import Button from '../Button/PrimaryButton';
  */
 const PricingCard = ({ className, title, price, renew, features, buttonText }) => {
   return (
-    <div className={`bg-white w-80  xl:w-96 rounded-3xl  px-5 pt-8 pb-8 relative overflow-hidden ${className}`}>
+    <div className={`bg-white w-80  hover:scale-105 duration-500 cursor-pointer xl:w-96 rounded-3xl  px-5 pt-8 pb-8 relative overflow-hidden ${className}`}>
       <svg className="absolute -top-20 -right-36 rotate-[300deg]" xmlns="http://www.w3.org/2000/svg" width={299} height={317} fill="none">
         <path fill="url(#a)" d="m299 317-198.88-34.078C42.42 273.076 0 220.333 0 158.45 0 96.56 42.42 43.824 100.113 33.978L299 0v317Z" />
         <defs>
@@ -39,7 +39,7 @@ const PricingCard = ({ className, title, price, renew, features, buttonText }) =
 <div className='w-full grid place-items-center p-2'>
   <Button
     onClick={"/Docs"}
-classes={`w-full max-w-[280px] py-4 ${buttonText === 'See Documentation' ? '!bg-transparent border-2 text-black border-[#121212]/60 hover:!bg-sky-200 duration-500' : ''}`}
+classes={`w-full max-w-[280px] py-4 ${buttonText === 'See Documentation' ? '!bg-transparent border-2 !text-black border-[#121212]/60 hover:!bg-sky-200 duration-500' : ''}`}
 title={buttonText} 
   />
 </div>

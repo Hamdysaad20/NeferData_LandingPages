@@ -55,13 +55,30 @@ function Pricing() {
   ];
 
   return (
-    <div className="w-full bg-gradient-to-b from-[#3092DB] to-[#FBFCFF] py-40 flex flex-wrap box-border lg:flex-nowrap justify-center items-center gap-3 lg:gap-9">
+    <div className='bg-gradient-to-b from-[#3092DB] to-[#FBFCFF]'>
+   <div className='w-full justify-center flex pt-32 '>
+   <div className="flex flex-col gap-6 text-white text-center  box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]">
+    <h1
+    style={{fontFamily: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif', fontWeight: 'bold', lineHeight: '120%'}}
+    className="text-4xl md:text-7xl font-bold leading-120%">
+    Neferdata Pricing Plans 
+    </h1>
+    <p className="text-[24px] max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-200">
+ 
+   Standard, Self-hosted, and Enterprise. Upgrade anytime for advanced features and capabilities.
+  </p>
+  </div>
+   
+   </div>
+    <div className="w-full bg[#FBFCFF] py-20 flex flex-wrap box-border lg:flex-nowrap justify-center items-center gap-3 lg:gap-9">
+     
       {pricingCardsData.map((cardData, idx) => (
         // Using unique index as key for the mapped elements. And spread operator to pass props.
         <PricingCard {...cardData} key={idx} />
       ))}
     </div>
-  );
+ 
+    </div> );
 }
 
 export default Pricing;
