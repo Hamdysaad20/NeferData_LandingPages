@@ -14,7 +14,7 @@ function Slideshow() {
       name: 'Mark Walz',
       jobTitle: 'Chief Technology Officer',
       companyName: 'SpotOn',
-      message: "Neferdata has completely transformed my email experience. It efficiently filters out unwanted emails, ensuring my inbox remains clutter-free. I no longer waste time sifting through irrelevant emails, and I can focus on what's truly important.",
+      message: "Neferdata has such a huge impact on my inbox. I don't have to filter through so much noise, and instead get personalized insights about potentially interesting companies. I wish I had access to the tool earlier.",
       classes: '',
     },
     {

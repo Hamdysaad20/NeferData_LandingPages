@@ -171,7 +171,7 @@ function Footer() {
                     target="_blank"
                     className="text-gray-200 transition"
                   >
-                    <span className="sr-only">{title}</span>
+                    <span className="sr-only select-none ">{title}</span>
                     <span className="w-6 inline-block hover:!-rotate-6 hover:text-blue-700 hover:!scale-150 transition-all"><Icon /></span>
                   </a>
                 </li>
@@ -183,7 +183,7 @@ function Footer() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
             {LINKS.map(({ title, links }, idx) => (
               <div key={idx}>
-                <p className="font-medium text-2xl text-gray-200">{title}</p>
+                <p className="font-medium text-2xl text-gray-200 select-none ">{title}</p>
                 <ul className="mt-6 space-y-4 text-sm">
                   {renderLinks(links)}
                 </ul>

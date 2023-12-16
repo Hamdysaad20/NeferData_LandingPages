@@ -5,7 +5,7 @@ const Testimonials = () => {
  
   return (
   <div className='w-full flex justify-center'>
-     <div className='w-full bg-[#3092DB] rounded-lg  max-w-[1500px] '>
+     <div className='w-full bg-[#3092DB] h-[700px] rounded-lg  max-w-[1500px] '>
 <div className='w-full justify-center flex pt-12'>
 <div className='flex flex-col gap-6  justify-center  text-center   box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]'>
           <div
