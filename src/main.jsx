@@ -18,13 +18,7 @@ import './styles/index.css';
 import './styles/fonts.css';
 import Mission from './Pages/Mission';
 
-/**
- * This Application component constructs the router of the application
- * It renders the LandingPage, Pricing, and App components according to the route.
- * 
- * The Application adheres to WCAG's section 2.4.4 (Link Purpose) guideline
- * by allowing link destinations to be programmatically determined.
- */
+
 export function Application() {
   return (
     <Router>

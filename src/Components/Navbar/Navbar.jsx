@@ -9,7 +9,7 @@ import "./Nav.css";
 const LINKS = [
   { main: { link: "/", title: "Home" }, hasDropDown: false },
   { main: { link: "/pricing", title: "Pricing" }, hasDropDown: false },
-  { main: { link: "/about", title: "about" }, hasDropDown: false },
+  { main: { link: "/mission", title: "Mission" }, hasDropDown: false },
   
 ];
 

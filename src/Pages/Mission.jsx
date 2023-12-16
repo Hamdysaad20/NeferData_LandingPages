@@ -1,8 +1,7 @@
-import React from 'react'
 
 function  Mission (){
   return (
-    <div>
+    <div className=' p-32'>
       <h1>mission</h1>
     </div>
   )
