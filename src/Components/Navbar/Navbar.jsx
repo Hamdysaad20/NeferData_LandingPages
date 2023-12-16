@@ -64,7 +64,9 @@ const Navbar = () => {
             fontWeight: "bold",
             fontSize: isScrolled ? "4rem" : "3.5rem",
             lineHeight: "120%",
-          }}>
+          }}
+          to='/'
+          >
           <img
             src={logoImg}
             alt='Company Logo'

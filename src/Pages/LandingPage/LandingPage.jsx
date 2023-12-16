@@ -1,12 +1,9 @@
-// We're beginning by importing necessary libraries, components, images, and videos
-import React from 'react';
 import Hero from '../../Components/Hero/Hero';
 import Gallery from '../../Components/Gallery/Gallery';
 import ProductCard from '../../Components/Card/ProductCard';
 import Testimonials from '../../Components/Testimonials/Testimonials';
 import PrivacyCertifications from '../../Components/PrivacyCertifications/PrivacyCertifications';
 import FAQs from '../../Components/FAQs/FAQs';
-
 import video1 from '../../assets/Videos/video1.mp4';
 import video2 from '../../assets/Videos/video2.mp4';
 
@@ -40,11 +37,6 @@ const App = () => {
     isReverse: false
   };
 
- 
-
- 
-
-
   const questions = [
     {
       title: "question 1",
@@ -57,13 +49,15 @@ const App = () => {
     {
       title: "question 3",
       discription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam quis voluptas fuga iusto eius cupiditate tenetur pariatur aliquam, quas quidem consequuntur ab quae incidunt ratione sapiente modi quam maiores?"
-    },{
+    },
+    {
       title: "question 4",
       discription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam quis voluptas fuga iusto eius cupiditate tenetur pariatur aliquam, quas quidem consequuntur ab quae incidunt ratione sapiente modi quam maiores?"
     }
-  ]
+  ];
 
-  // Returned JSX code is cleaner and easier to read
+ 
+
   return (
     <>
       <Hero />
@@ -71,10 +65,12 @@ const App = () => {
       <ProductCard {...productData} />
       <ProductCard {...emailAssistantData} />
       <PrivacyCertifications />
-      <Testimonials/>
+      <Testimonials />
       <FAQs questions={questions} />
     </>
-  )
+  );
 };
 
 export default App;
+
+  
