@@ -71,10 +71,7 @@ const App = () => {
       <ProductCard {...productData} />
       <ProductCard {...emailAssistantData} />
       <PrivacyCertifications />
-      <Testimonials
-        
-        
-        />
+      <Testimonials/>
       <FAQs questions={questions} />
     </>
   )

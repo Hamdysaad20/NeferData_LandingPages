@@ -1,5 +1,6 @@
 import { MdOutlineDone } from "react-icons/md";
 import PricingCard from "../../Components/Card/PricingCard";
+import FAQs from "../../Components/FAQs/FAQs";
 
 function Pricing() {
   const pricingCardsData = [
@@ -80,6 +81,38 @@ function Pricing() {
           <PricingCard {...cardData} key={idx} />
         ))}
       </div>
+
+      <div className='w-full grid place-items-center  pt-32 '>
+        <FAQs
+          questions={[
+            {
+              title: "What is Neferdata?",
+              discription:
+                "Neferdata is a SaaS product that provides insights on the technology stack of any company. It uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
+            },
+            {
+              title: "How does Neferdata work?",
+              discription:
+                "Neferdata uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
+            },
+            {
+              title: "How do I get started with Neferdata?",
+              discription:
+                "Neferdata uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
+            },
+            {
+              title: "How do I get started with Neferdata?",
+              discription:
+                "Neferdata uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
+            },
+            {
+              title: "How do I get started with Neferdata?",
+              discription:
+                "Neferdata uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
+            },
+          ]}
+        />
+        </div>
     </div>
   );
 }
