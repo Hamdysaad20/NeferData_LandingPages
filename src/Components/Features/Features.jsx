@@ -39,7 +39,7 @@ const Features = ({ tabs }) => {
           {tabs[activeTab].features.map((feature, index) => (
             <button
               key={index}
-              className={`flex justify-center text-center items-center p-1 px-2 rounded-md gap-3 font-semibold transition-all text-blue-1 border border-blue-1 ${activeFeature === index ? 'opacity-100 hover:opacity-100 bg-gray-200' : 'opacity-50 hover:opacity-80'}`}
+              className={`flex justify-center text-center items-center p-1 px-2 rounded-md gap-3 font-semibold transition-all text-blue-1 ${activeFeature === index ? 'opacity-100 hover:opacity-100 bg-gray-200 border border-blue-1' : 'opacity-50 hover:opacity-80'}`}
               onClick={() => handleFeatureSwitch(index)}
             >
               <div className='flex justify-center items-center rounded-lg'>
@@ -50,7 +50,7 @@ const Features = ({ tabs }) => {
           ))}
         </div>
         {/* Active Feature Content */}
-        <div className='pt-4'>
+        <div className='pt-4 h-96'>
           {tabs[activeTab].features[activeFeature].content}
         </div>
       </div>

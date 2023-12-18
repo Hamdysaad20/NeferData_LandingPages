@@ -1,5 +1,6 @@
 import Hero from '../../Components/Hero/Hero';
 import Gallery from '../../Components/Gallery/Gallery';
+import Gallery2 from '../../Components/Gallery/Gallery2';
 import ProductCard from '../../Components/Card/ProductCard';
 import Testimonials from '../../Components/Testimonials/Testimonials';
 import PrivacyCertifications from '../../Components/PrivacyCertifications/PrivacyCertifications';
@@ -72,7 +73,9 @@ const App = () => {
       title: "question 4",
       discription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam quis voluptas fuga iusto eius cupiditate tenetur pariatur aliquam, quas quidem consequuntur ab quae incidunt ratione sapiente modi quam maiores?"
     }
-  ]; const featuresData = [
+  ]; 
+  
+  const featuresData = [
     // Tab 1: Email Assistant
     {
       title: 'Email Assistant',
@@ -216,12 +219,11 @@ const App = () => {
     }
   ]
 
-
-
   return (
     <>
       <Hero />
       <Gallery />
+      <Gallery2 />
       <ProductCard {...productData} />
       <ProductCard {...emailAssistantData} />
       <PrivacyCertifications />
