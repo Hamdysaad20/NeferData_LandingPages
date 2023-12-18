@@ -145,7 +145,7 @@ const Navbar = () => {
               : "h-0 py-0 translate-y-32 max-sm:translate-y-0"
           } overflow-hidden transition-all`}>
           {/* Navigation Links */}
-          <div className='flex items-center justify-start flex-col w-[15rem] max-sm:w-full text-lg capitalize'>
+          <div className='flex items-center text-[#121212] text-bold justify-start flex-col w-[15rem] max-sm:w-full text-lg capitalize'>
             {LINKS.map((link, idx) => (
               <NavbarLink
                 main={link.main}
