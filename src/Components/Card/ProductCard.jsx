@@ -7,7 +7,7 @@ import Video from '../Video/Video';
 // ProductCard1 Component
 const ProductCard1 = ({ title, subTitle, list, videoSrc, onClick, isReverse }) => (
   // Main container: using template literal for dynamic styling
-  <div className={`font-roboto flex justify-center items-center max-lg:flex-col w-[90%] py-[112px] max-w-[1400px] m-auto gap-20 ${isReverse ? 'flex-row-reverse' : ''}`}>
+  <div className={` flex justify-center items-center max-lg:flex-col w-[90%] py-[112px] max-w-[1400px] m-auto gap-20 ${isReverse ? 'flex-row-reverse' : ''}`}>
 
     {/* Video Content */}
     <div className='w-1/2 max-lg:w-full'>

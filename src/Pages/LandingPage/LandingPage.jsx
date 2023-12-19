@@ -22,6 +22,8 @@ import {
   FaMicrophoneAlt,
   FaStickyNote
 } from 'react-icons/fa';
+import UseAnimations from "react-useanimations";
+
 import { FaListCheck } from 'react-icons/fa6'
 import video1 from '../../assets/Videos/video1.mp4';
 import video2 from '../../assets/Videos/video2.mp4';
@@ -222,18 +224,19 @@ const App = () => {
   return (
     <>
       <Hero />
-      <Gallery />
+      {/* <Gallery /> */}
       <Gallery2 />
       <ProductCard {...productData} />
       <ProductCard {...emailAssistantData} />
       <PrivacyCertifications />
       <Testimonials />
+      <Features tabs={featuresData} />
       <FAQs
         faqs="FAQs"
         faqsP=" Here are some of the most common questions we get asked. If you have
       other questions, please"
         questions={questions} />
-      <Features tabs={featuresData} />
+   
     </>
   );
 };

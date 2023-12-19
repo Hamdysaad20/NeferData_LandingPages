@@ -13,7 +13,7 @@ const PERCENT_STATS = [
 // Main Gallery component
 const Gallery2 = () => (
   // Section container
-  <section className="w-[90%] max-md:w-full max-w-[1200px] flex justify-center flex-col items-center mx-auto py-32 px-16 max-lg:px-8 max-md:px-6 gap-24 font-roboto box-border">
+  <section  className="w-[90%] max-md:w-full max-w-[1200px] flex justify-center flex-col items-center mx-auto py-32 px-16 max-lg:px-8 max-md:px-6 gap-24  box-border">
     {/* Title */}
     <h2 className="font-black text-8xl md:text-7xl max-md:text-sm text-center">
       Finding the right tool for your business is critical
