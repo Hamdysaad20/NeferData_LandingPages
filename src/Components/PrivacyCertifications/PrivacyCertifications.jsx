@@ -2,6 +2,8 @@ import { FcGoogle } from "react-icons/fc";
 import { FaArrowRightLong } from "react-icons/fa6";
 import CertificationCard from './CertificationCard';
 import flyImg from '../../assets/Images/image 12.png';
+import visibility2 from 'react-useanimations/lib/visibility2'
+import UseAnimations from "react-useanimations";
 
 // Function to display the Google icon
 const GoogleIcon = () => (
@@ -13,6 +15,7 @@ const GoogleIcon = () => (
 // Function to display the Microsoft icon
 const MicrosoftIcon = () => (
   <span className='w-full h-full flex justify-center items-center text-[2rem] p-2'>
+
     <figure className="bg-white flex justify-center items-center p-px">
       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="100%" viewBox="0 0 23 23">
         <path fill="#F25022" d="M0 0h11v11H0z" />
@@ -52,6 +55,10 @@ const PrivacyCertifications = () => {
   // Render the section
   return (
     <section className='flex flex-col w-[90%] max-w-[1200px] justify-center items-center py-[112px] gap-20 m-auto'>
+         <div className='bg-black w-54 p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
+< UseAnimations animation={visibility2} size={100} strokeColor='blue' />
+
+</div>
       <HeaderText />
       <div className='flex justify-center items-center gap-12 flex-wrap'>
         {certificationList.map((certification, index) => (

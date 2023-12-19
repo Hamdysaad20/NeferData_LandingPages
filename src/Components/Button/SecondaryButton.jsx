@@ -18,7 +18,7 @@ const SecondaryButton = ({ title, onClick, Icon, theme }) => {
   return (
     <button
       onClick={onClick} 
-      className={`text-center select-none font-bold capitalize py-4 text-white grid place-items-center  max-lg:gap-[20px] p-2 items-center text-[16px] max-lg:text-[14px] w-[271px] max-lg:w-[261px] box-border rounded-full ${bg} hover:bg-opacity-80 bg-opacity-100 transition-all`}
+      className={`text-center active:scale-95 duration-300 select-none font-bold capitalize py-4 text-white grid place-items-center  max-lg:gap-[20px] p-2 items-center text-[16px] max-lg:text-[14px] w-[271px] max-lg:w-[261px] box-border rounded-full ${bg} hover:bg-opacity-80 bg-opacity-100 transition-all`}
     >
       <span className="grid grid-cols-4 gap-2 place-items-center">
         <Icon />

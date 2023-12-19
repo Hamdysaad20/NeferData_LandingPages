@@ -1,5 +1,4 @@
 import Hero from '../../Components/Hero/Hero';
-import Gallery from '../../Components/Gallery/Gallery';
 import Gallery2 from '../../Components/Gallery/Gallery2';
 import ProductCard from '../../Components/Card/ProductCard';
 import Testimonials from '../../Components/Testimonials/Testimonials';

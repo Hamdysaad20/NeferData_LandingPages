@@ -56,9 +56,20 @@ function Pricing() {
   ];
 
   return (
-    <div className='bg-gradient-to-b from-[#3092DB] to-[#FBFCFF]'>
-      <div className='w-full justify-center flex pt-32 '>
-        <div className='flex flex-col gap-6 text-white text-center  box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]'>
+    <div 
+    style={{ 
+      backgroundImage: `url(${'/docs@30.8b9a76a2.avif'})`,
+      boxShadow: "0 0 30px 12px white inset",
+      backgroundRepeat: "no-repeat",  
+    }} 
+    
+    className='bg-gradient-to-b from-[#3092DB] to-[#FBFCFF]'>
+      <div
+        
+      className='w-full justify-center flex pt-32 '>
+        <div
+        
+        className='flex flex-col gap-6 text-black text-center  box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]'>
           <h1
             style={{
               fontFamily:
@@ -69,7 +80,7 @@ function Pricing() {
             className='text-4xl md:text-7xl font-bold leading-120%'>
             Neferdata Pricing Plans
           </h1>
-          <p className='text-[24px] max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-200'>
+          <p className='text-[24px] max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
             Standard, Self-hosted, and Enterprise. Upgrade anytime for advanced
             features and capabilities.
           </p>
@@ -82,7 +93,13 @@ function Pricing() {
         ))}
       </div>
 
-      <div className='w-full grid place-items-center  pt-32 '>
+      <div
+      style={{ 
+        backgroundImage: `url(${'/hero@75.b2469a49.jpg'})`,
+        boxShadow: "0 0 30px 12px white inset",
+        backgroundRepeat: "no-repeat",  
+      }} 
+      className='w-full grid place-items-center  pt-32 '>
         <FAQs
           questions={[
             {
