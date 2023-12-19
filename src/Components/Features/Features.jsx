@@ -26,12 +26,12 @@ const Features = ({ tabs }) => {
       }}
       className='w-full overflow-hidden pt-32  '>
       <div className='w-full flex justify-center'>
-        <div className='bg-black w-54 p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
+        <div className='bg-[#3092DB] w-54 p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
           <UseAnimations
             animation={loading2}
             speed={0.5}
             size={100}
-            strokeColor='blue'
+            strokeColor='white'
           />
         </div>{" "}
       </div>

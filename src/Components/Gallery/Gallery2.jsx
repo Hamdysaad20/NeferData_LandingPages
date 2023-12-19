@@ -16,8 +16,8 @@ const Gallery2 = () => (
   // Section container
   <section  className="w-[90%] max-md:w-full max-w-[1200px] flex justify-center flex-col items-center mx-auto py-32 px-16 max-lg:px-8 max-md:px-6 gap-12  box-border">
     {/* Title */}
-<div className='bg-black w-54 p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
-< UseAnimations animation={infinity} size={100} strokeColor='blue' />
+<div className='bg-[#3092DB] w-54 p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
+< UseAnimations animation={infinity} size={100} strokeColor='white' />
 
 </div>
     <h2 className="font-black text-8xl  md:text-7xl max-md:text-sm text-center">

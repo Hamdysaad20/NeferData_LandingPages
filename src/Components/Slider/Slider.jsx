@@ -79,7 +79,7 @@ function Slideshow() {
                   <img
                     src={currentTestimonial.imgSrc}
                     alt={currentTestimonial.name}
-                    className='rounded-full ring-2 border-4 border-[#121212]  w-[300px]'
+                    className='rounded-full ring-2 border-4 border-[#121212] w-[200px]  md:w-[300px]'
                   />
                   <span className='rounded-full p-2 bg-[#121212] w-12 aspect-square absolute right-[5%] top-[5%] flex justify-center items-center text-3xl'>
                     <Lottie animationData={groovyWalkAnimation} loop={true} />
@@ -92,7 +92,7 @@ function Slideshow() {
                     exit={{ opacity: 0 }}
                     transition={transition}
                   >
-                    <p className='text-2xl font-semibold max-w-[900px]'>
+                    <p className='md:text-2xl  text-lg font-semibold max-w-[900px]'>
                       {currentTestimonial.message}
                     </p>
                   </motion.blockquote>

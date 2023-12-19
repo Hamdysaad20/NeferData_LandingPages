@@ -49,11 +49,11 @@ const Navbar = () => {
         fontSize: "3.5rem",
         lineHeight: "120%",
       }}
-      className={`fixed top-0 w-screen bg-white h-[63px] lg:h-[80px] z-50 flex justify-center ${
+      className={`fixed  top-0 w-screen bg-white h-[63px] lg:h-[80px] z-50 flex justify-center ${
         isScrolled ? "text-transparent" : ""
       }`}
       role='navigation'>
-      <div className='max-w-[1500px] w-screen h-full font-roboto flex justify-between items-center px-[1.5rem] max-sm:px-2'>
+      <div className='max-w-[1500px] px-[1.8rem] w-screen h-full font-roboto flex justify-between items-center lg:px-[1.5rem] max-sm:px-2'>
         <Link
           className={`flex items-center gap-[1.5rem] ${
             isScrolled ? "justify-center" : ""

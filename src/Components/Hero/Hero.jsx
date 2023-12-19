@@ -47,16 +47,17 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="microsoft">
 
 // Main Hero component
 const Hero = () => (
- <div className='bg-gradient-to-b from-[#3092DB]  to-[#FBFCFF] relative'>
+ <div className=' relative '>
    <header 
   style={{ 
     backgroundImage: `url(${'/hero@75.b2469a49.jpg'} )`,
     boxShadow: "0 0 30px 12px white inset",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+   
   }}
   
-  className="pt-20 bg-gradient-to-b from-[#3092DB]  to-[#FBFCFF] flex flex-col items-center font-roboto">
+  className="pt-20 bg-gradient-to-b  flex flex-col items-center ">
     {/* Hero content wrapper */}
     <div className="w-[90%]  max-md:w-[95%] max-sm:w-full  box-border px-2 lg:px-16 py-28 m-16 h-[482px] flex flex-col justify-center items-center gap-6">
       {/* Hero Texts */}
@@ -77,8 +78,8 @@ const Hero = () => (
           <SecondaryButton onClick={null} theme='dark' Icon={MicrosoftIcon} title='Sign in with Microsoft' />
           <SecondaryButton onClick={null} theme='primary' Icon={GoogleIcon} title='Sign in with Google' />
         </div>
-        <p className='text-white text-[12px] max-lg:text-[10px] text-center'>
-          By clicking Sign Up you're confirming that you agree with our <span className='underline'>Terms of Service</span> and <span  className='underline'>Privacy Policy</span>.
+        <p className='text-gray-500 text-[12px] max-lg:text-[10px] text-center'>
+          By clicking Sign Up you&apos;re confirming that you agree with our <span className='underline select-none cursor-pointer'>Terms of Service</span> and <span  className='underline select-none cursor-pointer'>Privacy Policy</span>.
         </p>
       </div>
     </div>

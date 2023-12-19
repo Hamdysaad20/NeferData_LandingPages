@@ -31,7 +31,7 @@ const CertificationCard = ({Icon, Description}) => {
   };
 
   return (
-    <div className='w-[300px] hover:scale-105 cursor-pointer hover:shadow-xl duration-700 max-sm:w-[200px] p-4 rounded-3xl h-60 font-semibold mx-8 bg-white flex flex-col justify-center items-center gap-4 text-center'>
+    <div className='w-[300px] border-2 border-black/20 hover:scale-105 cursor-pointer hover:shadow-xl duration-700 max-sm:w-[250px] p-4 rounded-3xl min-h-[300px] font-semibold mx-8 bg-white flex flex-col justify-center items-center gap-4 text-center'>
       <span className='w-32 aspect-square '>
         <Icon aria-label="Certification Icon"/>
       </span>
