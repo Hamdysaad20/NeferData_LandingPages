@@ -57,7 +57,7 @@ const Hero = () => (
    
   }}
   
-  className="pt-20 bg-gradient-to-b  flex flex-col items-center ">
+  className="pt-20   flex flex-col items-center ">
     {/* Hero content wrapper */}
     <div className="w-[90%]  max-md:w-[95%] max-sm:w-full  box-border px-2 lg:px-16 py-28 m-16 h-[482px] flex flex-col justify-center items-center gap-6">
       {/* Hero Texts */}

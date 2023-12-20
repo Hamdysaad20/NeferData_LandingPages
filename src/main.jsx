@@ -16,7 +16,7 @@ import NotFound from './Pages/NotFound'; // Import the 404 page component
 // Import style sheets
 import './styles/index.css';
 import './styles/fonts.css';
-import Mission from './Pages/Mission';
+import Mission from './Pages/MissionPage/Mission';
 
 
 export function Application() {

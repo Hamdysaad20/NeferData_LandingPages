@@ -1,8 +1,0 @@
-  .container:hover .overlay {
-    bottom: 0;
-    height: 100%;
-  }
-  .text {
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }

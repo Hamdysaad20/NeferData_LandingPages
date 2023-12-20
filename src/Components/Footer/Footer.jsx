@@ -1,5 +1,5 @@
 import React from 'react'
-import logoImg from '../../assets/Images/image 7.png';
+import logoImg from '../../assets/Images/logo.png';
 
 
 // Functions that maps over list of link objects to render link elements

@@ -1,5 +1,5 @@
 import React from "react";
-import logoImg from "../../assets/Images/image 7.png";
+import logoImg from "../../assets/Images/logo.png";
 import PrimaryButton from "../Button/PrimaryButton";
 import NavbarLink from "./NavbarLink";
 import { useState, useEffect } from "react";
