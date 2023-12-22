@@ -17,7 +17,7 @@ import chartData from '../../Data/chartData.json';
 import productData from '../../Data/productData';
 import emailAssistantData from '../../Data/emailAssistantData';
 import questions from '../../Data/questions.json';
-import featuresData from '../../Data/featuresData';
+import tabs from '../../Data/featuresData';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
       <ProductCard {...emailAssistantData} />
       <PrivacyCertifications />
       <Testimonials />
-      <Features tabs={featuresData} />
+      <Features tabs={tabs} />
       <FAQs
         faqs="FAQs"
         faqsP=" Here are some of the most common questions we get asked. If you have

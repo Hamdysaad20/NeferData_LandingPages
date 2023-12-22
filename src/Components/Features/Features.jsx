@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import loading2 from "react-useanimations/lib/loading2";
 import UseAnimations from "react-useanimations";
-import PrimaryButton from "../Button/PrimaryButton";
 // Destructure from props for a cleaner syntax
 const Features = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -72,7 +71,7 @@ const Features = ({ tabs }) => {
               onClick={() => handleTabSwitch(index)}>
               <div className='h-12   w-full  flex justify-center gap-2 px-4 items-center  rounded-2xl border-2 border-black text-black'>
                 <tab.Icon />
-                <div className='leading-[16px] font-medium text-[0.875rem] text-black'>
+                <div className='leading-[16px] font-medium text-[0.875rem] text-black whitespace-nowrap'>
                   {tab.title}
                 </div>
               </div>
@@ -85,7 +84,7 @@ const Features = ({ tabs }) => {
             {tabs[activeTab].features.map((feature, index) => (
               <button
                 key={index}
-                className={`grid place-items-center  select-none flex-col  hover:opacity-75 duration-500 active:scale-95 justify-start text-center items-center  rounded-2xl p-2 h-12   font-bold transition-all text-black ${
+                className={`grid place-items-center select-none flex-col hover:opacity-75 duration-500 active:scale-95 justify-start text-center items-center  rounded-2xl p-2 h-12   font-bold transition-all text-black ${
                   activeFeature === index
                     ? "opacity-100 hover:opacity-100 bg-gray-200 "
                     : "opacity-50 border-white/20 hover:opacity-80"
@@ -94,7 +93,7 @@ const Features = ({ tabs }) => {
                 style={{ flex: "none" }}>
                 <div className='flex gap-2 px-2 justify-center items-center rounded-2xl'>
                   <feature.Icon />{" "}
-                  <div className='grid col-span-5 place-items-center text-sm break-keep box-content '>
+                  <div className='grid col-span-5 place-items-center text-sm break-keep box-content whitespace-nowrap'>
                     {feature.title}
                   </div>
                 </div>
@@ -103,44 +102,7 @@ const Features = ({ tabs }) => {
           </div>
           {/* Active Feature Content */}
           <div className='pt-4 overflow-hidden   h-full w-full'>
-            {/* {tabs[activeTab].features[activeFeature].content} */}
-            <div className='w-full grid   lg:grid-cols-2  h-full '>
-              <div className='divone  '>
-                <div className='mx-auto max-w-md text-center pt-12 lg:py-32  '>
-                  <h2 className='text-3xl font-bold tracking-tight text-white sm:text-4xl'>
-                    Boost your productivity
-                    <br />
-                    Let AI work for you .
-                  </h2>
-                  <p className='mt-6 text-lg leading-8 text-gray-300'>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Eveniet numquam facilis eum atque deserunt mollitia
-                    asperiores eaque libero
-                  </p>
-                  <div className='mt-10 flex items-center justify-center gap-x-6 lg:justify-center'>
-                    <PrimaryButton onClick={"/signup"} title='Sign Up' />
-
-                    <a
-                      href='#'
-                      className='text-sm font-semibold leading-6 text-white'>
-                      Learn more <span aria-hidden='true'>→</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className='divtwo hidden lg:block'>
-              <div className="relative mt-16 h-80 lg:mt-8">
-              <img
-                className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-                alt="App screenshot"
-                width={1824}
-                height={1080}
-              />
-            </div>
-              </div>
-            </div>
+            {tabs[activeTab].features[activeFeature].content}
           </div>
         </div>
       </section>
