@@ -1,0 +1,23 @@
+{
+  "labels": ["2017", "2018", "2019", "2020", "2021", "2022", "current"],
+  "data": [
+    {
+      "cat": "Expected Business Value",
+      "values": [115, 200, 422, 67, 86, 810, 120],
+      "borderColor": "rgba(255, 100, 100, 1)",
+      "backgroundColor": "rgba(255, 100, 100, 0.5)"
+    },
+    {
+      "cat": "Apps usage",
+      "values": [155, 680, 442, 600, 716, 80, 264],
+      "borderColor": "rgba(100, 100, 255, 1)",
+      "backgroundColor": "rgba(100, 100, 255, 0.5)"
+    },
+    {
+      "cat": "Fail rate",
+      "values": [947, 161, 649, 500, 716, 585, 1000],
+      "borderColor": "rgba(50, 255, 50, 1)",
+      "backgroundColor": "rgba(50, 255, 50, 0.5)"
+    }
+  ]
+}

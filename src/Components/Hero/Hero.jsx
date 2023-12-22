@@ -50,7 +50,7 @@ const Hero = () => (
  <div className=' relative '>
    <header 
   style={{ 
-    backgroundImage: `url(${'/hero@75.b2469a49.jpg'} )`,
+    backgroundImage: `url(${'/public/hero@75.b2469a49.jpg'} )`,
     boxShadow: "0 0 30px 12px white inset",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
