@@ -1,15 +1,12 @@
 // Import necessary dependencies
 import React from 'react';
 import Percent2 from './Percent2';
+import chartData from '../../Data/chartData.json';
+import Chart from '../../Components/Chart/Chart';
+
 import UseAnimations from "react-useanimations";
 import infinity from 'react-useanimations/lib/infinity'
-// Constant data for percent component,
-// represents different statistics.
-const PERCENT_STATS = [
-  { percent: 70, text: 'of digital projects fail to deliver the expected business value' },
-  { percent: 55, text: 'of company apps are NOT used on a regular basis' },
-  { percent: 56, text: 'of SaaS providers fail for internal, non-product reasons' }
-];
+
 
 // Main Gallery component
 const Gallery2 = () => (
@@ -25,11 +22,11 @@ const Gallery2 = () => (
     </h2>
 
     {/* Percent component display */}
-    <div className="flex gap-x-[220px] gap-y-10 justify-center items-center flex-wrap">
+    <div className="
+     h-[400px] sm:h-[600px] bg-[#3092DB] text-black rounded-2xl p-2 py-12 w-full max-w-[1200px] flex justify-center items-center gap-12  box-border
+    ">
       {/* Loop PERCENT_STATS data to render Percent components */}
-      {PERCENT_STATS.map((stat, index) => (
-        <Percent2 key={index} percent={stat.percent} text={stat.text} />
-      ))}
+      <Chart chartData={chartData} />
     </div>
   </section>
 );

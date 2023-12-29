@@ -22,6 +22,7 @@ ChartJS.register(
 
 const options = {
   responsive: true,
+  maintainAspectRatio: false,
   interaction: {
     mode: 'index',
     intersect: false,
@@ -32,10 +33,73 @@ const options = {
       type: 'linear',
       display: true,
       position: 'left',
+      max: 100, 
+      min: 0,
+      ticks: {
+        stepSize: 20,
+        color: 'white', // Change text color to white
+        font: {
+          weight: 'bold', // Make the text bold
+          size: 16 // Increase the text size
+        }
+      }
+    },
+    x: {
+      ticks: {
+        stepSize: 1,
+        color: 'white', // Change text color to white
+        font: {
+          weight: 'bold', // Make the text bold
+          size: 16 // Increase the text size
+        }
+      }
     }
   },
-};
+  plugins: {
+    title: {
+      display: false,
+      text: 'Chart.js Line Chart - Multi Axis',
+    },
+    legend: {
+      display: true,
+      position: 'bottom',
+      labels: {
+        color: 'white', // Change text color to white
+        font: {
+          weight: 'bold', // Make the text bold
+          size: 16 // Increase the text size
+        }
+      }
+    },
+    tooltip: {
+      displayColors: true,
+      callbacks: {
+        label: function (context) {
+          var label = context.dataset.label || '';
 
+          if (label) {
+            label += ': ';
+          }
+          if (context.parsed.y !== null) {
+            label += context.parsed.y + '%';
+          }
+          return label;
+        },
+      },
+      backgroundColor: '#121212', // Change tooltip background color to white
+      color: 'white', // Change tooltip text color to black
+      titleColor: 'white', // Change tooltip title color to black
+      titleFont: {
+        weight: 'bold' // Make tooltip title bold
+      },
+    },
+  },
+  elements: {
+    point: {
+      radius: 0,
+    },
+  },
+};
 const Chart = ({chartData}) => {
   const data = {
     labels: chartData.labels,
@@ -51,7 +115,7 @@ const Chart = ({chartData}) => {
   };
 
   return (
-    <div className='w-[90%] m-auto my-96'>
+    <div className='w-[90%] h-full m-auto my-96'>
       <Line options={options} data={data} />
     </div>
   );

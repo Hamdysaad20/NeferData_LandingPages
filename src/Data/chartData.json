@@ -1,23 +1,23 @@
 {
-  "labels": ["2017", "2018", "2019", "2020", "2021", "2022", "current"],
-  "data": [
-    {
-      "cat": "Expected Business Value",
-      "values": [115, 200, 422, 604, 806, 810, 980],
-      "borderColor": "rgba(255, 100, 100, 1)",
-      "backgroundColor": "rgba(255, 100, 100, 0.5)"
-    },
-    {
-      "cat": "Apps usage",
-      "values": [155, 442, 460, 600, 680, 716, 995],
-      "borderColor": "rgba(100, 100, 255, 1)",
-      "backgroundColor": "rgba(100, 100, 255, 0.5)"
-    },
-    {
-      "cat": "Fail rate",
-      "values": [110, 161, 500, 649, 716, 804, 1000],
-      "borderColor": "rgba(50, 255, 50, 1)",
-      "backgroundColor": "rgba(50, 255, 50, 0.5)"
-    }
-  ]
+    "labels": ["2017", "2018", "2019", "2020", "2021", "2022", "current"],
+    "data": [
+        {
+            "cat": "Expected Business Value",
+            "values": [11.5, 20, 32.2, 26, 39, 45, 50],
+            "borderColor": "rgba(255, 100, 100, 1)",
+            "backgroundColor": "rgba(255, 100, 100, 0.5)"
+        },
+        {
+            "cat": "Apps usage",
+            "values": [15.5, 44.2, 44, 40, 48, 53, 55],
+            "borderColor": "rgba(100, 100, 255, 1)",
+            "backgroundColor": "rgba(100, 100, 255, 0.5)"
+        },
+        {
+            "cat": "Fail rate",
+            "values": [20, 38, 45, 50, 60, 64, 70],
+            "borderColor": "rgba(50, 255, 50, 1)",
+            "backgroundColor": "rgba(50, 255, 50, 0.5)"
+        }
+    ]
 }

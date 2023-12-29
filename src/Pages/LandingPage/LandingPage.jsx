@@ -8,12 +8,9 @@ import Testimonials from '../../Components/Testimonials/Testimonials';
 import PrivacyCertifications from '../../Components/PrivacyCertifications/PrivacyCertifications';
 import FAQs from '../../Components/FAQs/FAQs';
 import Features from '../../Components/Features/Features';
-import UseAnimations from "react-useanimations";
 import CTAProduct from '../../Components/CTA/CTAProduct';
-import Chart from '../../Components/Chart/Chart';
 
 // import data
-import chartData from '../../Data/chartData.json';
 import productData from '../../Data/productData';
 import emailAssistantData from '../../Data/emailAssistantData';
 import questions from '../../Data/questions.json';
@@ -35,7 +32,7 @@ const App = () => {
       other questions, please"
         questions={questions} />
       <CTAProduct />
-      <Chart chartData={chartData} />
+     
     </>
 
   );
