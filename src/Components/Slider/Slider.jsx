@@ -75,11 +75,11 @@ function Slideshow() {
               transition={transition}
               className={`w-full  text-white pb-[52px] mt-[30px] mb-[70px] flex justify-center items-center ${currentTestimonial.classes}`}>
               <div className={`w-[80%] max-w-[1200px] flex gap-5 justify-center items-center max-md:flex-col`}>
-                <div className='relative hover:scale-95 duration-500 cursor-pointer select-none'>
+                <div className='relative hover:scale-95 w-[200px] h-[200px] md:h-[300px] md:w-[350px] duration-500 cursor-pointer select-none'>
                   <img
                     src={currentTestimonial.imgSrc}
                     alt={currentTestimonial.name}
-                    className='rounded-full ring-2 border-4 border-[#121212] w-[200px]  md:w-[300px]'
+                    className='rounded-full ring-2 border-4 border-[#121212] h-full w-full object-cover'
                   />
                   <span className='rounded-full p-2 bg-[#121212] w-12 aspect-square absolute right-[5%] top-[5%] flex justify-center items-center text-3xl'>
                     <Lottie animationData={groovyWalkAnimation} loop={true} />
