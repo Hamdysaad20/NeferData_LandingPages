@@ -112,10 +112,16 @@ const Chart = ({chartData}) => {
         yAxisID: 'y'
       }
     }),
+    
   };
 
   return (
-    <div className='w-[90%] h-full m-auto my-96'>
+    <div className='w-[90%] relative h-full m-auto my-96'>
+      <div className='absolute top-0  left-0 h-auto w-auto rounded-2xl p-2  bg-red-300 ' > 
+        <p className='text-white font-bold text-lg'>Percentage of people who have been vaccinated</p>
+        <p className='text-gray-400 font-bold text-lg'>Percentage of people who have been vaccinated</p>
+
+      </div>
       <Line options={options} data={data} />
     </div>
   );
