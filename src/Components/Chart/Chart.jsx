@@ -62,12 +62,15 @@ const options = {
     },
     legend: {
       display: true,
-      position: 'bottom',
+      position: 'top',
+      align: 'end',
+
+
       labels: {
         color: 'white', // Change text color to white
         font: {
-          weight: 'bold', // Make the text bold
-          size: 16 // Increase the text size
+          weight: 'extrabold', // Make the text bold
+          size: 10 // Increase the text size
         }
       }
     },
@@ -116,12 +119,8 @@ const Chart = ({chartData}) => {
   };
 
   return (
-    <div className='w-[90%] relative h-full m-auto my-96'>
-      <div className='absolute top-0  left-0 h-auto w-auto rounded-2xl p-2  bg-red-300 ' > 
-        <p className='text-white font-bold text-lg'>Percentage of people who have been vaccinated</p>
-        <p className='text-gray-400 font-bold text-lg'>Percentage of people who have been vaccinated</p>
-
-      </div>
+    <div className='w-[95%] relative h-full  m-auto my-96'>
+    
       <Line options={options} data={data} />
     </div>
   );

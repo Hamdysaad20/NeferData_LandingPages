@@ -2,8 +2,8 @@
     "labels": ["2017", "2018", "2019", "2020", "2021", "2022", "current"],
     "data": [
         {
-            "cat": "Expected Business Value",
-            "values": [11.5, 20, 32.2, 26, 39, 45, 50],
+            "cat": "Fail rate",
+            "values": [11.5, 20, 32.2, 26, 39, 45, 56],
             "borderColor": "#fff",
             "backgroundColor": "#fff"
         },
@@ -14,7 +14,7 @@
             "backgroundColor": "yellow"
         },
         {
-            "cat": "Fail rate",
+            "cat": "Expected Business Value",
             "values": [20, 38, 45, 50, 60, 64, 70],
             "borderColor": "#121212",
             "backgroundColor": "#121212"
