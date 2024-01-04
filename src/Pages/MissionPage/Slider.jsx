@@ -52,7 +52,7 @@ function Slider() {
   const currentFoundersNotes = FoundersNotes[index];
 
   return (
-    <div className='py-12'>
+    <div className='py-12 pt-0'>
       <AnimatePresence mode='wait'>
         <div className='flex flex-col gap-6 text-white text-center box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]'>
           <div className="flex justify-center ">
@@ -90,23 +90,22 @@ function Slider() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={transition}
-            className='text-[24px] max-lg:text-[20px] font-medium pb-32 lg:pb-0 box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-100'>
+            className={`text-${currentFoundersNotes.message.length > 170 ? '2xl' : 'xl'} max-lg:text-[20px] font-medium pb-32 lg:pb-0 box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-100`}>
             <span className='text-black text-extrabold'>&quot; </span>
             {currentFoundersNotes.message}{" "}
             <span className='text-black text-extrabold'>&quot;</span>
           </motion.p>
         </div>
-        <div className='absolute bottom-5  gap-4  right-12 text-center text-white flex justify-center'>
-         <div
-         className="bg-white w-12 h-12 rounded-full"
-         > 
-          sd
-         </div>
+        <div className='absolute bottom-5  gap-4  left-12 text-center text-white flex justify-center'>
+        <div className="bg-white text-left w-auto h-auto flex items-center justify-center">
+          
+         
+        </div>
          
           <div
             className={`w-12 ring-black cursor-pointer select-none relative h-12 rounded-full overflow-hidden bg-white ${
               currentFoundersNotes === FoundersNotes[1]
-                ? "opacity-100 ring-2  animate-pulse duration-1000"
+                ? "opacity-100 ring-2  scale-110 animate-pulse duration-1000"
                 : "opacity-20"
             }`}>
             <img
@@ -118,7 +117,7 @@ function Slider() {
           <div
             className={`relative  ring-black cursor-pointer select-none w-12 h-12 rounded-full overflow-hidden bg-white ${
               currentFoundersNotes === FoundersNotes[0]
-                ? "opacity-100 ring-2  animate-pulse duration-1000"
+                ? "opacity-100 ring-2  scale-110 animate-pulse duration-1000"
                 : "opacity-20"
             }`}>
             <img
@@ -126,6 +125,10 @@ function Slider() {
               alt=''
               className='w-full h-full object-cover object-center'
             />
+          </div>
+          <div className="ml-2 text-sm place-content-center place-items-start grid text-left">
+            <p className="text-white font-bold">{currentFoundersNotes.name}</p>
+            <p className="text-gray-300">{currentFoundersNotes.jobTitle}</p>
           </div>
         </div>
       </AnimatePresence>
