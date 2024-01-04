@@ -54,7 +54,7 @@ function Slideshow() {
 
   return (
     <div className=' w-full'>
-      <div className='slideshowDots'>
+      {/* <div className='slideshowDots'>
         {testimonialData.map((_, idx) => (
           <div
             key={idx}
@@ -63,7 +63,7 @@ function Slideshow() {
               setIndex(idx);
             }}></div>
         ))}
-      </div>
+      </div> */}
       <div className='slideshowSlider'>
         <div className='slide'>
           <AnimatePresence mode='wait'>
