@@ -96,7 +96,13 @@ function Slider() {
             <span className='text-black text-extrabold'>&quot;</span>
           </motion.p>
         </div>
-        <div className='absolute bottom-5  gap-4 left-0 right-0 text-center text-white flex justify-center'>
+        <div className='absolute bottom-5  gap-4  right-12 text-center text-white flex justify-center'>
+         <div
+         className="bg-white w-12 h-12 rounded-full"
+         > 
+          sd
+         </div>
+         
           <div
             className={`w-12 ring-black cursor-pointer select-none relative h-12 rounded-full overflow-hidden bg-white ${
               currentFoundersNotes === FoundersNotes[1]
