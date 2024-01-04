@@ -55,7 +55,8 @@ function Slider() {
     <div className='py-12'>
       <AnimatePresence mode='wait'>
         <div className='flex flex-col gap-6 text-white text-center box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]'>
-          <div className="flex justify-center scale-150">
+          <div className="flex justify-center ">
+          <div className="scale-150 p-2 rounded-2xl">
             <svg
               fill='none'
               height='28'
@@ -71,6 +72,7 @@ function Slider() {
                 strokeLinejoin='round'
                 strokeWidth='1.5'></path>
             </svg>
+          </div>
           </div>
           <h1
             style={{
