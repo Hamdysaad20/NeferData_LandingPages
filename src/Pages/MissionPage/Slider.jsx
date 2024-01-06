@@ -18,7 +18,7 @@ function Slider() {
       jobTitle: "CTO and Co-Founder @Neferdata",
       companyName: "NeferData",
       message:
-        "At NeferData, we're revolutionizing SaaS by democratizing tech access. We match companies based on size, stage, and category, bringing transparency and efficiency to the industry.",
+        "At NeferData, we're revolutionizing SaaS by democratizing tech. We match companies based on size, stage, and category, bringing  efficiency to the industry.",
       classes: "Democratizing SaaS for Efficiency.",
       companyLogo: NeferData,
     },
@@ -90,10 +90,8 @@ function Slider() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={transition}
-            className={`text-${currentFoundersNotes.message.length > 170 ? '2xl' : 'xl'} max-lg:text-[20px] font-medium pb-32 lg:pb-0 box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-100`}>
-            <span className='text-black text-extrabold'>&quot; </span>
+            className={`text-${currentFoundersNotes.message.length > 170 ? '2xl' : '2xl'} max-lg:text-[20px] font-medium pb-32 lg:pb-0 box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-100`}>
             {currentFoundersNotes.message}{" "}
-            <span className='text-black text-extrabold'>&quot;</span>
           </motion.p>
         </div>
         <div className='absolute bottom-5  gap-4  left-12 text-center text-white flex justify-center'>
