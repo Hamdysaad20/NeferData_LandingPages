@@ -27,7 +27,7 @@ export default {
         }
       },
       animation: {
-        'slideFromRightToLeft': 'slideFromRightToLeft 6s linear',
+        'slideFromRightToLeft': 'slideFromRightToLeft 12s linear',
       }
     },
   },

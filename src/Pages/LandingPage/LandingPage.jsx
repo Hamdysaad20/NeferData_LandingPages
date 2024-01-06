@@ -1,5 +1,3 @@
-import React from 'react';
-
 // import components
 import Hero from '../../Components/Hero/Hero';
 import Gallery2 from '../../Components/Gallery/Gallery2';
