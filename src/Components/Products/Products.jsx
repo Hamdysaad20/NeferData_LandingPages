@@ -17,10 +17,10 @@ const Products = ({ products }) => {
 
   return (
     <section
-      className='bg-[#3092DB] rounded-3xl m-auto my-64 p-4  w-11/12  lg:flex-row flex flex-col gap-4 min-h-[500px] lg:h-[700px] max-w-screen-2xl'
+      className='bg-[#3092DB] rounded-3xl m-auto my-64 mt-0 p-4  w-11/12  lg:flex-row flex flex-col gap-4 min-h-[500px] lg:h-[700px] max-w-screen-2xl'
       aria-label='Products Section'
       role='region'>
-      <div className='lg:w-2/5 w-full flex flex-col gap-1'>
+      <div className='lg:w-2/5 w-full grid place-items-center gap-1'>
         {products.map((product, index) => (
           <button
             className={`flex justify-start items-start p-4 text-start text-white overflow-hidden transition-all duration-500 rounded-xl before:aspect-square before:translate-x-1 before:translate-y-1/2 before:rounded-full before:bg-white before:absolute before:bottom-0 before: after:w-3/4 after:bg-gradient-to-r after:from-transparent after:to-white after:bottom-0 after:absolute relative ${
@@ -63,7 +63,7 @@ const Products = ({ products }) => {
 Products.propTypes = {
   products: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string.isRequired,
+      title: PropTypes.object.isRequired,
       description: PropTypes.string.isRequired,
       icon: PropTypes.object.isRequired,
       data: PropTypes.object.isRequired,
