@@ -20,7 +20,17 @@ export default {
         'custom-light': '0 4px 16px 2px rgba(0, 0, 0, .25)',
         'custom-bottom': '0 15px 14px 1px rgba(0, 0, 0, .25)',
       },
+      keyframes: {
+        slideFromRightToLeft: {
+          '0%': { right: '100%' },
+          '100%': { right: '-20%' },
+        }
+      },
+      animation: {
+        'slideFromRightToLeft': 'slideFromRightToLeft 6s linear',
+      }
     },
   },
   plugins: [],
 }
+
