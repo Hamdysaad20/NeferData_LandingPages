@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "./Slider";
 import Kamil_on_Stage from "../../assets/Images/Founders/KamilStage.png";
+import KamilGift from "../../assets/Images/Founders/kamil.gif";
 
 function TeamTestimonial() {
   return (
@@ -8,17 +9,25 @@ function TeamTestimonial() {
       <div className='w-full flex justify-center mb-0 p-2'>
         <div className='w-full bg-[#3092DB] min-h-[1100px] md:min-h-[700px] rounded-3xl overflow-hidden max-w-[1500px] '>
           <div className='w-full  relative h-full  flex-col lg:flex-row  px-2 flex overflow-hidden'>
-            <div className=' h-full cursor-pointer hover:opacity-80 duration-1000 hover:contrast-150  p-12 px-2  md:col-span-2  relative flex justify-center items-center'>
-              <img
-                style={{
-                  backgroundImage: `url(${"/hero@75.b2469a49.jpg"} )`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                }}
-                src={Kamil_on_Stage}
-                alt=''
-                className='w-full overflow-hidden h-full object-cover rounded-3xl object-center'
-              />
+            <a
+              href='https://www.youtube.com/watch?v=KU6ePY3vwDk'
+              target='_blank'
+              rel='noopener noreferrer'
+              className=' h-full w-full cursor-pointer hover:opacity-80 duration-1000 hover:contrast-150  p-4 px-2  md:col-span-2  relative flex justify-center items-center'>
+                <img
+                    style={{
+                      backgroundImage: `url(${"/hero@75.b2469a49.jpg"} )`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
+                    }}
+                    src={ KamilGift}
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = Kamil_on_Stage;
+                    }}
+                    alt=''
+                    className='w-full  overflow-hidden h-full object-cover rounded-3xl object-center'
+                  />
 
               <div className='absolute top-0 left-0 w-full h-full rounded-3xl   bg-opacity-50 flex justify-center items-center gap-2'>
                 <div className='h-32 w-32 p-6 animate-pulse duration-1000 bg-[#3092DB] cursor-pointer select-none hover:scale-95  rounded-full relative'>
@@ -33,7 +42,7 @@ function TeamTestimonial() {
                   </svg>
                 </div>
               </div>
-            </div>
+            </a>
 
             <div className='w-full h-full    md:col-span-2  relative flex justify-center items-center'>
               <Slider />
