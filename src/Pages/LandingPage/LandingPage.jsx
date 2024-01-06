@@ -11,8 +11,8 @@ import Features from '../../Components/Features/Features';
 import CTAProduct from '../../Components/CTA/CTAProduct';
 
 // import data
-import productData from '../../Data/productData';
-import emailAssistantData from '../../Data/emailAssistantData';
+// import productData from '../../Data/productData';
+// import emailAssistantData from '../../Data/emailAssistantData';
 import questions from '../../Data/questions.json';
 import tabs from '../../Data/featuresData';
 
@@ -21,8 +21,8 @@ const App = () => {
     <>
       <Hero />
       <Gallery2 />
-      <ProductCard {...productData} />
-      <ProductCard {...emailAssistantData} />
+      {/* <ProductCard {...productData} />
+      <ProductCard {...emailAssistantData} /> */}
       <PrivacyCertifications />
       <Testimonials />
       <Features tabs={tabs} />

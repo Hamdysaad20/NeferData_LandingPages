@@ -1,5 +1,6 @@
 
 
+import CTAsignIn from "../../Components/CTA/CTAsignIn";
 import Hero from "../../Components/MissionComponents/Hero";
 // import FeatureArea from "./Features";
 import Story from "./Story";
@@ -13,6 +14,7 @@ function  Mission (){
     <TeamTestimonial/>
     {/* <FeatureArea
     /> */}
+    <CTAsignIn/>
     </div>
   )
 }
