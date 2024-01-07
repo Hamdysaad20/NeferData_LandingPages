@@ -129,11 +129,29 @@ function FeaturesGrid() {
           </div>
         </div>
 
-        <div className="div absolute h-full w-full ">
-{/* //here we put the grid */}
-
-
+      <div className="div absolute h-full w-full">
+      <div className="parent-div h-full w-full flex flex-col md:flex-row">
+        {/* Left Div */}
+        <div className="left-div flex w-full h-full flex-col">
+          {/* Top Div */}
+          <div className="top-div h-full w-full bg-blue-500 p-4">
+            {/* Content for Top Div */}
+            <p>Top Div Content</p>
+          </div>
+          {/* Bottom Div */}
+          <div className="bottom-div h-full w-full bg-green-500 p-4 ">
+            {/* Content for Bottom Div */}
+            <p>Bottom Div Content</p>
+          </div>
         </div>
+
+        {/* Right Div */}
+        <div className="right-div w-full h-full bg-red-500 p-4 flex-grow">
+          {/* Content for Right Div */}
+          <p>Right Div Content</p>
+        </div>
+      </div>
+    </div>
       </section>
     </div>
   );
