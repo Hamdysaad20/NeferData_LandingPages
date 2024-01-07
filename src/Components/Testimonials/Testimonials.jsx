@@ -35,9 +35,8 @@ const Testimonials = () => {
             <span>What our customers are saying about us</span>
             </div>
             <p className='text-lg pt-4 text-center '>
-              Experience even greater levels of security and privacy with our
-              self-hosted option. With full control over your data and the
-              ability to customize your environment.
+              Our customers love Neferdata. Here’s what they have to say about
+              our products and services and how they have helped them .
             </p>
             <CTAsignIn
               buttonText='
@@ -85,7 +84,7 @@ const Testimonials = () => {
        className="p-2  "
        >
 <div
-className="bg-black/20 pt-4 rounded-3xl "
+className="bg-black/20 backdrop-blur-lg pt-4 rounded-3xl "
 >
 <Slideshow />
 

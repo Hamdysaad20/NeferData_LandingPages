@@ -138,7 +138,7 @@ function SelfHosted() {
               ability to customize your environment.
             </p>
             <CTAsignIn
-              buttonText='Get With Self-Hosted'
+              buttonText='Start With Self-Hosted'
               buttonTextSecondary='See Other Options'
               bg='bg-white'
             />
