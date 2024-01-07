@@ -50,9 +50,9 @@ const Scalability = () => {
         </section>
 
         <div className='w-full flex justify-center mb-0 '>
-          <div className='w-full   h-[900px] md:h-[700px]  '>
+          <div className='w-full   min-h-[900px] md:min-h-[700px]  '>
             <div className='w-full justify-center flex '>
-              <div className='flex flex-col gap-6 justify-start max-w-[1400px]  text-left w-full box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 '>
+              <div className='flex flex-col gap-6 justify-start max-w-[1400px]  h-full relative text-left w-full box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 '>
               <FeaturesGrid />
 
               </div>

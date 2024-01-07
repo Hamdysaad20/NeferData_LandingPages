@@ -1,6 +1,6 @@
 function FeaturesGrid() {
   return (
-    <div className='flex justify-center '>
+    <div className='flex justify-center  '>
       <section className='container  flex justify-center relative rounded-3xl'>
         <div className=' w-full'>
           <div className='section-icon py-6 flex justify-center'>
