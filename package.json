@@ -13,7 +13,7 @@
     "@nextui-org/react": "^2.2.9",
     "chart.js": "^4.4.1",
     "faker": "^5.5.3",
-    "framer-motion": "^10.16.16",
+    "framer-motion": "^10.17.9",
     "localforage": "^1.10.0",
     "lottie-react": "^2.4.0",
     "match-sorter": "^6.3.1",
