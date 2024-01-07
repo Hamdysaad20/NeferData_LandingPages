@@ -14,6 +14,7 @@ import tabs from '../../Data/featuresData';
 
 import { MdEmail, MdProductionQuantityLimits } from 'react-icons/md'; 
 import SelfHosted from '../../Components/SelfHosted/SelfHosted';
+import Scalability from '../../Components/SelfHosted/Scalability/Scalability';
 
 const products = [
   {
@@ -107,7 +108,7 @@ const App = () => {
       <Testimonials />
       <Features tabs={tabs} />
       <CTAProduct />
-
+<Scalability/>
       <FAQs
         faqs="FAQs"
         faqsP=" Here are some of the most common questions we get asked. If you have

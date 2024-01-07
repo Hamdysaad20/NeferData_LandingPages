@@ -31,7 +31,7 @@ function FAQs({ questions, ...props }) {
                 <Sparkels />
               </div>
             </div>
-            <p className='text-[24px] max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
+            <p className='text-[24px] pb-12 max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
               {props.faqsP}
               <a
                 className='text-[#3092DB] hover:text-[#3092DB] transition underline underline-offset-2 duration-500 ease-in-out'
