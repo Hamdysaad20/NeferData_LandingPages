@@ -35,8 +35,8 @@ function AIstory() {
           ),
         },
         {
-          title: 'AI-Powered SaaS Picks: Suggest, Fill, Score',
-          description: 'Smart SaaS picks with AI. No more Excel hassles. No more manual work. Just the right tools for your business.',
+          title: 'AI-Powered SaaS Picks',
+          description: 'Smart SaaS picks with AI. No more Excel hassles. No more manual work. Just get Suggestion, Fill, get Score.',
           icon: <MdEmail />,
           data: (
             <div className="bg-white p-4 rounded shadow h-full">
@@ -109,12 +109,14 @@ function AIstory() {
   return (
     <div
     style={{
-        backgroundImage: `url(${"/hero@75.b2469a49.jpg"} )`,
-        boxShadow: "0 0 30px 12px white inset",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    
+      backgroundImage: `url(${"/hero@75.b2469a49.jpg"} )`,
+      boxShadow: "0 0 30px 12px white inset",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      
+
+    }}
     >
  <header
      
