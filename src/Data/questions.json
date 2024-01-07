@@ -1,18 +1,22 @@
 [
   {
-    "title": "question 1",
-    "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam quis voluptas fuga iusto eius cupiditate tenetur pariatur aliquam, quas quidem consequuntur ab quae incidunt ratione sapiente modi quam maiores?"
+    "title": "How does Neferdata provide support to its clients?",
+    "discription": "Neferdata offers comprehensive support for its clients, including access to support via mail and phone, step-by-step guides and documentation, and full automation for setting up a private instance."
   },
   {
-    "title": "question 2",
-    "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam quis voluptas fuga iusto eius cupiditate tenetur pariatur aliquam, quas quidem consequuntur ab quae incidunt ratione sapiente modi quam maiores?"
+    "title": "What kind of companies can benefit from Neferdata's services?",
+    "discription": "Neferdata's services benefit a wide range of companies, from small startups to large enterprises. The deployment options cater to different business needs, providing flexibility and control over the deployment environment, management overhead, and support access."
   },
   {
-    "title": "question 3",
-    "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam quis voluptas fuga iusto eius cupiditate tenetur pariatur aliquam, quas quidem consequuntur ab quae incidunt ratione sapiente modi quam maiores?"
+    "title": "How does Neferdata's AI-powered email assistant work?",
+    "discription": "Neferdata's AI-powered email assistant helps users manage emails efficiently. The assistant analyzes email content and provides personalized recommendations for actions like archiving, deleting, or responding to emails."
   },
   {
-    "title": "question 4",
-    "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam quis voluptas fuga iusto eius cupiditate tenetur pariatur aliquam, quas quidem consequuntur ab quae incidunt ratione sapiente modi quam maiores?"
+    "title": "What is Neferdata's Global Instance deployment option?",
+    "discription": "Neferdata's Global Instance deployment option provides a fully managed, scalable, and secure deployment environment. It includes access to Neferdata's AI-powered email assistant and product discovery features, as well as full automation for setting up a private instance."
+  },
+  {
+    "title": "How does Neferdata's product discovery feature work?",
+    "discription": "Neferdata's product discovery feature helps users discover new products and services related to their email content. It uses advanced machine learning algorithms to analyze email content and provide personalized recommendations."
   }
 ]

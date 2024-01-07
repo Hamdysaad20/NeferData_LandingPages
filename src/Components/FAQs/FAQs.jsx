@@ -44,7 +44,10 @@ function FAQs({ questions, ...props }) {
       </div>
 
           <Accordion
-            selectionMode='multiple'
+            selectionMode='single'
+            hideIndicator={true}
+            
+            fullWidth={true}
             className='bg-[#F7F7F7]   border border-[#E5E5E5] rounded-3xl pb-6 p-2 pl-6 text-2xl outline-none focus:outline-none '>
             {questions.map((question, idx) => (
               <AccordionItem 
@@ -52,7 +55,7 @@ function FAQs({ questions, ...props }) {
                 key={idx}
                 title={question.title}
                 className=''>
-                <p className='text-[#121212]   text-[18px] leading-[150%]'>
+                <p className='text-[#121212] pl-4  text-[18px] leading-[150%]'>
                   {question.discription}
                 </p>
               </AccordionItem>
