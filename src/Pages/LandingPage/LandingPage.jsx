@@ -17,6 +17,7 @@ import Products from '../../Components/Products/Products';
 
 
 import { MdEmail, MdProductionQuantityLimits } from 'react-icons/md'; 
+import SelfHosted from '../../Components/SelfHosted/SelfHosted';
 
 const products = [
   {
@@ -104,19 +105,20 @@ const App = () => {
     <>
       <Hero />
       <Gallery2 />
-      <ProductCard {...productData} />
-      <ProductCard {...emailAssistantData} />
+     
       <PrivacyCertifications />
+      <SelfHosted/>
       <Testimonials />
       <Features tabs={tabs} />
+      <CTAProduct />
+
       <FAQs
         faqs="FAQs"
         faqsP=" Here are some of the most common questions we get asked. If you have
       other questions, please"
         questions={questions} />
-      <CTAProduct />
-
-      <Products products={products}/>
+     
+     
     </>
 
   );

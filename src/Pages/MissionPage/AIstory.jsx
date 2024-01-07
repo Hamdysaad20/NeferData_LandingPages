@@ -150,7 +150,9 @@ Embrace The AI Advantage
         </div>
       </header>
 
-            <Products products={products}/>
+            <Products products={products}
+             bg="bg-[#3092DB]"
+            />
 
     </div>
   )

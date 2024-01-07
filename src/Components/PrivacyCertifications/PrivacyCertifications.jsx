@@ -70,8 +70,8 @@ const PrivacyCertifications = () => {
 
 // Function to render section header and text
 const HeaderText = () => (
-  <div className='max-w-[560px] box-border px-5 flex flex-col gap-6 justify-center items-center'>
-   <div className='w-full justify-center pb-12 pt-0 flex'>
+  <div className='max-w-[1400px] m-auto  text-center   box-border px-5 flex flex-col gap-6 justify-center items-center'>
+   <div className='w-full justify-center m-0 text-center pb-12 pt-0 flex'>
         <div
           style={{
             fontFamily:
@@ -80,10 +80,12 @@ const HeaderText = () => (
             lineHeight: "120%",
           }}
           className='text-4xl md:text-7xl text-[#121212] max-w-[1000px] text-center font-bold relative leading-120%'>
-          <div className='flex flex-col md:flex-row place-items-center'>
+          <div className='flex capitalize flex-col justify-center md:flex-row place-items-center'>
           Privacy Certifications
           </div>
-          <p className='text-lg pt-4 text-center '>We’re continuously investing in security features & industry certifications for our customer’s safety.</p>
+          <p className='text-lg pt-4 text-center '>
+          We are committed to ensuring the security of our customers, which is why we are continuously investing in the latest security features and industry certifications to provide the highest level of protection for your data.               
+            </p>
 
         </div>
       </div>

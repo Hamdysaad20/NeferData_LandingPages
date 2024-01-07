@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-const Products = ({ products }) => {
+const Products = ({ products ,bg}) => {
   const [activeProductIndex, setActiveProductIndex] = useState(0);
   const handleActiveProduct = (index) => setActiveProductIndex(index);
 
@@ -17,7 +17,9 @@ const Products = ({ products }) => {
 
   return (
     <section
-      className='bg-[#3092DB] rounded-3xl m-auto my-64 mt-0 p-4  w-11/12  lg:flex-row flex flex-col gap-4 min-h-[500px] lg:h-[700px] max-w-screen-2xl'
+
+ 
+      className={`rounded-3xl m-auto my-64 mt-0 p-4 w-11/12 lg:flex-row flex flex-col gap-4 min-h-[500px] lg:h-[700px] max-w-screen-2xl ${bg}`}
       aria-label='Products Section'
       role='region'>
       <div className='lg:w-2/5 w-full grid place-items-center gap-1'>
@@ -69,6 +71,7 @@ Products.propTypes = {
       data: PropTypes.object.isRequired,
     }).isRequired
   ).isRequired,
+  bg:PropTypes.string.isRequired,
 };
 
 export default Products;

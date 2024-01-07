@@ -84,9 +84,9 @@ const Features = ({ tabs }) => {
             {tabs[activeTab].features.map((feature, index) => (
               <button
                 key={index}
-                className={`grid place-items-center select-none flex-col hover:opacity-75 duration-500 active:scale-95 justify-start text-center items-center  rounded-2xl p-2 h-12   font-bold transition-all text-black ${
+                className={`grid place-items-center select-none flex-col hover:opacity-75 duration-500 active:scale-95 justify-start text-center items-center  rounded-2xl p-2 h-12   font-bold transition-all text-white ${
                   activeFeature === index
-                    ? "opacity-100 hover:opacity-100 bg-gray-200 "
+                    ? "opacity-100 hover:opacity-100 bg-gray-50/20 "
                     : "opacity-50 border-white/20 hover:opacity-80"
                 }`}
                 onClick={() => handleFeatureSwitch(index)}
