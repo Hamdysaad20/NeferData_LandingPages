@@ -99,8 +99,12 @@ const options = {
   },
   elements: {
     point: {
-      radius: 0,
+      radius: 5,
     },
+  
+      line: {
+        borderWidth: 6, // Increase line thickness to 2 pixels
+      },
   },
 };
 const Chart = ({chartData}) => {
