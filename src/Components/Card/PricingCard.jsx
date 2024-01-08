@@ -13,7 +13,7 @@ import Button from '../Button/PrimaryButton';
  */
 const PricingCard = ({ className, title, price, renew, features, buttonText }) => {
   return (
-    <div className={`bg-white w-80  hover:scale-105 duration-500 cursor-pointer xl:w-96 rounded-3xl  px-5 pt-8 pb-8 relative overflow-hidden ${className}`}>
+    <div className={`bg-white w-80 border-2  hover:scale-105 duration-500 cursor-pointer xl:w-96 rounded-3xl  px-5 pt-8 pb-8 relative overflow-hidden ${className}`}>
       <svg className="absolute -top-20 -right-36 rotate-[300deg]" xmlns="http://www.w3.org/2000/svg" width={299} height={317} fill="none">
         <path fill="url(#a)" d="m299 317-198.88-34.078C42.42 273.076 0 220.333 0 158.45 0 96.56 42.42 43.824 100.113 33.978L299 0v317Z" />
         <defs>
