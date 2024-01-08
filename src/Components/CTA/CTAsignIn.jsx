@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CTAsignIn({ title, subtitle, buttonText, buttonTextSecondary, bg }) {
   return (
@@ -11,9 +11,12 @@ function CTAsignIn({ title, subtitle, buttonText, buttonTextSecondary, bg }) {
         <p className="mt-5 text-xl leading-8 text-black">
           {subtitle}
         </p>
-        <div className="mt-6 flex items-center justify-center gap-4">
-          <Link  to="/selfhosted"  className={`flex items-center justify-center gap-2 rounded-full  px-5 py-3 text-lg font-medium  hover:opacity-75 duration-700 ${bg === 'bg-white' ? 'text-black bg-white ' : 'text-white bg-black  '}`}>
-            <span> 
+        <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-4">
+          <Link
+            to="/selfhosted"
+            className={`flex items-center justify-center gap-2 rounded-full px-5 py-3 text-lg font-medium hover:opacity-75 duration-700 ${bg === 'bg-white' ? 'text-black bg-white ' : 'text-white bg-black  '}`}
+          >
+            <span>
               {buttonText}
             </span>
             <span>
@@ -31,7 +34,10 @@ function CTAsignIn({ title, subtitle, buttonText, buttonTextSecondary, bg }) {
               </svg>
             </span>
           </Link>
-          <Link to="/pricing" className="flex items-center justify-center gap-2 rounded-full  px-5 py-3 text-lg font-medium ">
+          <Link
+            to="/pricing"
+            className={`flex items-center justify-center gap-2 rounded-full px-5 py-3 text-lg font-medium mt-0 md:mt-0`}
+          >
             <span>{buttonTextSecondary}</span>
             <span>
               <svg
@@ -51,7 +57,7 @@ function CTAsignIn({ title, subtitle, buttonText, buttonTextSecondary, bg }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default CTAsignIn
+export default CTAsignIn;

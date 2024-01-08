@@ -49,7 +49,7 @@ const Navbar = () => {
         fontSize: "3.5rem",
         lineHeight: "120%",
       }}
-      className={`fixed  top-0 w-screen bg-white h-[63px] lg:h-[80px] z-50 flex justify-center ${
+      className={`fixed  top-0 w-screen bg-white/90 border-b-2 backdrop-blur-2xl h-[63px] lg:h-[80px] z-50 flex justify-center ${
         isScrolled ? "text-transparent" : ""
       }`}
       role='navigation'>
