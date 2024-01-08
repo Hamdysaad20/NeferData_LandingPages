@@ -25,9 +25,9 @@ const Products = ({ products ,bg}) => {
       <div className='lg:w-2/5 w-full grid place-items-center gap-1'>
         {products.map((product, index) => (
           <button
-            className={`flex justify-start items-start p-4 text-start text-white overflow-hidden transition-all duration-500 rounded-xl before:aspect-square before:translate-x-1 before:translate-y-1/2 before:rounded-full before:bg-white before:absolute before:bottom-0 before: after:w-3/4 after:bg-gradient-to-r after:from-transparent after:to-white after:bottom-0 after:absolute relative ${
+            className={`flex justify-start items-start  border-t-2 border-gray-100/20 p-4 text-start text-white overflow-hidden transition-all duration-500 rounded-xl before:aspect-square before:translate-x-1 before:translate-y-1/2 before:rounded-full before:bg-white before:absolute before:bottom-0 before: after:w-3/4 after:bg-gradient-to-r after:from-transparent after:to-white after:bottom-0 after:absolute relative ${
               activeProductIndex === index
-                ? "bg-white/10 opacity-100 after:h-1 after:animate-slideFromRightToLeft after:right-full before:h-2 before:animate-slideFromRightToLeft before:shadow-[0px_0px_100px_30px_rgb(200,200,255)]"
+                ? "bg-white/10 opacity-100 after:h-1  after:animate-slideFromRightToLeft after:right-full before:h-2 before:animate-slideFromRightToLeft before:shadow-[0px_0px_100px_30px_rgb(200,200,255)]"
                 : "bg-transparent after:right-0 opacity-60 after:h-0 after:animate-none before:h-0 before:animate-none before:shadow-none"
             } hover:bg-white/20 hover:opacity-90`}
             key={index}
@@ -35,14 +35,14 @@ const Products = ({ products ,bg}) => {
             role='tab'
             aria-controls={`product-tab-${index}`}
             aria-selected={activeProductIndex === index}>
-            <span className='pr-4 text-3xl transition-all duration-500'>
+            <span className='pr-4 text-3xl  transition-all duration-500'>
               {product.icon}
             </span>
             <div
               className={`flex flex-col  justify-start items-start transition-all duration-500 overflow-hidden ${
                 activeProductIndex === index ? "h-28" : "h-8"
               }`}>
-              <span className='text-2xl font-semibold mb-2'>
+              <span className='text-2xl relative font-semibold mb-2'>
                 {product.title}
               </span>
               <span className='text-base text-white/80'>

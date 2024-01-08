@@ -58,10 +58,10 @@ function AIstory() {
     },
     {
       title: (
-        <span className='flex justify-between items-center gap-2'>
-          <span className=''>SaaS Contract Manager</span>
+        <span className='flex relative w-full justify-between items-center gap-2'>
+          <span className='w-[70%]'>SaaS Contract Manager</span>
 
-          <span className='text-white px-4 py-[6px] relative   text-sm bg-gray-700/40 animate-pulse grid place-items-center w-20 rounded-full '>
+          <span className='text-white absolute top-0 right-0 px-4 py-[6px]     text-sm bg-gray-700/40 animate-pulse grid place-items-center w-20 rounded-full '>
             soon
             <span className='absolute h-12 w-12 -top-5 right-0'>
               <Sparkels />
@@ -86,10 +86,10 @@ function AIstory() {
     },
     {
       title: (
-        <span className='flex justify-between items-center gap-2'>
-          <span className=''>AI Usage Analytics</span>
+        <span className='flex  relative w-full justify-between items-center gap-2'>
+          <span className='w-[70%] '>AI Usage Analytics</span>
 
-          <span className='text-white px-4 py-[6px] relative   text-sm bg-gray-700/40 animate-pulse grid place-items-center w-20 rounded-full '>
+          <span className='text-white px-4 absolute top-0 right-0 py-[6px]    text-sm bg-gray-700/40 animate-pulse grid place-items-center w-20 rounded-full '>
             soon
             <span className='absolute h-12 w-12 -top-5 right-0'>
               <Sparkels />
