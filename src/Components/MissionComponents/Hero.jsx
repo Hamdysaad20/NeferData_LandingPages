@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "../../assets/Images/logo.png";
 
 function Hero() {
   return (
@@ -18,7 +19,7 @@ function Hero() {
      <div className="w-[90%]  max-md:w-[95%] max-sm:w-full  box-border px-2 lg:px-16 py-28 mt-16 min-h-[482px] flex flex-col justify-center items-center gap-6">
        {/* Hero Texts */}
        <div className='bg-[#3092DB] aspect-square  w-[116px] h-[116px] p-6   relative shadow-2xl shadow-blue-700 rounded-[2rem] '>
-          <img src='src/assets/Images/logo.png'
+          <img src={logo}
            className='h-full w-full aspect-square duration-300 grid place-content-center font-bold object-cover object-center'
  alt ='Neferdata'
           
