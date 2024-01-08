@@ -121,12 +121,13 @@ const App = () => {
     <>
       <Hero />
       <Gallery2 />
+      <Features tabs={tabs} />
 
       <PrivacyCertifications />
       <SelfHosted />
-      <Testimonials />
-      <Features tabs={tabs} />
       <Scalability />
+      <Testimonials />
+
       <FAQs
         faqs='FAQs'
         faqsP=' Here are some of the most common questions we get asked. If you have

@@ -36,9 +36,31 @@ export default function Gallery2() {
       <div className='bg-[#3092DB] p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
         <UseAnimations animation={infinity} size={100} strokeColor='white' />
       </div>
-      <h2 className='font-black text-8xl  md:text-7xl max-md:text-sm text-center'>
-        Finding the right tool for your business is critical
-      </h2>
+    
+
+
+            <div
+                  style={{
+                    fontFamily:
+                      'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
+                    fontWeight: "bold",
+                    lineHeight: "120%",
+                  }}
+                  className='text-4xl md:text-7xl text-black max-w-[1000px] pb-12 text-center font-bold relative leading-120%'>
+                  <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
+                  Finding the right tool for your business is critical
+                  </div>
+                  <p className='text-lg pt-4 text-center '>
+      you don&apos;t know what is the right one to solve your customer problem and which is cost less and more efficient for your business             
+                            </p>
+                </div>
+
+
+
+
+
+
+
 
       <div className='h-[400px] relative sm:h-[700px] bg-[#3092DB] text-black  overflow-hidden rounded-2xl p-2 py-12 pt-32 w-full  flex justify-center items-center gap-12  box-border'>
         <div className='absolute top-0 flex justify-center flex-col text-center  pt-4 left-0  w-full'>
