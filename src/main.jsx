@@ -17,12 +17,15 @@ import NotFound from './Pages/NotFound'; // Import the 404 page component
 import './styles/index.css';
 import './styles/fonts.css';
 import Mission from './Pages/MissionPage/Mission';
+import ScrollToTop from './ScrolltoTop';
 
 
 export function Application() {
   return (
     <Router>
+      <ScrollToTop />
         <Routes>
+        
           <Route path="/" element={<App />}>
             <Route index element={<LandingPage />} />
             <Route path="/pricing" element={<Pricing />} />
