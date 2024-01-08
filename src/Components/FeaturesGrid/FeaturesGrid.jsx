@@ -3,6 +3,8 @@ import BGasset from "./BGasset";
 import Smallasste from "./Smallasste";
 import Lottie from "lottie-react";
 import ServersConnected from "../../Lottie/ServersIntegration.json";
+import ServersConnected2 from "../../Lottie/CloudYellow.json";
+
 
 function FeaturesGrid() {
   return (
@@ -28,21 +30,20 @@ function FeaturesGrid() {
                   className={`bg-[#3092DB] hover:bg-[#3092DB]/70 duration-500 cursor-pointer  overflow-hidden min-h-[250px] relative p-4 rounded-xl w-full h-full `}>
                   <div className='absolute top-0 pt-4 left-0 pl-4 flex-col flex justify-start w-full z-10 items-left'>
                     <h1 className='text-3xl font-bold text-white'>
-                      Automated Setup &amp; Configuration
+                    Flexible Deployment Options
                     </h1>
                     <p className=' text-white text-sm font-medium mt-2 md:w-9/12'>
-                      Automate Neferdata setup using Terraform and Helm, with
-                      support via mail and phone.{" "}
+                    Neferdata provides deployment options: free Global Instance, Managed Service, and Self-Hosted control.
                     </p>
                   </div>
                   <div
                     className='absolute md:-bottom-4 -bottom-10  -right-20  md:-right-28 flex justify-center items-center'
                     style={{ width: "70%", height: "100%" }}>
                     <Lottie
-                      animationData={ServersConnected}
+                      animationData={ServersConnected2}
                       autoplay
                       loop
-                      className='w-full h-full scale-110 absolute '
+                      className='w-full h-full opacity-40 scale-125 absolute '
                       style={{ width: "100%", height: "100%" }}
                     />
                   </div>
