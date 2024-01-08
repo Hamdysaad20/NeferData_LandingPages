@@ -203,13 +203,13 @@ function Footer() {
             </ul>
           </div>
 
-          <div className='grid grid-cols-1  w-[70%] z-10 right-0  gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4'>
+          <div className='grid grid-cols-1  w-[100%] z-10 right-0  gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4'>
             {LINKS.map(({ title, links }, idx) => (
               <div key={idx}>
-                <p className='font-medium text-2xl text-gray-50 select-none '>
+                <p className='font-medium  text-2xl text-gray-50 select-none '>
                   {title}
                 </p>
-                <ul className='mt-6 space-y-4 relative h-full w-full text-sm'>
+                <ul className='mt-6 space-y-4 select-none relative h-full w-full text-sm'>
                   {renderLinks(links)}
                 </ul>
               </div>
