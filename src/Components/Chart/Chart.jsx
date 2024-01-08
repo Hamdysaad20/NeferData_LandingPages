@@ -1,4 +1,4 @@
-import React from 'react';
+import {useEffect} from 'react';
 import PropTypes from 'prop-types';
 import {
   Chart as ChartJS,
@@ -19,6 +19,9 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
+
+
 
 const options = {
   responsive: true,
@@ -102,12 +105,13 @@ const options = {
       radius: 5,
     },
   
-      line: {
-        borderWidth: 6, // Increase line thickness to 2 pixels
-      },
+    line: {
+      borderWidth: window.innerWidth >= 1024 ? 10 : 2, // Increase line thickness to 6 pixels in laptop view, 2 pixels in mobile view
+    },
   },
 };
 const Chart = ({chartData}) => {
+  
   const data = {
     labels: chartData.labels,
     datasets: chartData.data.map(ele => {
@@ -121,6 +125,8 @@ const Chart = ({chartData}) => {
     }),
     
   };
+
+  
 
   return (
     <div className='w-[95%] relative h-full  m-auto my-96'>
