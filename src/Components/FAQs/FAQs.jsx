@@ -7,7 +7,7 @@ import Sparkels from "../Spark/spark";
 
 function FAQs({ questions, ...props }) {
   return (
-    <div className=' flex justify-center pb-6 p-2 pl-6 text-2xl outline-none focus:outline-none'>
+    <div className='flex justify-center pb-6 p-2  text-2xl outline-none focus:outline-none'>
       <div
         aria-label='Frequently asked questions Section'
         className='w-full max-w-[1400px]'>

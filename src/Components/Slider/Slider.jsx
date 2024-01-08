@@ -73,7 +73,7 @@ function Slideshow() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={transition}
-              className={`w-full  text-white pb-[52px] mt-[30px] mb-[70px] flex justify-center items-center ${currentTestimonial.classes}`}>
+              className={`w-full  text-white pb-[52px] mt-[30px]  flex justify-center items-center ${currentTestimonial.classes}`}>
               <div className={`w-[80%] max-w-[1200px] flex gap-5 justify-center items-center max-md:flex-col`}>
                 <div className='relative hover:scale-95 w-[200px] h-[200px] md:h-[300px] md:w-[350px] duration-500 cursor-pointer select-none'>
                   <img
