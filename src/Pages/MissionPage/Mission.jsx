@@ -26,6 +26,9 @@ function Mission() {
         bg='bg-[#3092DB]'
       />
       <AIstory />
+
+
+      
     </div>
   );
 }
