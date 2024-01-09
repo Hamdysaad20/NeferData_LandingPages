@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import loading2 from "react-useanimations/lib/loading2";
-import UseAnimations from "react-useanimations";
+import Lottie from "lottie-react";
+import loading2 from "../../Lottie/ai.json";
+
 // Destructure from props for a cleaner syntax
 const Features = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -27,34 +28,35 @@ const Features = ({ tabs }) => {
       className='w-full overflow-hidden pt-32  '>
       <div className='w-full flex justify-center'>
         <div className='bg-[#3092DB] w-54 p-2 shadow-2xl shadow-blue-700 rounded-[2rem] h-54'>
-          <UseAnimations
-            animation={loading2}
-            speed={0.5}
-            size={100}
-            strokeColor='white'
-          />
+        <Lottie 
+          animationData={loading2}
+          style={{ height: 100, width: 100 }}
+          className="scale-150"
+          loop
+          autoplay
+        />
         </div>{" "}
       </div>
       <div className='w-full justify-center pb-12 pt-6 flex'>
-        <div
-          style={{
-            fontFamily:
-              'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
-            fontWeight: "bold",
-            lineHeight: "120%",
-          }}
-          className='text-4xl md:text-7xl text-[#121212] max-w-[1000px] text-center font-bold relative leading-120%'>
-          <div className='flex flex-col md:flex-row place-items-center'>
-            <span>
-              Neferdata:{" "}
-              <span className='underline decoration-sky-500'>AI tools </span>for{" "}
-              <span className='underline decoration-sky-500'>
-                business growth
-              </span>{" "}
-              .
-            </span>
-          </div>
-        </div>
+       
+       
+      <div
+            style={{
+              fontFamily:
+                'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
+              fontWeight: "bold",
+              lineHeight: "120%",
+            }}
+            className='text-4xl md:text-7xl px-4 text-black max-w-[1000px] pb-12 text-center font-bold relative leading-120%'>
+            <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
+            Grow with our Tools &amp; AI Solutions{" "}
+            </div>
+            <p className='text-lg pt-4 text-center '>
+            Neferdata is a suite of AI-powered tools and solutions that help you grow your business and achieve your goals.
+
+            </p>
+      </div>
+    
       </div>
       <section className='flex flex-col max-w-[1500px] w-[90%]  items-center justify-center m-auto gap-2 mb-48'>
         {/* Tab Generator */}
