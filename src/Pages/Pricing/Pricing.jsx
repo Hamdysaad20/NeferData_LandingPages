@@ -129,7 +129,7 @@ function Pricing() {
           other questions, please'
       />
 
-      <div className='w-full bg-[#3092DB] py-12 mt-12 -mb-12 '>
+      <div className='w-full bg-[#3092DB] rounded-t-3xl py-12 mt-12 -mb-12 '>
         <CTAsignIn
           title={
             <span className='text-white capitalize'>
@@ -145,30 +145,24 @@ function Pricing() {
           }
           buttonText='Start For Free'
           buttonTextSecondary={
-            <span className="text-white capitalize">
-           Try Demo
-            </span>
+            <span className='text-white capitalize'>Try Demo</span>
           }
           bg='bg-white'
         />
-<span className="w-full grid place-items-center  pt-2">            
-<div className="text-gray-300 flex  justify-center gap-2 select-none">  
-<MdOutlineDone className='inline-block mt-[6px]' />
-No credit card required
-<div
-className=" h-6 w-6  "
->
-<Lottie
-              animationData={CreditCards}
-              autoplay
-              loop
-              style={{ width: "100%", height: "100%" }}
-            />
-
-</div>
-
-</div>
-</span>        
+        <span className='w-full grid place-items-center  pt-2'>
+          <div className='text-gray-300 flex  justify-center gap-2 select-none'>
+            <MdOutlineDone className='inline-block mt-[6px]' />
+            No credit card required
+            <div className=' h-6 w-6  '>
+              <Lottie
+                animationData={CreditCards}
+                autoplay
+                loop
+                style={{ width: "100%", height: "100%" }}
+              />
+            </div>
+          </div>
+        </span>
       </div>
     </div>
   );
