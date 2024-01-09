@@ -6,7 +6,7 @@ import FeaturesGrid from '../../../Components/FeaturesGrid/FeaturesGrid';
 
 const Scalability = () => {
   return (
-    <div className='md:py-12  pb-80 '>
+    <div className='md:py-12 pt-32  pb-80 '>
       <div className=' rounded-b-3xl pb-32'>
         <section className='w-[90%] max-md:w-full max-w-[1400px] flex justify-center flex-col items-center mx-auto  pb-6 px-16 max-lg:px-8 max-md:px-6 gap-12  box-border'>
           <div className='bg-[#3092DB] p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>

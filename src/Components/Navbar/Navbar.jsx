@@ -49,13 +49,13 @@ const Navbar = () => {
         fontSize: "3.5rem",
         lineHeight: "120%",
       }}
-      className={`fixed  top-0 w-screen bg-white/90 border-b-2 backdrop-blur-2xl h-[63px] lg:h-[80px] z-50 flex justify-center ${
+      className={`fixed  top-0 w-screen px-5 md:px-0 bg-white/90 border-b-2 backdrop-blur-2xl h-[63px] lg:h-[80px] z-50 flex justify-center ${
         isScrolled ? "text-transparent" : ""
       }`}
       role='navigation'>
-      <div className='max-w-[1500px] px-[1.8rem] w-screen h-full font-roboto flex justify-between items-center lg:px-[1.5rem] max-sm:px-2'>
+      <div className='max-w-[1500px]     sm:px-[1.8rem] w-screen h-full  flex justify-between items-center lg:px-[1.5rem] max-sm:px-2'>
         <Link
-          className={`flex items-center gap-[1.5rem] ${
+          className={`flex items-center gap-[.5rem] ${
             isScrolled ? "justify-center" : ""
           }`}
           style={{
@@ -70,7 +70,7 @@ const Navbar = () => {
           <img
             src={logoImg}
             alt='Company Logo'
-            className={`select-none aspect-square duration-300  max-md:w-9 max-sm:w-7 ${
+            className={`select-none aspect-square duration-1000  max-md:w-9 max-sm:w-7 ${
               isScrolled
                 ? "max-h-[50px] max-w-[50px] scale-110  max-md:w-12 max-sm:w-10"
                 : ""
@@ -81,8 +81,8 @@ const Navbar = () => {
               <span
                 className={`logo-text font-semibold relative overflow-hidden text-[#121212] max-md:text-[18px] max-sm:text-[20px] select-none tracking-wide text-[24px] transition-all transform ${
                   isScrolled
-                    ? "-translate-x-full duration-500 animate-slide-out"
-                    : "translate-x-0 duration-500 animate-slide-in"
+                    ? "-translate-x-full duration-1000 animate-slide-out"
+                    : "translate-x-0 duration-1000 animate-slide-in"
                 }`}>
                 Neferdata
               </span>
@@ -139,7 +139,7 @@ const Navbar = () => {
           44 + 16 + 4 * 40 + 32 = 252px = 16rem = h-64
         */}
         <div
-          className={`hidden max-lg:flex flex-col gap-4 rounded-lg max-sm:rounded-t-none absolute right-16 top-full bg-white shadow-custom-light max-sm:shadow-custom-bottom p-4 z-40 max-sm:w-full max-sm:right-0  ${
+          className={`hidden max-lg:flex flex-col gap-4 rounded-lg max-sm:rounded-t-none absolute right-16 top-full bg-white  p-4 z-40 max-sm:w-full max-sm:right-0  ${
             isSideBarActive
               ? "h-64 translate-y-0"
               : "h-0 py-0 translate-y-32 max-sm:translate-y-0"

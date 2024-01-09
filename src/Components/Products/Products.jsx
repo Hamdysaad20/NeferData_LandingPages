@@ -19,7 +19,7 @@ const Products = ({ products ,bg}) => {
     <section
 
  
-      className={`rounded-[40px] m-auto my-64 mt-0 p-4 w-11/12 lg:flex-row flex flex-col gap-4 min-h-[500px] lg:h-[700px] max-w-screen-2xl ${bg}`}
+      className={`rounded-[40px] m-auto  my-12 mt-0 p-4 w-11/12 lg:flex-row flex flex-col gap-4 min-h-[500px] lg:h-[700px] max-w-screen-2xl ${bg}`}
       aria-label='Products Section'
       role='region'>
       <div className='lg:w-2/5 w-full grid place-items-center gap-1'>

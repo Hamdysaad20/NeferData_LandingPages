@@ -110,9 +110,9 @@ function SelfHosted() {
   return (
     <div
     
-      className=''>
-      <div className='bg-[#3092DB] pb-32'>
-        <section className='w-[90%] max-md:w-full max-w-[1400px] flex justify-center flex-col items-center mx-auto py-32 pb-6 px-16 max-lg:px-8 max-md:px-6 gap-12  box-border'>
+      className=' bg-[#3092DB] rounded-[40px] lg:rounded-b-3xl '>
+      <div className=' pb-0 lg:pb-32'>
+        <section className='w-[90%]  max-md:w-full max-w-[1400px] flex justify-center flex-col items-center mx-auto py-32 pb-6 px-16 max-lg:px-8 max-md:px-6 gap-12  box-border'>
           <div className='bg-white p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
             <Lottie
               animationData={SelfHostedCloud}
@@ -143,9 +143,16 @@ function SelfHosted() {
               bg='bg-white'
             />
           </div>
+          
         </section>
-        <Products products={products} bg='bg-sky-900/20 backdrop-blur-2xl' />
+      <div
+      className="relative pb-1"
+      >
+      <Products products={products} bg='bg-sky-900/20  backdrop-blur-2xl' />
+       
       </div>
+      </div>
+    
     </div>
   );
 }
