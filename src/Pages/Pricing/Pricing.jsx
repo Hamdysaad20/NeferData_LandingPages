@@ -15,7 +15,7 @@ function Pricing() {
         "SaaS product discovery",
         "Vendor assessment checklist",
         "Customizable 'My Company' page",
-        "No adds or paid placement",
+        "No ads or paid placement",
         "Hustle-free hosting in global instance",
       ],
       buttonText: "Create Account",
@@ -92,31 +92,28 @@ function Pricing() {
         <FAQs
           questions={[
             {
-              title: "What is Neferdata?",
-              discription:
-                "Neferdata is a SaaS product that provides insights on the technology stack of any company. It uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
+                title: "Estimated monthly cloud costs for self-hosted Neferdata?",
+                discription:" The estimated monthly cloud costs for self-hosted Neferdata are around $185-$280, including Kubernetes/EKS, Cloud SQL/RDS, Redis cache, OpenAI Enterprise, and Local Llama2. These costs are estimates and may vary based on usage"
+                          },
+            {
+                title: "How does Neferdata ensure data privacy and security in Private Instance?",
+                discription:"Neferdata stores sensitive data in the user's database, which only the user can access. Additionally, the body of emails is obfuscated after insights extraction, and data is never used for AI training with Enterprise OpenAI or local LLM model deployment. Users can also control what metadata gets retained, and insights sent to Neferdata are anonymized and cannot be traced back to an individual "
+              
+              },
+            
+              { title: "How does Neferdata protect user data privacy?",
+              
+              discription: "Neferdata ensures the privacy of user data by extracting insights in an aggregated and anonymized manner. The insights are always anonymized and cannot be traced back to the user. Additionally, Neferdata invests in privacy features to safeguard confidential information, and user data is never utilized for targeted ads or sold to vendors. Users have the ability to review all insights generated from their data using online reports" 
+            
             },
             {
-              title: "How does Neferdata work?",
-              discription:
-                "Neferdata uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
-            },
+                title: "What is the role of AI in Neferdata's decision-making process?",
+                discription:" Neferdata emphasizes the use of AI to enhance and accelerate the decision-making process rather than replacing it. The company leverages AI to provide supercharged recommendations tailored to specific business needs, aiming to optimize workflow processes through well-applied AI "
+              },
             {
-              title: "How do I get started with Neferdata?",
+              title: "What are the features of Neferdata's free version, and how are they meant to be used?",
               discription:
-                "Neferdata uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
-            },
-            {
-              title: "How do I get started with Neferdata?",
-              discription:
-                "Neferdata uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
-            },
-            {
-              title: "How do I get started with Neferdata?",
-              discription:
-                "Neferdata uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
-            },
-          ]}
+              "The Neferdata free Standard grants users access to AI Email Assistant and Product Discovery features, ensuring control over stored metadata with no ads. It empowers users with AI productivity tools for data-driven decisions, contract management, relationship tracking, usage trend analysis, and future preparation."          } ] }
           faqs='FAQs'
           faqsP=' Here are some of the most common questions we get asked. If you have
           other questions, please'
