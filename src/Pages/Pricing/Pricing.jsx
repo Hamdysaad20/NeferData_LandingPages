@@ -56,20 +56,15 @@ function Pricing() {
   ];
 
   return (
-    <div 
-    style={{ 
-      backgroundImage: `url(${'/docs@30.8b9a76a2.avif'})`,
-      boxShadow: "0 0 30px 12px white inset",
-      backgroundRepeat: "no-repeat",  
-    }} 
-    
-    className='bg-gradient-to-b from-[#3092DB] to-[#FBFCFF]'>
-      <div
-        
-      className='w-full justify-center flex pt-32 '>
-        <div
-        
-        className='flex flex-col gap-6 text-black text-center  box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]'>
+    <div
+      style={{
+        backgroundImage: `url(${"/docs@30.8b9a76a2.avif"})`,
+        boxShadow: "0 0 30px 12px white inset",
+        backgroundRepeat: "no-repeat",
+      }}
+      className='bg-gradient-to-b from-[#3092DB] to-[#FBFCFF]'>
+      <div className='w-full justify-center flex pt-32 '>
+        <div className='flex flex-col gap-6 text-black text-center  box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]'>
           <h1
             style={{
               fontFamily:
@@ -93,13 +88,7 @@ function Pricing() {
         ))}
       </div>
 
-      <div
-      style={{ 
-        backgroundImage: `url(${'/hero@75.b2469a49.jpg'})`,
-        boxShadow: "0 0 30px 12px white inset",
-        backgroundRepeat: "no-repeat",  
-      }} 
-      className='w-full grid place-items-center  pt-32 '>
+     
         <FAQs
           questions={[
             {
@@ -128,13 +117,11 @@ function Pricing() {
                 "Neferdata uses AI to analyze the company's website and identify the technologies used to build it. It also provides insights on the company's SaaS products and vendors.",
             },
           ]}
-
-
-          faqs="FAQs"
-          faqsP=" Here are some of the most common questions we get asked. If you have
-          other questions, please"
+          faqs='FAQs'
+          faqsP=' Here are some of the most common questions we get asked. If you have
+          other questions, please'
         />
-        </div>
+     
     </div>
   );
 }
