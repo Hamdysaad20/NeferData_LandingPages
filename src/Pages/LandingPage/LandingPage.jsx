@@ -6,6 +6,7 @@ import PrivacyCertifications from "../../Components/PrivacyCertifications/Privac
 import FAQs from "../../Components/FAQs/FAQs";
 import Features from "../../Components/Features/Features";
 import CTAProduct from "../../Components/CTA/CTAProduct";
+import SVGbg from "../../Components/Hero/SVGbg";
 
 import questions from "../../Data/questions.json";
 import tabs from "../../Data/featuresData";
@@ -119,7 +120,14 @@ const products = [
 const App = () => {
   return (
     <>
-      <Hero />
+     <div
+     className="relative rounded-3xl  overflow-hidden "
+     >
+     <div className="absolute h-full w-full  z-0">
+     <SVGbg/>
+     </div>
+     <Hero />
+     </div>
       <Gallery2 />
       <Features tabs={tabs} />
 

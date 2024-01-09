@@ -47,27 +47,20 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="microsoft">
 
 // Main Hero component
 const Hero = () => (
- <div className=' relative '>
+ <div className=' relative  '>
    <header 
-  style={{ 
-    backgroundImage: `url(${'/public/hero@75.b2469a49.jpg'} )`,
-    boxShadow: "0 0 30px 12px white inset",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-   
-  }}
-  
+    
   className="pt-20   flex flex-col items-center ">
     {/* Hero content wrapper */}
     <div className="w-[90%]  max-md:w-[95%] max-sm:w-full  box-border px-2 lg:px-16 py-28 m-16 h-[482px] flex flex-col justify-center items-center gap-6">
       {/* Hero Texts */}
-      <div className="flex flex-col gap-6 text-black text-center box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]">
+      <div className="flex flex-col gap-6 text-white text-center box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]">
         <h1
         style={{fontFamily: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif', fontWeight: 'bold', lineHeight: '120%'}}
         className="text-4xl md:text-7xl font-bold leading-120%">
           AI and ML tools for your purchasing journey
         </h1>
-        <p className="text-[24px] max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700">
+        <p className="text-[24px] max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-50">
           Our discovery and reporting tools help you get the most value out of your investments.
        
         </p>
@@ -78,7 +71,7 @@ const Hero = () => (
           <SecondaryButton onClick={null} theme='dark' Icon={MicrosoftIcon} title='Sign in with Microsoft' />
           <SecondaryButton onClick={null} theme='primary' Icon={GoogleIcon} title='Sign in with Google' />
         </div>
-        <p className='text-gray-500 text-[12px] max-lg:text-[10px] text-center'>
+        <p className='text-gray-50 text-[12px] max-lg:text-[10px] text-center'>
           By clicking Sign Up you&apos;re confirming that you agree with our <span className='underline select-none cursor-pointer'>Terms of Service</span> and <span  className='underline select-none cursor-pointer'>Privacy Policy</span>.
         </p>
       </div>
