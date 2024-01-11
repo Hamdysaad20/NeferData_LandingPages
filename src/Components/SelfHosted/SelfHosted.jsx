@@ -7,8 +7,6 @@ import { FaDatabase } from "react-icons/fa6";
 import { GrHostMaintenance } from "react-icons/gr";
 import { BiSolidCustomize } from "react-icons/bi";
 
-
-
 function SelfHosted() {
   const products = [
     {
@@ -23,27 +21,34 @@ function SelfHosted() {
       ),
       icon: <GrHostMaintenance />,
       data: (
-        <div className='bg-white/10 p-4 relative rounded shadow h-full'>
-         <div>
-            <img src="../../assets/Images/Keith_Hadi_Avatar.png" alt="Neferdata Image" />
-         </div>
-         
-         <div
-          className="flex justify-center flex-col gap-2  absolute bottom-5 text-center w-full "
-         >
-         <div
-         className="max-w-lg">
-         <p className='text-lg font-bold mb-2'>
-            Self-Hosted Option for Enhanced Privacy
-          </p>
-          <p className='text-gray-700'>
-            Explore a heightened level of security and privacy with our
-            self-hosted solution. Gain complete control over your data and
-            customize your environment for a personalized and secure user
-            experience.
-          </p>
-         </div>
-         </div>
+        <div className='bg-white/10 duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl shadow h-full'>
+          <div
+          className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+          >
+            <img
+              src='../../assets/Images/Keith_Hadi_Avatar.png'
+              alt='Neferdata Image'
+              className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
+            />
+          </div>
+
+          <div className='absolute bottom-5 text-center left-0 right-0 w-full '>
+           <div
+           className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+           >
+           <div className='max-w-lg '>
+              <p className='lg:text-4xl text-2xl capitalize text-white font-bold mb-2'>
+                Self-Hosted Option for Enhanced Privacy
+              </p>
+              <p className='text-white'>
+                Explore a heightened level of security and privacy with our
+                self-hosted solution. Gain complete control over your data and
+                customize your environment for a personalized and secure user
+                experience.
+              </p>
+            </div>
+           </div>
+          </div>
         </div>
       ),
     },
