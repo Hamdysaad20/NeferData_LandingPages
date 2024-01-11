@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Products = ({ products, bg }) => {
   const [activeProductIndex, setActiveProductIndex] = useState(0);
@@ -39,6 +40,7 @@ const Products = ({ products, bg }) => {
             role="tab"
             aria-controls={`product-tab-${index}`}
             aria-selected={activeProductIndex === index}
+            style={{ zIndex: 1 }} // Add this line to fix the mobile view issue
           >
             <span className="pr-4 text-3xl  transition-all duration-500">
               {product.icon}
@@ -53,10 +55,30 @@ const Products = ({ products, bg }) => {
               </span>
               <span className="text-base text-white/80">
                 {product.description}
+                {activeProductIndex === index && (
+                  <div className="s">
+                    <Link
+                      to="/pricing"
+                      className="text-white absolute hover:bg-black/40 duration-500 select-none bg-black/20 p-2 px-4 rounded-full text-sm font-semibold mt-2 cursor-pointer"
+                      style={{
+                        opacity: activeProductIndex === index ? 1 : 0,
+                        transform: `translateY(${activeProductIndex === index ? 0 : 20}px)`,
+                        transition: "opacity 0.3s ease, transform 0.3s ease",
+                        transitionDelay: `${index * 0.1}s`, // Add this line to delay the transition for each element
+                      }}
+                    >
+                      Learn more
+                    </Link>
+                  </div>
+                )}
               </span>
+              
             </div>
+         
           </button>
+          
         ))}
+        
       </div>
       <div
         className="lg:w-3/5 w-full rounded-3xl overflow-hidden h-full"

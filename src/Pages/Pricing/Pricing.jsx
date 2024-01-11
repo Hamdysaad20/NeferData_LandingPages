@@ -7,55 +7,41 @@ import CreditCards from "../../Lottie/creditcards.json";
 
 function Pricing() {
   const pricingCardsData = [
-    {
-      className: "",
-      title: "Standerd",
-      price: "Free",
-      renew: "Always",
-      features: [
-        "AI-powered email filter",
-        "Snack-sized company insights",
-        "SaaS product discovery",
-        "Vendor assessment checklist",
-        "Customizable 'My Company' page",
-        "No ads or paid placement",
-        "Hustle-free hosting in global instance",
-      ],
-      buttonText: "Create Account",
-    },
-    {
-      className: "",
-      title: "Self-hosted",
-      price: "Free",
-      renew: "Always",
-      features: [
-        "All features of Standard",
-        "Full data protection of your environment",
-        "Compatible with on-prem, private & public cloud",
-        "Step-by-step documentation & instructions",
-        "Integration with your existing OpenAI account",
-        "Audit log & reports of extracted insights",
-        "Access to upgrades & new features at your timeline",
-      ],
-      buttonText: "See Documentation",
-    },
-    // Enterprise pricing data
-    {
-      className: "!bg-sky-100",
-      title: "Enterprise",
-      price: "$ 5.99",
-      renew: "per user per month",
-      features: [
-        "All features of Standard",
-        "Full data protection & privacy",
-        "Dedicated & isolated instance in our cloud",
-        "All-in solution with no overhead",
-        "Access to 24/7 product support",
-        "Audit log & reports of extracted insights",
-        "Immediate access to latest features",
-      ],
-      buttonText: "Purchase Now",
-    },
+   { className: "",
+    title: "Global Instance",
+    price: "Free",
+    renew: "Sign up & start using for free and with no setup at neferdata.com",
+    features: [
+      "Includes Al Email Assistant & Product Discovery",
+      "Full control of stored metadata + no-ads guarantee",
+      "Compatible with & certified by Google Gmail & Microsoft 0365",
+    ],
+    buttonText: "Create Account",
+  },
+  {
+    className: "!bg-sky-100 ",
+    title: "Managed Service",
+    price: "$299",
+    renew: "Enterprise-grade privacy with no management overhead",
+    features: [
+      "Worry-free setup, administration & maintenance",
+      "Dedicated, encrypted & secure instance in Neferdata cloud",
+      "Access to 24/7 support & all latest features",
+    ],
+    buttonText: "Purchase Now",
+  },
+  {
+    className: "",
+    title: "Self-hosted",
+    price: "Free",
+    renew: "All features of Neferdata in the privacy of your own environment",
+    features: [
+      "Cloud agnostic ... compatible with AWS, AZURE, GCP, or on-prem",
+      "Step-by-step documentation & instructions for self-guided install",
+      "Self-managed operations, upgrades & maintenance",
+    ],
+    buttonText: "See Documentation",
+  },
   ];
 
   return (
