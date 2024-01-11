@@ -58,7 +58,7 @@ const Hero = () => (
         <h1
         style={{fontFamily: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif', fontWeight: 'bold', lineHeight: '120%'}}
         className="text-4xl md:text-7xl  font-bold leading-140%">
-          AI and ML tools for your purchasing journey
+Maximize Your SaaS Investments 
         </h1>
         <p className="text-[24px] max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-50">
           Our discovery and reporting tools help you get the most value out of your investments.
