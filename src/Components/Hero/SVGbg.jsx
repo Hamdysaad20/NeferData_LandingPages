@@ -11,7 +11,7 @@ function SVGbg() {
       position: "relative",
       shapeRendering: "auto"
     }}
-className="w-full h-full lg:scale-[1.2] xl:scale-[1] sm:scale-[2] scale-[3] "
+className="w-full h-full lg:scale-[1.5] xl:scale-[1.3] sm:scale-[2.7] scale-[5] "
     preserveAspectRatio="xMidYMid"
     viewBox="0 0 1430 979"
   >
