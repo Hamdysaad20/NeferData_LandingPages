@@ -1,0 +1,34 @@
+{
+    "cards": [
+        {
+            "index": 0,
+            "title": "AI-Powered Email Assistant Efficiency",
+            "description": "A smart AI-powered email assistant that helps you manage your inbox efficiently.",
+            "LOTTIEanimationData": "../Lottie/Email.json"
+        },
+        {
+            "index": 2,
+            "title": "Products Discovery Customized for You",
+            "description": "AI powers your search for perfect SaaS tools, helping you make informed business choices.",
+            "LOTTIEanimationData": "../Lottie/ai.json"
+        },
+        {
+            "index": 3,
+            "title": "SaaS Picks with AI",
+            "description": "Smart SaaS picks with AI. No more Excel hassles. No more manual work. Just get Suggestion, Fill, get Score.",
+            "LOTTIEanimationData": "../Lottie/SaaS.json"
+        },
+        {
+            "index": 4,
+            "title": "Be on Top of Your Contracts ",
+            "description": "Never miss a deadline. AI tracks & optimizes your SaaS agreements. Easy automation, boosted compliance.",
+            "LOTTIEanimationData": "../Lottie/Contract.json"
+        },
+        {
+            "index": 5,
+            "title": "Better Understand Your Data",
+            "description": "A smart AI-powered email assistant that helps you manage your inbox efficiently.",
+            "LOTTIEanimationData": "../Lottie/AIBot.json"
+        }
+    ]
+}

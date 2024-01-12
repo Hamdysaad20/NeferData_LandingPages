@@ -1,11 +1,10 @@
-
-import { useEffect, useState, lazy, Suspense } from "react";
+import { useEffect, useState, Suspense } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import ProductsCard from "./ProductsCard";
 
-const LazyLoadedData = lazy(() => import("../../Data/NeferDataProducts"));
-
-const Products = ({ products, bg }) => {
+const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
+  
   const [activeProductIndex, setActiveProductIndex] = useState(0);
   const handleActiveProduct = (index) => setActiveProductIndex(index);
 
@@ -27,9 +26,8 @@ const Products = ({ products, bg }) => {
   return (
     <section
       className={`rounded-[40px] m-auto  my-12 mt-0 p-4 w-11/12 lg:flex-row flex flex-col gap-4 min-h-[500px] lg:min-h-[700px] max-w-screen-2xl ${bg}`}
-      aria-label="Products Section"
-      role="region"
-    >
+      aria-label='Products Section'
+      role='region'>
       <div className={productAreaClass}>
         {products.slice(0, productCount).map((product, index) => (
           <button
@@ -40,56 +38,54 @@ const Products = ({ products, bg }) => {
             } hover:bg-white/20 hover:opacity-90`}
             key={index}
             onClick={() => handleActiveProduct(index)}
-            role="tab"
+            role='tab'
             aria-controls={`product-tab-${index}`}
             aria-selected={activeProductIndex === index}
-            style={{ zIndex: 1 }} 
-          >
-            <span className="pr-4 text-3xl  transition-all duration-500">
+            style={{ zIndex: 1 }}>
+            <span className='pr-4 text-3xl  transition-all duration-500'>
               {product.icon}
             </span>
             <div
               className={`flex flex-col   justify-start items-start transition-all  overflow-hidden ${
                 activeProductIndex === index ? "h-[150px] lg:h-28" : "h-8"
-              }`}
-            >
-              <span className="lg:text-2xl relative w-full font-semibold mb-2">
+              }`}>
+              <span className='lg:text-2xl relative w-full font-semibold mb-2'>
                 {product.title}
               </span>
-              <span className="text-base  text-left text-white/80">
+              <span className='text-base  text-left text-white/80'>
                 {product.description}
                 {activeProductIndex === index && (
-                  <span className=" ">
+                  <span className=' '>
                     <Link
-                      to="/pricing"
-                      className="text-white  hover:text-black/40 duration-500 select-none underline  px-2 rounded-full text-sm font-semibold  cursor-pointer"
+                      to='/pricing'
+                      className='text-white  hover:text-black/40 duration-500 select-none underline  px-2 rounded-full text-sm font-semibold  cursor-pointer'
                       style={{
                         opacity: activeProductIndex === index ? 1 : 0,
-                        transform: `translateY(${activeProductIndex === index ? 0 : 20}px)`,
+                        transform: `translateY(${
+                          activeProductIndex === index ? 0 : 20
+                        }px)`,
                         transition: "opacity 0.3s ease, transform 0.3s ease",
                         transitionDelay: `${index * 0.1}s`, // Add this line to delay the transition for each element
-                      }}
-                    >
+                      }}>
                       Learn more
                     </Link>
                   </span>
                 )}
               </span>
-              
             </div>
-         
           </button>
-          
         ))}
-        
       </div>
       <div
-        className="lg:w-3/5 w-full  min-h-[400px] bg-[#3092DB] relative rounded-3xl overflow-hidden "
-        role="tabpanel"
-        id={`product-tab-${activeProductIndex}`}
-      >
+        className='lg:w-3/5 w-full  min-h-[400px] bg-[#3092DB] relative rounded-3xl overflow-hidden '
+        role='tabpanel'
+        id={`product-tab-${activeProductIndex}`}>
         <Suspense fallback={<div>Loading...</div>}>
-          {products[activeProductIndex].data}
+          <ProductsCard
+            title={ProductsCardData.cards[activeProductIndex].title}
+            discription={ProductsCardData.cards[activeProductIndex].description}
+            LOTTIEanimationData={LOTTIEanimationData[activeProductIndex]}
+          />
         </Suspense>
       </div>
     </section>
@@ -106,7 +102,7 @@ Products.propTypes = {
     }).isRequired
   ).isRequired,
   bg: PropTypes.string.isRequired,
+  LOTTIEanimationData: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Products;
-

@@ -49,10 +49,10 @@ const App = () => {
        
           <SelfHosted />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
        
           <Scalability />
-      </Suspense>
+      </Suspense> */}
       <Suspense fallback={<div>Loading...</div>}>
         
           <Testimonials />

@@ -4,6 +4,13 @@ import Products from "../Products/Products";
 import products from "../../Data/NeferDataProducts";
 import MicrosoftIcon from "./MicrosoftSVG";
 import GoogleIcon from "./GoogleSVG";
+import EmailLottie from "../../Lottie/Email.json";
+import AILottie from "../../Lottie/ai.json";
+import SaaSLottie from "../../Lottie/SaaS.json";
+import Contract from "../../Lottie/Contract.json";
+import AIBot from "../../Lottie/AIBot.json";
+import ProductsCardData from "../../Data/ProductsCardData.json";
+
 
 const componentData = {
   title: "Maximize Your SaaS Investments",
@@ -24,6 +31,13 @@ const componentData = {
   termsOfService: "Terms of Service",
   privacyPolicy: "Privacy Policy",
 };
+const LOTTIEanimationData = [
+  EmailLottie,
+  AILottie,
+  SaaSLottie,
+  Contract,
+  AIBot,
+];
 
 function Hero() {
   return (
@@ -75,7 +89,13 @@ function Hero() {
         </div>
         {/* Video container */}
         <div className='w-[99%]  max-md:w-full  max-w-[1500px]'>
-          <Products products={products} bg='bg-[#3092DB]' />
+          <Products products={products}
+          LOTTIEanimationData = {LOTTIEanimationData}
+          ProductsCardData = {ProductsCardData}
+
+          
+          
+          bg='bg-[#3092DB]' />
         </div>
       </header>
     </div>

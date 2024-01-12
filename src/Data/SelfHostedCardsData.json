@@ -1,0 +1,19 @@
+{
+    "cards": [
+        {
+            "title": "Self-Hosted Option for Enhanced Privacy",
+            "description": "<span>Explore a heightened level of security and privacy with our self-hosted solution. Gain complete control over your data and customize your environment for a personalized and secure user experience.</span>",
+            "icon": "<GrHostMaintenance />"
+        },
+        {
+            "title": "Total Control Over Your Data",
+            "description": "Neferdata's dedication to empowering users with complete authority and oversight of their data within the platform, ensuring transparency, privacy, and personalized control over their information.",
+            "icon": "<FaDatabase />"
+        },
+        {
+            "title": "Customization for a Tailored Environment",
+            "description": "Neferdata's focus on providing personalized and adaptable solutions that cater to each user's specific needs and preferences, including AI-generated recommendations and deployment options for a customized experience.",
+            "icon": "<BiSolidCustomize />"
+        }
+    ]
+}
