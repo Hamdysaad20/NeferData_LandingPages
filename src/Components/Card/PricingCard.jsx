@@ -3,15 +3,7 @@ import { MdOutlineDone } from 'react-icons/md'
 import Button from '../Button/PrimaryButton';
 import Sparkels from '../Spark/spark';
 
-/**
- * PricingCard component renders a card displaying different pricing options.
- * It receives properties like className, title, price, renew, features, and buttonText.
- * Adheres to WCAG guideline 1.3.1 (Info and Relationships) because the information,
- * structure, and relationships can be programmatically determined or are available in text.
- *
- * @param {Object} props Component properties
- * @returns {JSX.Element} Rendered PricingCard component
- */
+
 const PricingCard = ({ className,textColor, title, price, renew, features, buttonText }) => {
   return (
     <div className={`bg-blue-100 w-[70%] sm:w-80 border-2  hover:scale-105 duration-500 cursor-pointer xl:w-96 rounded-3xl  px-5 pt-8 pb-8 ${title === "Managed Service" ? "border-yellow-500 border-4 shadow-lg duration-700 hover:shadow-yellow-400 " : ""} relative overflow-hidden ${className}`}>

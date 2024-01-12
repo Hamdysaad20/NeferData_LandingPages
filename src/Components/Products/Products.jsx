@@ -1,6 +1,9 @@
-import { useEffect, useState } from "react";
+
+import { useEffect, useState, lazy, Suspense } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+
+const LazyLoadedData = lazy(() => import("../../Data/NeferDataProducts"));
 
 const Products = ({ products, bg }) => {
   const [activeProductIndex, setActiveProductIndex] = useState(0);
@@ -85,7 +88,9 @@ const Products = ({ products, bg }) => {
         role="tabpanel"
         id={`product-tab-${activeProductIndex}`}
       >
-        {products[activeProductIndex].data}
+        <Suspense fallback={<div>Loading...</div>}>
+          {products[activeProductIndex].data}
+        </Suspense>
       </div>
     </section>
   );
@@ -104,3 +109,4 @@ Products.propTypes = {
 };
 
 export default Products;
+
