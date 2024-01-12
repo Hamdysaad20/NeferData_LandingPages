@@ -25,7 +25,7 @@ function Mission() {
         buttonTextSecondary='see pricing'
         bg='bg-[#3092DB]'
       />
-      <AIstory />
+      {/* <AIstory /> */}
 
 
       
