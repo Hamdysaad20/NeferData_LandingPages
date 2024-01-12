@@ -8,16 +8,20 @@ const PrivacyCertifications = lazy(() => import('../../Components/PrivacyCertifi
 const FAQs = lazy(() => import('../../Components/FAQs/FAQs'));
 const CTAProduct = lazy(() => import('../../Components/CTA/CTAProduct'));
 const SVGbg = lazy(() => import('../../Components/Hero/SVGbg'));
+import gridData from "./gridData.json";
 
 import questions from "../../Data/questions.json";
 const SelfHosted = lazy(() => import('../../Components/SelfHosted/SelfHosted'));
-const Scalability = lazy(() => import('../../Components/SelfHosted/Scalability/Scalability'));
+const AINeferData = lazy(() => import('../../Components/SelfHosted/Scalability/Scalability'));
 
 const App = () => {
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
   };
+
+
+
 
   return (
     <>
@@ -49,10 +53,17 @@ const App = () => {
        
           <SelfHosted />
       </Suspense>
-      {/* <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
        
-          <Scalability />
-      </Suspense> */}
+          <AINeferData 
+           title= "Lean How to benefit from AI with Neferdata"
+           description="Using Neferdata's AI-powered tools and solutions, can open your eyes more on the opportunity that you can benifit from."
+           buttonText= "Get Started with Neferdata"
+           buttonTextSecondary="Have a question? Contact us"
+           bg= "text-blue-500"
+           gridData={gridData}
+          /> 
+      </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         
           <Testimonials />

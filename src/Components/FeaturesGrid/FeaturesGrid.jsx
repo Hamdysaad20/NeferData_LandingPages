@@ -1,12 +1,22 @@
-import Kubernetes from "./Kubernetes";
 import BGasset from "./BGasset";
 import Smallasste from "./Smallasste";
 import Lottie from "lottie-react";
-import ServersConnected from "../../Lottie/ServersIntegration.json";
-import ServersConnected2 from "../../Lottie/CloudYellow.json";
+import ServersConnected from "../../Lottie/CloudYellow.json";
+import ServersConnected2 from "../../Lottie/ai.json";
+import ServersConnected3 from "../../Lottie/story.json";
+
+import { useRef, useEffect } from "react";
+import gridData from "../../Pages/LandingPage/gridData.json";
 
 
 function FeaturesGrid() {
+  const lottieRef = useRef(null);
+
+  useEffect(() => {
+    if (lottieRef.current) {
+      lottieRef.current.play();
+    }
+  }, []);
   return (
     <div className='flex justify-center  '>
       <section className='container  flex justify-center relative rounded-3xl'>
@@ -29,11 +39,11 @@ function FeaturesGrid() {
                 <div
                   className={`bg-[#3092DB] hover:bg-[#3092DB]/70 duration-500 cursor-pointer  overflow-hidden min-h-[250px] relative p-4 rounded-xl w-full h-full `}>
                   <div className='absolute top-0 pt-4 left-0 pl-4 flex-col flex justify-start w-full z-10 items-left'>
-                    <h1 className='text-3xl font-bold text-white'>
-                    Flexible Deployment Options
+                    <h1 className='text-3xl md:text-4xl max-w-lg font-bold text-white'>
+                     {gridData[0]?.title}
                     </h1>
                     <p className=' text-white text-sm font-medium mt-2 md:w-9/12'>
-                    Neferdata provides deployment options: free Global Instance, Managed Service, and Self-Hosted control.
+                    {gridData[0].discription}
                     </p>
                   </div>
                   <div
@@ -45,8 +55,9 @@ function FeaturesGrid() {
                       loop
                       className='w-full h-full opacity-40 scale-125 absolute '
                       style={{ width: "100%", height: "100%" }}
+                      useRef={lottieRef}
                     />
-                  </div>
+                  </div>  
                 </div>
               </div>
               {/* Bottom Div */}
@@ -55,12 +66,11 @@ function FeaturesGrid() {
                 <div
                   className={`bg-[#3092DB] hover:bg-[#3092DB]/70 duration-500 cursor-pointer  overflow-hidden min-h-[250px] relative p-4 rounded-xl w-full h-full `}>
                   <div className='absolute top-0 pt-4 left-0 pl-4 flex-col flex justify-start w-full z-10 items-left'>
-                    <h1 className='text-3xl font-bold text-white'>
-                      Automated Setup &amp; Configuration
+                    <h1 className='text-3xl md:text-4xl max-w-lg font-bold text-white'>
+                      {gridData[1].title}
                     </h1>
                     <p className=' text-white text-sm font-medium mt-2 md:w-9/12'>
-                      Automate Neferdata setup using Terraform and Helm, with
-                      support via mail and phone.{" "}
+                      {gridData[1].discription}
                     </p>
                   </div>
                   <div
@@ -85,18 +95,24 @@ function FeaturesGrid() {
                 id='CntainerKubernetesICONSVG'
                 className={`bg-[#3092DB]  hover:opacity-70 duration-500 cursor-pointer   overflow-hidden min-h-[400px]  md:min-h-[516px] relative md:p-4 rounded-xl w-full h-full `}>
                 <div className='absolute top-0 pt-4 left-0 pl-4 flex-col flex justify-start w-full z-10  backdrop-blur-md items-left'>
-                  <h1 className='text-3xl font-bold text-white'>
-                    Set Up Your Kubernetes Cluster
+                  <h1 className='text-3xl md:text-4xl max-w-lg  font-bold text-white'>
+                  {gridData[2].title}
                   </h1>
                   <p className=' text-white text-sm font-medium mt-2 md:w-9/12'>
-                    For Neferdata deployment, a scalable Kubernetes cluster is
-                    essential, adapting seamlessly to your business growth and
-                    changes.
+                  {gridData[2].discription}
+
                   </p>
                 </div>
 
                 <div className='absolute md:-bottom-4 sm:-bottom-12 h-[60%]  -bottom-4   sm:h-[85%] lg:h-[70%] lg:w-[70%] xl:w-[70%] xl:h-[80%] md:h-[60%] md:w-[80%]  -right-4 flex justify-center items-center'>
-                  <Kubernetes />
+                <Lottie
+                      animationData={ServersConnected3}
+                      autoplay
+                      loop
+                      className='w-full h-full opacity-40 scale-100 absolute '
+                      style={{ width: "100%", height: "100%" }}
+                      useRef={lottieRef}
+                    />
                 </div>
               </div>
             </div>
