@@ -32,7 +32,7 @@ const Scalability = () => {
             <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
               Scalable as you grow
             </div>
-            <p className='text-lg pt-4 text-center '>
+            <p className='md:text-2xl text-base font-normal  pt-4 text-center '>
               Scale your business with ease and automate your SaaS utilization
               with Neferdata&apos;s AI-powered productivity tools for data-driven
               decisions.

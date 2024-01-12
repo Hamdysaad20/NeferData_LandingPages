@@ -129,7 +129,7 @@ const App = () => {
      <Hero />
      </div>
       <Gallery2 />
-      <Features tabs={tabs} />
+      {/* <Features tabs={tabs} /> */}
 
       <PrivacyCertifications />
       <SelfHosted />

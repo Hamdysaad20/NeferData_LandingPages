@@ -50,8 +50,8 @@ export default function Gallery2() {
                   <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
                   Finding the right tool for your business is critical
                   </div>
-                  <p className='text-lg pt-4  text-center '>
-      you don&apos;t know what is the right one to solve your customer problem and which is cost less and more efficient for your business             
+                  <p className='md:text-2xl text-base   font-normal pt-4  text-ctenter '>
+      You don&apos;t know what is the right one to solve your customer problem and which is cost less and more efficient for your business             
                             </p>
                 </div>
 

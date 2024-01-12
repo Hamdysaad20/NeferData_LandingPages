@@ -83,7 +83,7 @@ const HeaderText = () => (
           <div className='flex capitalize flex-col justify-center md:flex-row place-items-center'>
           Privacy Certifications
           </div>
-          <p className='text-lg pt-4 text-center '>
+          <p className='md:text-2xl text-base   font-normal pt-4 text-center '>
           We are committed to ensuring the security of our customers, which is why we are continuously investing in the latest security features and industry certifications to provide the highest level of protection for your data.               
             </p>
 

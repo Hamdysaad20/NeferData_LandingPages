@@ -40,7 +40,7 @@ function SelfHosted() {
               <p className='lg:text-4xl text-2xl capitalize text-white font-bold mb-2'>
                 Self-Hosted Option for Enhanced Privacy
               </p>
-              <p className='text-white'>
+              <p className='text-white '>
                 Explore a heightened level of security and privacy with our
                 self-hosted solution. Gain complete control over your data and
                 customize your environment for a personalized and secure user
@@ -110,7 +110,7 @@ function SelfHosted() {
             <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
               More Privacy? Choose self-Hosted
             </div>
-            <p className='text-lg pt-4 text-center '>
+            <p className='md:text-2xl text-base  font-normal pt-4 text-center '>
               Experience even greater levels of security and privacy with our
               self-hosted option. With full control over your data and the
               ability to customize your environment.

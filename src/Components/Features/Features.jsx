@@ -51,7 +51,7 @@ const Features = ({ tabs }) => {
             <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
             Grow with our Tools &amp; AI Solutions{" "}
             </div>
-            <p className='text-lg pt-4 text-center '>
+            <p className='text-2xl  font-normal pt-4 text-center '>
             Neferdata is a suite of AI-powered tools and solutions that help you grow your business and achieve your goals.
 
             </p>

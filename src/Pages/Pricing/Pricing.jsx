@@ -10,7 +10,7 @@ function Pricing() {
    { className: "",
     title: "Global Instance",
     price: "Free",
-    renew: "Sign up & start using for free and with no setup at neferdata.com",
+    renew: "",
     features: [
       "Includes Al Email Assistant & Product Discovery",
       "Full control of stored metadata + no-ads guarantee",
@@ -19,10 +19,11 @@ function Pricing() {
     buttonText: "Create Account",
   },
   {
-    className: "!bg-sky-100 ",
+    className: "!bg-[#3092DB] text-white",
     title: "Managed Service",
     price: "$299",
-    renew: "Enterprise-grade privacy with no management overhead",
+    textColor: "text-white/80",
+    renew: "",
     features: [
       "Worry-free setup, administration & maintenance",
       "Dedicated, encrypted & secure instance in Neferdata cloud",
@@ -34,7 +35,7 @@ function Pricing() {
     className: "",
     title: "Self-hosted",
     price: "Free",
-    renew: "All features of Neferdata in the privacy of your own environment",
+    renew: "",
     features: [
       "Cloud agnostic ... compatible with AWS, AZURE, GCP, or on-prem",
       "Step-by-step documentation & instructions for self-guided install",
@@ -64,7 +65,7 @@ function Pricing() {
             className='text-4xl md:text-7xl font-bold leading-120%'>
             Neferdata Pricing Plans
           </h1>
-          <p className='text-[24px] max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
+          <p className='text-[24px] md:text-2xl text-base font-normal max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
             Standard, Self-hosted, and Enterprise. Upgrade anytime for advanced
             features and capabilities.
           </p>

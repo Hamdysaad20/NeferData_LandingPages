@@ -28,7 +28,7 @@ const Testimonials = () => {
             <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
               <span>What our customers are saying about us</span>
             </div>
-            <p className='text-lg pt-4 text-center '>
+            <p className='md:text-2xl text-base font-normal pt-4 text-center '>
               Our customers love Neferdata. Here’s what they have to say about
               our products and services and how they have helped them .
             </p>
