@@ -8,7 +8,12 @@ import { RiCompassDiscoverFill } from "react-icons/ri";
 import { BsHandIndexThumbFill } from "react-icons/bs";
 import { FaFileContract } from "react-icons/fa6";
 import { SiGoogleanalytics } from "react-icons/si";
-
+import  Lottie  from 'lottie-react';
+import AILottie from '../../Lottie/ai.json';
+import AIBot from '../../Lottie/AIBot.json';
+import EmailLottie from '../../Lottie/Email.json';
+import Contract from '../../Lottie/Contract.json';
+import SaaSLottie from '../../Lottie/SaaS.json';
 const GoogleIcon = () => (
    <svg
   className="w-[30px] rounded-sm"
@@ -63,14 +68,13 @@ function Hero() {
       <div className='absolute w-full h-full'>
           <div className='bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl  h-full'>
           <div
-          className="w-full text-center justify-center flex relative p-4  rounded  h-full"
-          >
-            <img
-              src='../../assets/Images/Keith_Hadi_Avatar.png'
-              alt='Neferdata Image'
-              className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
-            />
-          </div>
+            className="w-full text-center place-items-center absolute bottom-10  justify-center flex  p-4  rounded  h-full"
+            >
+              <Lottie
+                animationData={EmailLottie}
+                className='w-full h-full'
+              />
+            </div>
 
           <div className='absolute bottom-5 text-center left-0 right-0 w-full '>
            <div
@@ -101,12 +105,11 @@ function Hero() {
         <div className='absolute w-full h-full'>
             <div className='bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl  h-full'>
             <div
-            className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+            className="w-full text-center place-items-center absolute bottom-10  justify-center flex  p-4  rounded  h-full"
             >
-              <img
-                src='../../assets/Images/Keith_Hadi_Avatar.png'
-                alt='Neferdata Image'
-                className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
+              <Lottie
+                animationData={AILottie}
+                className='w-full h-full'
               />
             </div>
   
@@ -139,14 +142,14 @@ function Hero() {
         <div className='absolute w-full h-full'>
             <div className='bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl  h-full'>
             <div
-            className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+            className="w-full text-center place-items-center absolute bottom-10  justify-center flex  p-4  rounded  h-full"
             >
-              <img
-                src='../../assets/Images/Keith_Hadi_Avatar.png'
-                alt='Neferdata Image'
-                className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
+              <Lottie
+                animationData={SaaSLottie}
+                className='w-full scale-[0.6] h-full'
               />
             </div>
+  
   
             <div className='absolute bottom-5 text-center left-0 right-0 w-full '>
              <div
@@ -188,12 +191,11 @@ function Hero() {
         <div className='absolute w-full h-full'>
             <div className='bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl  h-full'>
             <div
-            className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+            className="w-full text-center place-items-center absolute bottom-10  justify-center flex  p-4  rounded  h-full"
             >
-              <img
-                src='../../assets/Images/Keith_Hadi_Avatar.png'
-                alt='Neferdata Image'
-                className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
+              <Lottie
+                animationData={Contract}
+                className='w-full scale-[0.6] h-full'
               />
             </div>
   
@@ -236,18 +238,17 @@ function Hero() {
         <div className='absolute w-full h-full'>
             <div className='bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl  h-full'>
             <div
-            className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+            className="w-full text-center place-items-center absolute bottom-10  justify-center flex  p-12  rounded  h-full"
             >
-              <img
-                src='../../assets/Images/Keith_Hadi_Avatar.png'
-                alt='Neferdata Image'
-                className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
+              <Lottie
+                animationData={AIBot}
+                className='w-full h-full scale-75'
               />
             </div>
   
             <div className='absolute bottom-5 text-center left-0 right-0 w-full '>
              <div
-             className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+             className="w-full text-center justify-center flex relative p-2  rounded  h-full"
              >
              <div className='md:max-w-lg relative '>
                 <p className='lg:text-4xl text-xl capitalize text-white font-bold mb-2'>
