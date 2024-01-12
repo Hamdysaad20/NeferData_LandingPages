@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { MdOutlineDone } from 'react-icons/md'
 import Button from '../Button/PrimaryButton';
+import Sparkels from '../Spark/spark';
 
 /**
  * PricingCard component renders a card displaying different pricing options.
@@ -13,7 +14,7 @@ import Button from '../Button/PrimaryButton';
  */
 const PricingCard = ({ className,textColor, title, price, renew, features, buttonText }) => {
   return (
-    <div className={`bg-blue-100 w-[70%] sm:w-80 border-2  hover:scale-105 duration-500 cursor-pointer xl:w-96 rounded-3xl  px-5 pt-8 pb-8 relative overflow-hidden ${className}`}>
+    <div className={`bg-blue-100 w-[70%] sm:w-80 border-2  hover:scale-105 duration-500 cursor-pointer xl:w-96 rounded-3xl  px-5 pt-8 pb-8 ${title === "Managed Service" ? "border-yellow-500 border-4 shadow-lg duration-700 hover:shadow-yellow-400 " : ""} relative overflow-hidden ${className}`}>
       <svg className="absolute -top-20 -right-36 rotate-[300deg]" xmlns="http://www.w3.org/2000/svg" width={299} height={317} fill="none">
         <path fill="url(#a)" d="m299 317-198.88-34.078C42.42 273.076 0 220.333 0 158.45 0 96.56 42.42 43.824 100.113 33.978L299 0v317Z" />
         <defs>
@@ -24,7 +25,18 @@ const PricingCard = ({ className,textColor, title, price, renew, features, butto
           </radialGradient>
         </defs>
       </svg>
+      {title === "Managed Service" && (
+          <div className='absolute top-0 p-3 rounded-tr-3xl rounded-bl-3xl bg-black/20  right-0'>
+            Let us Do the Work
+            <span
+            className='absolute top-0 right-0 w-10 h-10'
+            >
+              <Sparkels/>
+            </span>
+          </div>
+        )}
       <div className='z-20 relative'>
+        
         <h2 className={`${textColor} text-lg tracking-wider z-20  text-slate-600 mb-2`}>{title}</h2>
         <span className="text-6xl mb-2 tracking-wider text-bold inline-block ">{price}</span>
         <br />
@@ -58,7 +70,8 @@ PricingCard.propTypes = {
   price: PropTypes.string.isRequired,
   renew: PropTypes.string.isRequired,
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
-  buttonText: PropTypes.string.isRequired
+  buttonText: PropTypes.string.isRequired,
+  textColor: PropTypes.string,
 };
 
 PricingCard.defaultProps = {
