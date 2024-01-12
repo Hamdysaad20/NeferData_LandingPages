@@ -1,7 +1,13 @@
 import PropTypes from 'prop-types';
 import SecondaryButton from "../Button/SecondaryButton";
-import videoSrc from '../../assets/Videos/video1.mp4';
-import Video from '../Video/Video';
+import Products from '../Products/Products';
+import { MdEmail, MdProductionQuantityLimits } from 'react-icons/md';
+import Sparkels from '../Spark/spark';
+import { MdMarkEmailUnread } from "react-icons/md";
+import { RiCompassDiscoverFill } from "react-icons/ri";
+import { BsHandIndexThumbFill } from "react-icons/bs";
+import { FaFileContract } from "react-icons/fa6";
+import { SiGoogleanalytics } from "react-icons/si";
 
 const GoogleIcon = () => (
    <svg
@@ -46,7 +52,218 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="microsoft">
 );
 
 // Main Hero component
-const Hero = () => (
+function Hero() {
+  const products = [
+    {
+      title: "AI-Powered Email Assistant Efficiency",
+      description:
+        "A smart AI-powered email assistant that helps you manage your inbox efficiently.",
+      icon: <MdMarkEmailUnread />,
+      data: (
+      <div className='absolute w-full h-full'>
+          <div className='bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl  h-full'>
+          <div
+          className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+          >
+            <img
+              src='../../assets/Images/Keith_Hadi_Avatar.png'
+              alt='Neferdata Image'
+              className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
+            />
+          </div>
+
+          <div className='absolute bottom-5 text-center left-0 right-0 w-full '>
+           <div
+           className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+           >
+           <div className='max-w-lg '>
+              <p className='lg:text-4xl text-2xl capitalize text-white font-bold mb-2'>
+              Supercharge Your Email Efficiency
+              
+              </p>
+              <p className='text-white/80 text-sm md:text-md'>
+              Experience the power of our AI-Powered Email Assistant and streamline
+                        your inbox management like never before.
+              </p>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      ),
+    },
+    {
+      title: "Products Discovery",
+      description:
+        "AI powers your search for perfect SaaS tools, helping you make informed business choices.",
+      icon: <RiCompassDiscoverFill />,
+      data: (
+        <div className='absolute w-full h-full'>
+            <div className='bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl  h-full'>
+            <div
+            className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+            >
+              <img
+                src='../../assets/Images/Keith_Hadi_Avatar.png'
+                alt='Neferdata Image'
+                className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
+              />
+            </div>
+  
+            <div className='absolute bottom-5 text-center left-0 right-0 w-full '>
+             <div
+             className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+             >
+             <div className='md:max-w-lg relative '>
+                <p className='lg:text-4xl text-xl capitalize text-white font-bold mb-2'>
+                SaaS Discovery made Easy with AI
+                
+                </p>
+                <p className='text-white/80 text-sm md:text-md'>
+                Our AI-powered discovery tools help you find the best SaaS products for your business.
+
+                </p>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        ),
+    },
+    {
+      title: "SaaS Picks",
+      description:
+        "Smart SaaS picks with AI. No more Excel hassles. No more manual work. Just get Suggestion, Fill, get Score.",
+      icon: <BsHandIndexThumbFill />,
+      data: (
+        <div className='absolute w-full h-full'>
+            <div className='bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl  h-full'>
+            <div
+            className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+            >
+              <img
+                src='../../assets/Images/Keith_Hadi_Avatar.png'
+                alt='Neferdata Image'
+                className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
+              />
+            </div>
+  
+            <div className='absolute bottom-5 text-center left-0 right-0 w-full '>
+             <div
+             className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+             >
+             <div className='md:max-w-lg relative '>
+                <p className='lg:text-4xl text-xl capitalize text-white font-bold mb-2'>
+                  Discovery SaaS Products & Boost Your Business
+                
+                </p>
+                <p className='text-white/80 text-sm md:text-md'>
+                Our AI-powered discovery tools help you find the best SaaS products for your business.                
+                </p>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        ),
+    },
+    {
+      title: (
+        <span className='flex relative w-full justify-between items-center gap-2'>
+          <span className='w-[70%]'>Contract Manager</span>
+
+          <span className='text-white absolute top-0 right-0 px-4 py-[6px]     text-sm bg-gray-700/40 animate-pulse grid place-items-center w-20 rounded-full '>
+            soon
+            <span className='absolute h-12 w-12 -top-5 right-0'>
+              <Sparkels />
+            </span>
+          </span>
+        </span>
+      ),
+
+      description:
+        " Never miss a deadline. AI tracks & optimizes your SaaS agreements. Easy automation, boosted compliance. ",
+      icon: <FaFileContract />,
+      data: (
+        <div className='absolute w-full h-full'>
+            <div className='bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl  h-full'>
+            <div
+            className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+            >
+              <img
+                src='../../assets/Images/Keith_Hadi_Avatar.png'
+                alt='Neferdata Image'
+                className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
+              />
+            </div>
+  
+            <div className='absolute bottom-5 text-center left-0 right-0 w-full '>
+             <div
+             className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+             >
+             <div className='md:max-w-lg relative '>
+                <p className='lg:text-4xl text-xl capitalize text-white font-bold mb-2'>
+                  No More Missed Deadlines with AI
+                
+                </p>
+                <p className='text-white/80 text-sm md:text-md'>
+                Never miss a deadline. AI tracks & optimizes your SaaS agreements. Easy automation, boosted compliance.
+                </p>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        ),
+    },
+    {
+      title: (
+        <span className='flex  relative w-full justify-between items-center gap-2'>
+          <span className='w-[70%] '>AI Usage Analytics</span>
+
+          <span className='text-white px-4 absolute top-0 right-0 py-[6px]    text-sm bg-gray-700/40 animate-pulse grid place-items-center w-20 rounded-full '>
+            soon
+            <span className='absolute h-12 w-12 -top-5 right-0'>
+              <Sparkels />
+            </span>
+          </span>
+        </span>
+      ),
+      description:
+        "A smart AI-powered email assistant that helps you manage your inbox efficiently.",
+      icon: <SiGoogleanalytics />,
+      data: (
+        <div className='absolute w-full h-full'>
+            <div className='bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer  p-4 relative rounded-3xl  h-full'>
+            <div
+            className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+            >
+              <img
+                src='../../assets/Images/Keith_Hadi_Avatar.png'
+                alt='Neferdata Image'
+                className='w-[70%] h-[70%] p-2 rounded-2xl bg-black/10'
+              />
+            </div>
+  
+            <div className='absolute bottom-5 text-center left-0 right-0 w-full '>
+             <div
+             className="w-full text-center justify-center flex relative p-4  rounded  h-full"
+             >
+             <div className='md:max-w-lg relative '>
+                <p className='lg:text-4xl text-xl capitalize text-white font-bold mb-2'>
+                AI Usage Analytics                </p>
+                <p className='text-white/80 text-sm md:text-md'>
+                A smart AI-powered Analytics that helps you manage your SaaS efficiently.
+                </p>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        ),
+    },
+  ];
+return(
  <div className=' relative  '>
    <header 
     
@@ -77,18 +294,17 @@ Maximize Your SaaS Investments
       </div>
     </div>
     {/* Video container */}
-    <div className="w-[90%] max-md:w-full box-border p-16 max-sm:p-1 max-md:p-10 max-w-[1400px]">
-      <Video 
-        src={videoSrc}
-        
-      />
+    <div className="w-[99%]  max-md:w-full  max-w-[1500px]">
+    <Products products={products} bg='bg-[#3092DB]' />
+
     </div>
   </header>
  </div>
-);
+);}
+
+export default Hero;
 
 Hero.propTypes = {
   onClick: PropTypes.func,
 }
 
-export default Hero;
