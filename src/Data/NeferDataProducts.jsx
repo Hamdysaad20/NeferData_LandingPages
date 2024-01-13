@@ -29,12 +29,15 @@ const products = [
     ),
     description: "Make data-driven product decisions for your specific needs.",
     icon: <RiCompassDiscoverFill />,
+    link: "https://neferdata.com/evaluate",
+
   },
   {
     index: 2,
     title: "Manage Contracts",
     description: "Keep track of all contracts, licenses & manage renewals.",
     icon: <FaFileContract />,
+    link: "https://neferdata.com/login",
   },
   {
     index: 3,
@@ -42,6 +45,8 @@ const products = [
     description:
       "AI Usage Analytics: A smart AI-powered email assistant that helps you manage your inbox efficiently.",
     icon: <SiGoogleanalytics />,
+    link: "https://neferdata.com/login",
+
   },
   {
     index: 4,
@@ -49,6 +54,8 @@ const products = [
     description:
       "Quantify your actual needs & utilization of tools you pay for.",
     icon: <BsHandIndexThumbFill />,
+    link: "https://neferdata.com/login",
+
   },
   {
     index: 5,
@@ -56,6 +63,8 @@ const products = [
     description:
       "Never miss out on important information & avoid distractions.",
     icon: <MdMarkEmailUnread />,
+    link: "https://neferdata.com/login",
+
   },
 ];
 
