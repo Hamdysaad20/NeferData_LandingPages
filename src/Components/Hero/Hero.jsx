@@ -10,6 +10,8 @@ import SaaSLottie from "../../Lottie/SaaS.json";
 import Contract from "../../Lottie/Contract.json";
 import AIBot from "../../Lottie/AIBot.json";
 import ProductsCardData from "../../Data/ProductsCardData.json";
+import { Link } from "react-router-dom";
+
 
 const componentData = {
   title: "Maximize Your SaaS Investments",
@@ -62,7 +64,7 @@ function Hero() {
           </div>
           {/* Sign In buttons */}
           <div>
-            <div className='flex gap-4 py-4 max-md:flex-col max-md:items-center'>
+            <div className='flex gap-4 pb-0 py-4 max-md:flex-col max-md:items-center'>
               {componentData.signInButtons.map((button, index) => (
                 <SecondaryButton
                   key={index}
@@ -73,27 +75,33 @@ function Hero() {
                 />
               ))}
             </div>
-            <p className='text-gray-50 text-[12px] max-lg:text-[10px] text-center'>
+         
+          </div>
+          <p className='text-gray-50 text-[18px] max-lg:text-[10px] text-center'>
               By clicking Sign Up you&apos;re confirming that you agree with our{" "}
-              <span className='underline select-none cursor-pointer'>
+              <Link  to='/terms-of-service' className='underline select-none cursor-pointer'>
                 {componentData.termsOfService}
-              </span>{" "}
+              </Link>{" "}
               and{" "}
-              <span className='underline select-none cursor-pointer'>
+              <Link to='/privacy-policy'
+
+
+              
+              className='underline select-none cursor-pointer'>
                 {componentData.privacyPolicy}
-              </span>
+              </Link>
               .
             </p>
-          </div>
         </div>
         {/* Video container */}
         <div className='w-[99%]  max-md:w-full  max-w-[1500px]'>
-          <Products
-            products={products}
-            LOTTIEanimationData={LOTTIEanimationData}
-            ProductsCardData={ProductsCardData}
-            bg='bg-[#023459b3] border-4 border-gray-50/60 shadow-2xl'
-          />
+          <Products products={products}
+          LOTTIEanimationData = {LOTTIEanimationData}
+          ProductsCardData = {ProductsCardData}
+
+          
+          
+          bg='bg-[#3092DB]/20 border-4 border-gray-200/60 shadow-2xl' />
         </div>
       </header>
     </div>
