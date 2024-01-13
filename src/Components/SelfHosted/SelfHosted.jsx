@@ -91,7 +91,7 @@ function SelfHosted() {
             LOTTIEanimationData={LOTTIEanimationData}
             ProductsCardData={ProductsCardData}
 
-            bg='bg-sky-900/20  backdrop-blur-2xl'
+            bg='bg-[#023459b3] border-4 border-gray-50/60 shadow-2xl'
           />
         </div>
       </div>

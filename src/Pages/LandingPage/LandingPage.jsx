@@ -26,7 +26,7 @@ const App = () => {
   return (
     <>
       <div className='relative rounded-3xl  overflow-hidden '>
-        <div className='absolute h-full w-full  z-0'>
+        <div className='absolute h-full w-full bg-sky-500 z-0'>
           <Suspense fallback={<div>Loading...</div>}>
             <SVGbg />
           </Suspense>

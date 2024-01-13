@@ -8,7 +8,25 @@ import { FaFileContract } from "react-icons/fa6";
 const products = [
   {
     index: 1,
-    title: "Discover & Evaluate",
+    title: (
+      <div
+      className="relative  w-full"
+      >
+        <span className="relative">
+        Discover & Evaluate
+        </span>
+        <span
+        className="font-normal absolute right-0 px-2 py-1 bg-black/20 rounded-3xl text-sm"
+        >
+         use it for free
+       <span className="absolute top-0 right-0">
+       <Sparkels/>
+       </span>
+        
+        </span>
+        
+      </div>
+    ),
     description: "Make data-driven product decisions for your specific needs.",
     icon: <RiCompassDiscoverFill />,
   },

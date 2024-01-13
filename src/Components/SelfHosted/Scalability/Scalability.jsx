@@ -3,6 +3,7 @@ import lighting from "../../../Lottie/lighting.json";
 import CTAsignIn from "../../CTA/CTAsignIn";
 import FeaturesGrid from '../../../Components/FeaturesGrid/FeaturesGrid';
 import gridData from "../../../Pages/LandingPage/gridData.json";
+import infinity from "react-useanimations/lib/infinity";
 
 
 const Scalability = ({title,description,buttonText,buttonTextSecondary,bg }) => {
