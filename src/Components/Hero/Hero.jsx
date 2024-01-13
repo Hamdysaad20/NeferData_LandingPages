@@ -11,7 +11,6 @@ import Contract from "../../Lottie/Contract.json";
 import AIBot from "../../Lottie/AIBot.json";
 import ProductsCardData from "../../Data/ProductsCardData.json";
 
-
 const componentData = {
   title: "Maximize Your SaaS Investments",
   description:
@@ -89,13 +88,12 @@ function Hero() {
         </div>
         {/* Video container */}
         <div className='w-[99%]  max-md:w-full  max-w-[1500px]'>
-          <Products products={products}
-          LOTTIEanimationData = {LOTTIEanimationData}
-          ProductsCardData = {ProductsCardData}
-
-          
-          
-          bg='bg-[#3092DB]/20 border-4 border-gray-200/60 shadow-2xl' />
+          <Products
+            products={products}
+            LOTTIEanimationData={LOTTIEanimationData}
+            ProductsCardData={ProductsCardData}
+            bg='bg-[#023459b3] border-4 border-gray-50/60 shadow-2xl'
+          />
         </div>
       </header>
     </div>

@@ -33,8 +33,8 @@ const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
           <button
             className={`flex justify-start items-start  border-t-2 border-gray-100/20 p-4 text-start text-white overflow-hidden transition-all duration-500 rounded-xl before:aspect-square before:translate-x-1 before:translate-y-1/2 before:rounded-full before:bg-white before:absolute before:bottom-0 before: after:w-3/4 after:bg-gradient-to-r after:from-transparent after:to-white after:bottom-0 after:absolute relative ${
               activeProductIndex === index
-                ? "bg-white/10 opacity-100 after:h-1  h-full after:animate-slideFromRightToLeft after:right-full before:h-2 before:animate-slideFromRightToLeft before:shadow-[0px_0px_100px_30px_rgb(200,200,255)]"
-                : "bg-transparent after:right-0 h-full  opacity-60 after:h-0 after:animate-none before:h-0 before:animate-none before:shadow-none"
+                ? "bg-white/10 w-full opacity-100 after:h-1  h-full after:animate-slideFromRightToLeft after:right-full before:h-2 before:animate-slideFromRightToLeft before:shadow-[0px_0px_100px_30px_rgb(200,200,255)]"
+                : "bg-transparent w-full after:right-0 h-full  opacity-60 after:h-0 after:animate-none before:h-0 before:animate-none before:shadow-none"
             } hover:bg-white/20 hover:opacity-90`}
             key={index}
             onClick={() => handleActiveProduct(index)}
