@@ -34,11 +34,9 @@ export default function Gallery2() {
   ];
 
   return (
-    <section className='w-[90%] max-md:w-full max-w-[1500px] flex justify-center flex-col items-center mx-auto'>
-      <div className='bg-[#3092DB] p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
-        <UseAnimations animation={infinity} size={100} strokeColor='white' />
-      </div>
-      <div className='bg-[#3092DB] p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
+    <section className='w-[90%]  max-md:w-full max-w-[1500px] flex justify-center flex-col items-center mx-auto'>
+
+      <div className='bg-[#3092DB] my-12 p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
         <Lottie
           aria-label='icon by lordicon - thanks lordicon! you saved me https://lordicon.com/'
           animationData={lighting}
@@ -57,13 +55,13 @@ export default function Gallery2() {
           fontWeight: "bold",
           lineHeight: "120%",
         }}
-        className='text-4xl md:text-7xl text-black max-w-[1000px] pb-12 text-center font-bold relative leading-120%'>
+        className='text-4xl md:text-7xl px-6 text-black max-w-[1000px] pb-12 text-center font-bold relative leading-120%'>
         <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
           Finding the right tool for your business is critical
         </div>
         <p className='md:text-2xl text-base   font-normal pt-4  text-ctenter '>
-          You don&apos;t know what is the right one to solve your customer
-          problem and which is cost less and more efficient for your business
+        With Neferdata you can get full value from SaaS & position your biz for success
+
         </p>
       </div>
 

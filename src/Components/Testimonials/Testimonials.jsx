@@ -6,9 +6,9 @@ import CTAsignIn from "../CTA/CTAsignIn";
 
 const Testimonials = () => {
   return (
-    <div className='py-12 pt-0 -mt-5'>
+    <div className=''>
       <div className='bg-[#3092DB] rounded-b-3xl '>
-        <section className='w-[90%] max-md:w-full max-w-[1400px] flex justify-center flex-col items-center mx-auto pt-32  px-16 max-lg:px-8 max-md:px-6 gap-12  box-border'>
+        <section className='w-[90%] max-md:w-full max-w-[1400px] flex justify-center flex-col items-center mx-auto px-16 max-lg:px-8 max-md:px-6 gap-12  box-border'>
           <div className='bg-white p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
             <Lottie
               animationData={Voice}

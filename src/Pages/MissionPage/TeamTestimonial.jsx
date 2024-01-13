@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "./Slider";
 import Kamil_on_Stage from "../../assets/Images/Founders/KamilStage.png";
 import KamilGift from "../../assets/Images/Founders/kamil.gif";

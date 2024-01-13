@@ -7,11 +7,11 @@ import Sparkels from "../Spark/spark";
 
 function FAQs({ questions, ...props }) {
   return (
-    <div className='flex justify-center pb-6 p-2  text-2xl outline-none focus:outline-none'>
+    <div className='flex justify-center  p-2  text-2xl outline-none focus:outline-none'>
     <div
       aria-label='Frequently asked questions Section'
       className='w-full max-w-[1400px]'>
-      <div className='w-full justify-center flex pt-12'>
+      <div className='w-full justify-center flex '>
         <div className='flex flex-col gap-6 text-[#121212] text-center  box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]'>
           <div className='w-full flex justify-center'>
             <div className='bg-[#3092DB] w-[116px] p-2 shadow-2xl shadow-blue-700 rounded-[2rem] h-54'>

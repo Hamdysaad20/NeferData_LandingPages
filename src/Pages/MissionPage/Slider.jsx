@@ -3,8 +3,6 @@ import Kamil_Litman from "../../assets/Images/Founders/Kamil.jpeg";
 import NeferData from "../../assets/Images/logo.png";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Lottie from "lottie-react";
-import groovyWalkAnimation from "../../Lottie/qkfCNGxSmo.json";
 
 const delay = 7000;
 

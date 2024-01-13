@@ -20,9 +20,6 @@ const App = () => {
     visible: { opacity: 1, y: 0 },
   };
 
-
-
-
   return (
     <>
       <div className='relative rounded-3xl  overflow-hidden '>
@@ -40,50 +37,56 @@ const App = () => {
         </motion.div>
       </div>
       <Suspense fallback={<div>Loading...</div>}>
-      
+        <div className='py-12'>
           <Gallery2 />
-       
+        </div>
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
-       
-          <PrivacyCertifications />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-       
+        <div className='py-12'>
           <SelfHosted />
+        </div>
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-       
+        <div className='pb-12'>
           <AINeferData 
-           title= "Lean How to benefit from AI with Neferdata"
+           title= "Learn How to benefit from AI with Neferdata"
            description="Using Neferdata's AI-powered tools and solutions, can open your eyes more on the opportunity that you can benifit from."
            buttonText= "Get Started with Neferdata"
            buttonTextSecondary="Have a question? Contact us"
            bg= "text-blue-500"
            gridData={gridData}
           /> 
+        </div>
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        
+        <div className='py-12'>
+          <PrivacyCertifications />
+        </div>
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div className='py-12 mt-12 rounded-t-3xl bg-[#3092DB]'>
           <Testimonials />
+        </div>
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
-       
+        <div className='py-12'>
           <FAQs
             faqs='FAQs'
             faqsP=' Here are some of the most common questions we get asked. If you have
       other questions, please'
             questions={questions}
           />
+        </div>
       </Suspense>
 
       <div className='pb-12 '>
         {" "}
         <Suspense fallback={<div>Loading...</div>}>
-         
+          <div className='py-12'>
             <CTAProduct />
+          </div>
         </Suspense>
       </div>
     </>

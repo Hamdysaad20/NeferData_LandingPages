@@ -18,7 +18,7 @@ const products = [
         <span
         className="font-normal absolute right-0 px-2 py-1 bg-black/20 rounded-3xl text-sm"
         >
-         use it for free
+         for free
        <span className="absolute top-0 right-0">
        <Sparkels/>
        </span>

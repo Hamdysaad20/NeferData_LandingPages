@@ -53,7 +53,7 @@ const PrivacyCertifications = () => {
 
   // Render the section
   return (
-    <section className='flex flex-col w-[90%] max-w-[1200px] justify-center items-center py-[112px] gap-10 m-auto'>
+    <section className='flex flex-col w-[90%] max-w-[1200px] justify-center items-center  gap-10 m-auto'>
          <div className='bg-[#3092DB] w-54 p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
 < UseAnimations animation={visibility2} size={100} strokeColor='white' />
 
