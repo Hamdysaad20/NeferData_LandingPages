@@ -67,7 +67,7 @@ function Pricing() {
             Neferdata Pricing Plans
           </h1>
           <p className='text-[24px] md:text-2xl text-base font-normal max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
-            Standard, Self-hosted, and Enterprise. Upgrade anytime for advanced
+            Standard, Self-hosted, and Managed Service. Upgrade anytime for advanced
             features and capabilities.
           </p>
         </div>
