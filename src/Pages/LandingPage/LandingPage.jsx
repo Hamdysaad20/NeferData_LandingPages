@@ -22,8 +22,9 @@ const App = () => {
 
   return (
     <>
+    <Suspense fallback={<div>Loading...</div>}>
       <div className='relative rounded-3xl  overflow-hidden '>
-        <div className='absolute h-full w-full bg-sky-500 z-0'>
+        <div className='absolute h-full w-full bg-[#3092DB] z-0'>
           <Suspense fallback={<div>Loading...</div>}>
             <SVGbg />
           </Suspense>
@@ -41,14 +42,8 @@ const App = () => {
           <Gallery2 />
         </div>
       </Suspense>
-
       <Suspense fallback={<div>Loading...</div>}>
-        <div className='py-12'>
-          <SelfHosted />
-        </div>
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <div className='pb-12'>
+        <div className='pb-12 bg-[#3092DB] rounded-3xl'>
           <AINeferData 
            title= "Learn How to benefit from AI with Neferdata"
            description="Using Neferdata's AI-powered tools and solutions, can open your eyes more on the opportunity that you can benifit from."
@@ -64,6 +59,13 @@ const App = () => {
           <PrivacyCertifications />
         </div>
       </Suspense>
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <div className='py-12'>
+          <SelfHosted />
+        </div>
+      </Suspense>
+
       <Suspense fallback={<div>Loading...</div>}>
         <div className='py-12 mt-12 rounded-t-3xl bg-[#3092DB]'>
           <Testimonials />
@@ -89,6 +91,7 @@ const App = () => {
           </div>
         </Suspense>
       </div>
+      </Suspense>
     </>
   );
 };

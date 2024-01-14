@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import Lottie from "lottie-react";
-import SelfHostedCloud from "../../Lottie/AICloud.json";
+import SelfHostedCloud from "../../Lottie/whitecloud.json";
 import Products from "../Products/Products";
 import CTAsignIn from "../CTA/CTAsignIn";
 import { FaDatabase } from "react-icons/fa6";
@@ -49,10 +49,10 @@ function SelfHosted() {
     }
   }, []);
   return (
-    <div className=' bg-[#3092DB] rounded-[40px] lg:rounded-b-3xl '>
+    <div className='  rounded-[40px] lg:rounded-b-3xl '>
       <div className=' pb-0 lg:pb-32'>
         <section className='w-[90%]  max-md:w-full max-w-[1400px] flex justify-center flex-col items-center mx-auto py-32 pb-6 px-16 max-lg:px-8 max-md:px-6 gap-12  box-border'>
-          <div className='bg-white p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
+          <div className='bg-[#3092DB]  p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
             <Lottie
               animationData={SelfHostedCloud}
               style={{ width: 100, height: 100 }}
@@ -69,7 +69,7 @@ function SelfHosted() {
               fontWeight: "bold",
               lineHeight: "120%",
             }}
-            className='text-4xl md:text-7xl text-white max-w-[1000px] pb-12 text-center font-bold relative leading-120%'>
+            className='text-4xl md:text-7xl text-black max-w-[1000px] pb-12 text-center font-bold relative leading-120%'>
             <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
               More Privacy? Choose self-Hosted
             </div>
@@ -81,7 +81,7 @@ function SelfHosted() {
             <CTAsignIn
               buttonText='Start With Self-Hosted'
               buttonTextSecondary='See Other Options'
-              bg='bg-white'
+              bg='bg-black'
               textColor='text-black'
               mainLink='/pricing'
               secondaryLink='/pricing'

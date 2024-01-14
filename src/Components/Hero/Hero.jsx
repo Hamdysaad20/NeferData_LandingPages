@@ -10,6 +10,7 @@ import SaaSLottie from "../../Lottie/SaaS.json";
 import Contract from "../../Lottie/Contract.json";
 import AIBot from "../../Lottie/AIBot.json";
 import ProductsCardData from "../../Data/ProductsCardData.json";
+import future from "../../Lottie/WKQf1nhdyB.json";
 import { Link } from "react-router-dom";
 
 
@@ -35,11 +36,13 @@ const componentData = {
   privacyPolicy: "Privacy Policy",
 };
 const LOTTIEanimationData = [
-  EmailLottie,
-  AILottie,
-  SaaSLottie,
-  Contract,
-  AIBot,
+  AILottie,       // "Products Discovery Customized for You"
+  Contract, 
+  AIBot,          // No direct match in JSON data
+  SaaSLottie,     // No direct match in JSON data
+  EmailLottie,    // "AI-Powered Email Assistant Efficiency"
+  future,
+
 ];
 
 function Hero() {

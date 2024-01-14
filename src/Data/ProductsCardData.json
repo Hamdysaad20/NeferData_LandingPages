@@ -1,13 +1,13 @@
 {
     "cards": [
         {
-            "index": 2,
+            "index": 1,
             "title": "Products Discovery Customized for You",
             "description": "AI powers your search for perfect SaaS tools, helping you make informed business choices.",
             "LOTTIEanimationData": "../Lottie/ai.json"
         },
         {
-            "index": 4,
+            "index": 2,
             "title": "Be on Top of Your Contracts ",
             "description": "Never miss a deadline. AI tracks & optimizes your SaaS agreements. Easy automation, boosted compliance.",
             "LOTTIEanimationData": "../Lottie/Contract.json"
@@ -19,16 +19,23 @@
             "LOTTIEanimationData": "../Lottie/UsageTrends.json"
         },
         {
-            "index": 5,
+            "index": 4,
             "title": "Manage Relationships",
             "description": "Build and maintain strong relationships with AI-powered tools and features.",
             "LOTTIEanimationData": "../Lottie/Relationships.json"
         },
         {
-            "index": 0,
+            "index": 5,
             "title": "AI-Powered Email Assistant Efficiency",
             "description": "A smart AI-powered email assistant that helps you manage your inbox efficiently.",
             "LOTTIEanimationData": "../Lottie/Email.json"
+        },
+        {
+            "index": 6,
+            "title": "Prepare for the Future",
+            "description": "See How other companies are using AI to prepare for the future.",
+            "LOTTIEanimationData": "../Lottie/Email.json"
         }
+       
     ]
 }

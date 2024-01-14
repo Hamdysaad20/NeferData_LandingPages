@@ -37,7 +37,7 @@ function FeaturesGrid() {
               <div className='top-div h-full w-full  p-2'>
                 {/* Content for Top Div */}
                 <div
-                  className={`bg-[#3092DB] hover:bg-[#3092DB]/70 duration-500 cursor-pointer  overflow-hidden min-h-[250px] relative p-4 rounded-xl w-full h-full `}>
+                  className={`bg-sky-900/30 hover:bg-sky-900/70 duration-500 cursor-pointer  overflow-hidden min-h-[250px] relative p-4 rounded-xl w-full h-full `}>
                   <div className='absolute top-0 pt-4 left-0 pl-4 flex-col flex justify-start w-full z-10 items-left'>
                     <h1 className='text-3xl md:text-4xl max-w-lg font-bold text-white'>
                      {gridData[0]?.title}
@@ -64,7 +64,7 @@ function FeaturesGrid() {
               <div className='bottom-div h-full w-full  p-2 '>
                 {/* Content for Bottom Div */}
                 <div
-                  className={`bg-[#3092DB] hover:bg-[#3092DB]/70 duration-500 cursor-pointer  overflow-hidden min-h-[250px] relative p-4 rounded-xl w-full h-full `}>
+                  className={`bg-sky-900/30  hover:bg-sky-900/70 duration-500 cursor-pointer  overflow-hidden min-h-[250px] relative p-4 rounded-xl w-full h-full `}>
                   <div className='absolute top-0 pt-4 left-0 pl-4 flex-col flex justify-start w-full z-10 items-left'>
                     <h1 className='text-3xl md:text-4xl max-w-lg font-bold text-white'>
                       {gridData[1].title}
@@ -93,7 +93,7 @@ function FeaturesGrid() {
               {/* Content for Right Div */}
               <div
                 id='CntainerKubernetesICONSVG'
-                className={`bg-[#3092DB]  hover:opacity-70 duration-500 cursor-pointer   overflow-hidden min-h-[400px]  md:min-h-[516px] relative md:p-4 rounded-xl w-full h-full `}>
+                className={`bg-sky-900/30 hover:bg-sky-900/70 duration-500 cursor-pointer   overflow-hidden min-h-[400px]  md:min-h-[516px] relative md:p-4 rounded-xl w-full h-full `}>
                 <div className='absolute top-0 pt-4 left-0 pl-4 flex-col flex justify-start w-full z-10  backdrop-blur-md items-left'>
                   <h1 className='text-3xl md:text-4xl max-w-lg  font-bold text-white'>
                   {gridData[2].title}

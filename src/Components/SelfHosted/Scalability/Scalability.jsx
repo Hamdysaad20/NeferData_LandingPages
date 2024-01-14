@@ -12,14 +12,14 @@ const Scalability = ({
   bg,
 }) => {
   return (
-    <div className='md:py-12 pt-32  pb-80 '>
+    <div className='md:py-12 pt-32   pb-80 '>
       <div className=' rounded-b-3xl pb-32'>
         <section className='w-[90%] max-md:w-full max-w-[1400px] flex justify-center flex-col items-center mx-auto  pb-6 px-16 max-lg:px-8 max-md:px-6 gap-12  box-border'>
-          <div className='bg-[#3092DB] p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
+          <div className='bg-white p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
             <UseAnimations
               animation={infinity}
               size={100}
-              strokeColor='white'
+              strokeColor='#3092DB'
             />
           </div>
 
@@ -30,7 +30,7 @@ const Scalability = ({
               fontWeight: "bold",
               lineHeight: "120%",
             }}
-            className='text-4xl md:text-7xl text-black max-w-[1000px] text-center font-bold relative leading-120%'>
+            className='text-4xl md:text-7xl text-white max-w-[1000px] text-center font-bold relative leading-120%'>
             <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
               {title}
             </div>

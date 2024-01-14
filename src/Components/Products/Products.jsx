@@ -67,7 +67,7 @@ const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
                         transition: "opacity 0.3s ease, transform 0.3s ease",
                         transitionDelay: `${index * 0.1}s`, // Add this line to delay the transition for each element
                       }}>
-                      Learn more
+                     Try it for free
                     </Link>
                   </span>
                 )}

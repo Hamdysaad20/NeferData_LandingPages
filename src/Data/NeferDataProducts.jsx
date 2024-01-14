@@ -4,6 +4,8 @@ import { RiCompassDiscoverFill } from "react-icons/ri";
 import { BsHandIndexThumbFill } from "react-icons/bs";
 import Sparkels from "../Components/Spark/spark";
 import { FaFileContract } from "react-icons/fa6";
+import { SiNextra } from "react-icons/si";
+
 
 const products = [
   {
@@ -16,9 +18,9 @@ const products = [
         Discover & Evaluate
         </span>
         <span
-        className="font-normal absolute right-0 px-2 py-1 bg-black/20 rounded-3xl text-sm"
+        className="font-normal absolute right-0 px-4 py-1 bg-black/20 rounded-3xl text-base"
         >
-         for free
+        free
        <span className="absolute top-0 right-0">
        <Sparkels/>
        </span>
@@ -66,6 +68,14 @@ const products = [
     link: "https://neferdata.com/login",
 
   },
+  {
+    index: 6,
+    title: "Prepare for the Future",
+    description:
+      "Get insights on what others are using to stay ahead",
+    icon: <SiNextra />,
+    link: "https://neferdata.com/login",
+  }
 ];
 
 export default products;

@@ -102,7 +102,7 @@ function Slideshow() {
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={transition}
-                      className='text-2xl font-semibold text-[#efff55]'
+                      className='text-2xl font-semibold text-white'
                     >
                       {currentTestimonial.name}
                     </motion.h3>
