@@ -40,6 +40,8 @@ const Testimonials = () => {
                 Have a question? Contact us
               '
               bg='bg-white'
+              mainLink='/pricing'
+              secondaryLink='/pricing'
             />
           </div>
         </section>

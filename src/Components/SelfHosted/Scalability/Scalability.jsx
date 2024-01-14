@@ -41,6 +41,8 @@ const Scalability = ({
               buttonText={buttonText}
               buttonTextSecondary={buttonTextSecondary}
               bg={bg}
+              mainLink='/pricing'
+              secondaryLink='/pricing'
             />
           </div>
         </section>

@@ -136,6 +136,8 @@ function Pricing() {
             <span className='text-white capitalize'>Try Demo</span>
           }
           bg='bg-white'
+          mainLink='https://neferdata.com/login'
+          secondaryLink='https://neferdata.com/evaluate'
         />
         <span className='w-full grid place-items-center  pt-2'>
           <div className='text-gray-300 flex  justify-center gap-2 select-none'>

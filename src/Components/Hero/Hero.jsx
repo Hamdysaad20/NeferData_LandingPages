@@ -22,11 +22,13 @@ const componentData = {
       theme: "dark",
       Icon: MicrosoftIcon,
       title: "Sign in with Microsoft",
+      link: "https://neferdata.com/login",
     },
     {
       theme: "primary",
       Icon: GoogleIcon,
       title: "Sign in with Google",
+      link: "https://neferdata.com/login",
     },
   ],
   termsOfService: "Terms of Service",
@@ -68,7 +70,7 @@ function Hero() {
               {componentData.signInButtons.map((button, index) => (
                 <SecondaryButton
                   key={index}
-                  onClick={null}
+                  onClick={button.link}
                   theme={button.theme}
                   Icon={button.Icon}
                   title={button.title}

@@ -82,6 +82,10 @@ function SelfHosted() {
               buttonText='Start With Self-Hosted'
               buttonTextSecondary='See Other Options'
               bg='bg-white'
+              textColor='text-black'
+              mainLink='/pricing'
+              secondaryLink='/pricing'
+              
             />
           </div>
         </section>

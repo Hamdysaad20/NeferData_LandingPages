@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function CTAsignIn({ title, subtitle, buttonText, buttonTextSecondary, bg }) {
+function CTAsignIn({ title, subtitle, buttonText, buttonTextSecondary, bg,...props }) {
   return (
     <div>
       <div className={`mx-auto max-w-4xl rounded-3xl text-center `}>
@@ -13,7 +13,7 @@ function CTAsignIn({ title, subtitle, buttonText, buttonTextSecondary, bg }) {
         </p>
         <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-4">
           <Link
-            to="/selfhosted"
+            to={props.mainLink? props.mainLink : "/selfhosted"}
             className={`flex items-center justify-center gap-2 rounded-full px-5 py-3 text-lg font-medium hover:opacity-75 duration-700 ${bg === 'bg-white' ? 'text-black bg-white ' : 'text-white bg-black  '}`}
           >
             <span>
@@ -35,7 +35,7 @@ function CTAsignIn({ title, subtitle, buttonText, buttonTextSecondary, bg }) {
             </span>
           </Link>
           <Link
-            to="/pricing"
+            to={props.secondaryLink? props.secondaryLink : "/pricing"}
             className={`flex items-center justify-center gap-2 rounded-full px-5 py-3 text-lg font-medium mt-0 md:mt-0`}
           >
             <span>{buttonTextSecondary}</span>

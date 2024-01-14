@@ -52,13 +52,13 @@ const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
               <span className='lg:text-2xl relative w-full font-semibold mb-2'>
                 {product.title}
               </span>
-              <span className='text-base  text-left text-white/80'>
+              <span className='text-base relative text-left text-white/80'>
                 {product.description}
                 {activeProductIndex === index && (
-                  <span className=' '>
+                  <span className=' relative '>
                     <Link
-                      to={product.link}
-                      className='text-white  hover:text-black/40 duration-500 select-none underline  px-2 rounded-full text-sm font-semibold  cursor-pointer'
+                      to={product.link? product.link : "https://neferdata.com/waitlist"}
+                      className='text-white   hover:text-black/40 duration-500 select-none underline  px-2 rounded-full text-sm font-semibold  cursor-pointer'
                       style={{
                         opacity: activeProductIndex === index ? 1 : 0,
                         transform: `translateY(${
