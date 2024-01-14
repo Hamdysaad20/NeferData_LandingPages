@@ -98,10 +98,8 @@ function Hero() {
           <Products products={products}
           LOTTIEanimationData = {LOTTIEanimationData}
           ProductsCardData = {ProductsCardData}
-
-          
-          
-          bg='bg-[#3092DB]/20 border-4 border-gray-200/60 shadow-2xl' />
+          bg='bg-[#023459b3] border-4 border-gray-50/60 shadow-2xl'
+          />
         </div>
       </header>
     </div>
