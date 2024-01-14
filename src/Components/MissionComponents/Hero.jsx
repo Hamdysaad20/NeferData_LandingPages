@@ -23,7 +23,7 @@ function Hero() {
               alt='Neferdata'
             />
           </div>{" "}
-          <div className='flex flex-col gap-6 text-black text-center box-border px-0 lg:px-16 max-lg:px-2 max-md:px-0 max-w-[890px]'>
+          <div className='flex flex-col gap-6 text-black text-center box-border    px-4 max-w-[1090px]'>
             <h1
               style={{
                 fontFamily:
@@ -32,7 +32,8 @@ function Hero() {
                 lineHeight: "120%",
               }}
               className='text-3xl md:text-7xl font-bold leading-120%'>
-              Neferdata: AI Tools Customized for Your Success{" "}
+Better way to get value from your SaaS investments
+
             </h1>
             <p className='text-[24px] max-lg:text-[20px] font-medium  box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
               AI-Powered Tools Tailored for You - Right, Personalized, and

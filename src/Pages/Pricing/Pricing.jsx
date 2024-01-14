@@ -25,7 +25,8 @@ function Pricing() {
     textColor: "text-white/80",
     renew: "",
     features: [
-      "Worry-free setup, administration & maintenance",
+      "Worry-free setup, "+
+      "administration & maintenance",
       "Dedicated, encrypted & secure instance in Neferdata cloud",
       "Access to 24/7 support & all latest features",
     ],

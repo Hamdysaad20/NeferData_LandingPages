@@ -30,17 +30,33 @@ const PricingCard = ({ className,textColor, title, price, renew, features, butto
       <div className='z-20 relative'>
         
         <h2 className={`${textColor} text-lg tracking-wider z-20  text-slate-600 mb-2`}>{title}</h2>
-        <span className="text-6xl mb-2 tracking-wider text-bold inline-block ">{price}</span>
+     
+          <span className="text-6xl mb-2 tracking-wider text-bold inline-block ">{price}</span>   {price !== "Free" && ( <span>/month</span> )}
+        
         <br />
         <span className="inline-block mb-4">{renew}</span>
         <ul
         className='text-left grid gap-2'
         >
+          
           {features.map((feature, index) => (
-          <div className="flex items-center gap-0 mb-2" key={index}>
-            <MdOutlineDone className={`${textColor}  text-sky-500 text-2xl`} />
-            <p className={`${textColor}  tracking-wide leading-6 text-gray-700 px-3 font-semibold`}>{feature}</p>
-          </div>
+          <span className="flex flex-row" key={index}>
+                        <MdOutlineDone className={`${textColor}  text-sky-500 text-2xl`} />
+
+            {feature.includes("administration") ? (
+              
+              <span className='px-3'>
+                
+                {feature.split("administration")[0]}
+                <br />
+                <p className={`${textColor}  tracking-wide leading-6 text-gray-700  font-semibold`}>
+                  administration{feature.split("administration")[1]}
+                </p>
+              </span>
+            ) : (
+              <p className={`${textColor}  tracking-wide leading-6 text-gray-700 px-3 font-semibold`}>{feature}</p>
+            )}
+          </span>
         ))}
         </ul>
 
