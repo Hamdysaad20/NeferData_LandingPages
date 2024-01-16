@@ -19,7 +19,7 @@ function SelfHosted() {
       title: "Contribute to SaaS Market Transparency",
       description: (
         <span>
-          Neferdata provides insights about SaaS marketplace. The insights are anonymized & can’t be traced back to individual businesses. Your data is never used to target ads or sold to vendors.
+          We provides insights about SaaS marketplace. The insights are anonymized & can’t be traced back to individual businesses. Your data is never used to target ads or sold to vendors.
         </span>
       ),
       icon: <GrHostMaintenance />,
@@ -27,7 +27,7 @@ function SelfHosted() {
     {
       title: "Total Control Of Your Data",
       description:
-        "Neferdata's dedicated to empower users with complete authority and oversight of their data within the platform, ensuring transparency, privacy, and personalized control over their information.",
+        "We dedicated to empower users with complete authority and oversight of their data within the platform, ensuring transparency, privacy, and personalized control over their information.",
       icon: <FaDatabase />,
     },
     {

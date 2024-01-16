@@ -32,6 +32,7 @@ const products = [
     description: "Make data-driven product decisions tailored to your specific needs.",
     icon: <RiCompassDiscoverFill />,
     link: import.meta.env.VITE_EVALUATION_URL,
+    linkName: "Try for free",
 
   },
   {
@@ -40,6 +41,7 @@ const products = [
     description: "Keep track of all contracts, licenses & manage renewals.",
     icon: <FaFileContract />,
     link: import.meta.env.VITE_CONTRACTS_URL,
+    linkName: "Sign up now",
   },
   {
     index: 3,
@@ -48,6 +50,8 @@ const products = [
       "Quantify utilization of the tools you pay for & understand your actual licensing needs.",
     icon: <SiGoogleanalytics />,
     link: import.meta.env.VITE_ANALYTICS_URL,
+    linkName: "Sign up now",
+
 
   },
   {
@@ -57,6 +61,8 @@ const products = [
       "Never miss out on important information & avoid distractions.",
     icon: <MdMarkEmailUnread />,
     link: import.meta.env.VITE_EMAIL_URL,
+    linkName: "Sign up now",
+
 
   },
   {
@@ -66,6 +72,8 @@ const products = [
       "Get insights on what others are using to stay ahead",
     icon: <SiNextra />,
     link: import.meta.env.VITE_EVALUATION_URL,
+    linkName: "Sign up now",
+
   }
 ];
 
