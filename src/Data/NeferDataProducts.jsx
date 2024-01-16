@@ -29,7 +29,7 @@ const products = [
         
       </div>
     ),
-    description: "Make data-driven product decisions for your specific needs.",
+    description: "Make data-driven product decisions tailored to your specific needs.",
     icon: <RiCompassDiscoverFill />,
     link: import.meta.env.VITE_EVALUATION_URL,
 
