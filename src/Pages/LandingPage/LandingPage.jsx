@@ -46,7 +46,7 @@ const App = () => {
         <div className='pb-12 bg-[#3092DB] rounded-3xl'>
           <AINeferData 
            title= "Learn How to benefit from AI with Neferdata"
-           description="Using Neferdata's AI-powered tools and solutions, can open your eyes more on the opportunity that you can benifit from."
+           description="With Neferdata you can experience the transformative power of AI & get inspired to identify other ways it can help your company."
            buttonText= "Get Started with Neferdata"
            buttonTextSecondary="Have a question? Contact us"
            bg= "text-blue-500"
