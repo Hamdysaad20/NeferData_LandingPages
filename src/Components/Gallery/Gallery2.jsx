@@ -57,7 +57,7 @@ export default function Gallery2() {
         }}
         className='text-4xl md:text-7xl px-6 text-black max-w-[1000px] pb-12 text-center font-bold relative leading-120%'>
         <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
-          Finding the right tool for your business is critical
+        The right tools can unlock productivity & speed
         </div>
         <p className='md:text-2xl text-base   font-normal pt-4  text-ctenter '>
         With Neferdata you can get full value from SaaS & position your biz for success
