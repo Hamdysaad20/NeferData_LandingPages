@@ -20,18 +20,12 @@
         },
         {
             "index": 4,
-            "title": "Manage Relationships",
-            "description": "Build and maintain strong relationships with AI-powered tools and features.",
-            "LOTTIEanimationData": "../Lottie/Relationships.json"
-        },
-        {
-            "index": 5,
             "title": "AI-Powered Email Assistant Efficiency",
             "description": "A smart AI-powered email assistant that helps you manage your inbox efficiently.",
             "LOTTIEanimationData": "../Lottie/Email.json"
         },
         {
-            "index": 6,
+            "index": 5,
             "title": "Prepare for the Future",
             "description": "See How other companies are using AI to prepare for the future.",
             "LOTTIEanimationData": "../Lottie/Email.json"

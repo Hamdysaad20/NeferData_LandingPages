@@ -52,15 +52,6 @@ const products = [
   },
   {
     index: 4,
-    title: "Manage Relationships",
-    description:
-      "Quantify your actual needs & utilization of tools you pay for.",
-    icon: <BsHandIndexThumbFill />,
-    link: import.meta.env.VITE_EMAIL_URL,
-
-  },
-  {
-    index: 5,
     title: "Email Assistant",
     description:
       "Never miss out on important information & avoid distractions.",
@@ -69,7 +60,7 @@ const products = [
 
   },
   {
-    index: 6,
+    index: 5,
     title: "Prepare for the Future",
     description:
       "Get insights on what others are using to stay ahead",
