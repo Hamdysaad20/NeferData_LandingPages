@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 const componentData = {
   title: "Maximize Your SaaS Investments",
   description:
-    "Our discovery and reporting tools help you get the most value out of your investments.",
+    "Our AI-powered discovery and reporting tools help you get the most value from your subscriptions.",
   signInButtons: [
     {
       theme: "dark",
