@@ -87,23 +87,16 @@ const PricingCard = ({
             </span>
           ))}
         </ul>
-        <div className='w-full grid place-items-center p-2'>
-          <Button
-            onClick={() =>
-              (window.location.href =
-                buttonText === "Create Account"
-                  ? "https://neferdata.com/login"
-                  : "https://neferdata.com/waitlist")
-            }
-            classes={`w-full max-w-[280px] py-4 ${
-              buttonText === "See Documentation" ||
-              buttonText === "Create Account"
-                ? "!bg-transparent border-2 !text-black border-[#121212]/60 hover:!bg-sky-200 duration-500"
-                : "hover:bg-black/70 duration-700 !bg-black"
-            }`}
-            title={buttonText}
-          />
-        </div>
+
+
+<div className='w-full grid place-items-center p-2'>
+  <Button
+    onClick={() => window.location.href = buttonText === "Create Account" ? import.meta.env.VITE_LOGIN_URL : import.meta.env.VITE_WAITLIST_URL}
+    classes={`w-full max-w-[280px] py-4 ${buttonText === 'See Documentation' || buttonText=== "Create Account" ? '!bg-transparent border-2 !text-black border-[#121212]/60 hover:!bg-sky-200 duration-500' : 'hover:bg-black/70 duration-700 !bg-black'}`}
+    title={buttonText} 
+  />
+</div>
+
       </div>
     </div>
   );

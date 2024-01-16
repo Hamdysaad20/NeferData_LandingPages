@@ -36,7 +36,7 @@ function FAQs({ questions, ...props }) {
            
             {" "}  <a
               className='text-[#3092DB] hover:text-[#3092DB] transition underline underline-offset-2 duration-500 ease-in-out'
-              href='mailto:info@neferdata.com '>
+              href='mailto:social@neferdata.com '>
               Contact us
             </a>
             .

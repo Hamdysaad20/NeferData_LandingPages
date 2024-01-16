@@ -116,10 +116,11 @@ function Footer() {
     {
       title: "Service",
       links: [
-        { url: "https://neferdata.com/evaluate", title: "Product Evaluation" ,status:true },
-        { url: "https://neferdata.com/email", title: "Email Assistant"  ,status:true },
-        { url: "https://neferdata.com/waitlist", title: "SaaS Analytics"  ,status:true },
-        { url: "https://neferdata.com/waitlist", title: "SaaS Recommendations"  ,status:true },
+        { url: import.meta.env.VITE_EVALUATE_URL, title: "Product Evaluation" ,status:true },
+        { url: import.meta.env.VITE_EMAIL_URL, title: "Email Assistant"  ,status:true },
+        { url: import.meta.env.VITE_ANALYTICS_URL, title: "SaaS Analytics"  ,status:true },
+        { url: import.meta.env.VITE_EVALUATE_URL, title: "SaaS Recommendations"  ,status:true },
+
 
       ],
     },
