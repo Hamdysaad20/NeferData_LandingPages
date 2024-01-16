@@ -117,7 +117,7 @@ function Footer() {
       title: "Service",
       links: [
         { url: "https://neferdata.com/evaluate", title: "Product Evaluation" ,status:true },
-        { url: "https://neferdata.com/waitlist", title: "Email Assistant"  ,status:true },
+        { url: "https://neferdata.com/email", title: "Email Assistant"  ,status:true },
         { url: "https://neferdata.com/waitlist", title: "SaaS Analytics"  ,status:true },
         { url: "https://neferdata.com/waitlist", title: "SaaS Recommendations"  ,status:true },
 
@@ -126,7 +126,7 @@ function Footer() {
     {
       title: "Company",
       links: [
-        { url: "/mission", title: "mission" ,status:true },
+        { url: "/mission", title: "Mission" ,status:true },
         { url: "/team", title: "Team" ,status:false},
         { url: "/careers", title: "Careers",status:false },
       ],
