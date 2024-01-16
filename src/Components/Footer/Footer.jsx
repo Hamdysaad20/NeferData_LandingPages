@@ -121,12 +121,13 @@ function Footer() {
         { url: import.meta.env.VITE_ANALYTICS_URL, title: "SaaS Analytics"  ,status:true },
         { url: import.meta.env.VITE_EVALUATE_URL, title: "SaaS Recommendations"  ,status:true },
 
+
       ],
     },
     {
       title: "Company",
       links: [
-        { url: "/mission", title: "mission" ,status:true },
+        { url: "/mission", title: "Mission" ,status:true },
         { url: "/team", title: "Team" ,status:false},
         { url: "/careers", title: "Careers",status:false },
       ],

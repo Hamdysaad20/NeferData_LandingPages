@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Lottie from "lottie-react";
 import groovyWalkAnimation from "../../Lottie/qkfCNGxSmo.json";
-import Keith_Hadi_Avatar from '../../assets/Images/Keith_Hadi_Avatar.png';
-import Mark_Walz_Avatar from '../../assets/Images/Mark_Walz_Avatar.png';
-import maymobility from '/public/may-removebg-preview.png';
-import spoton from '/public/spoton.png';
+import Keith_Hadi_Avatar from "../../assets/Images/Keith_Hadi_Avatar.png";
+import Mark_Walz_Avatar from "../../assets/Images/Mark_Walz_Avatar.png";
+import maymobility from "/public/may-removebg-preview.png";
+import spoton from "/public/spoton.png";
 const delay = 7000;
 
 function Slideshow() {
@@ -13,22 +13,24 @@ function Slideshow() {
   const testimonialData = [
     {
       imgSrc: Mark_Walz_Avatar,
-      name: 'Mark Walz',
-      jobTitle: 'Chief Technology Officer',
-      companyName: 'SpotOn',
-      message: "Neferdata has such a huge impact on my inbox. I don't have to filter through so much noise, and instead get personalized insights about potentially interesting companies. I wish I had access to the tool earlier.",
-      classes: '',
-      companyLogo: spoton
+      name: "Mark Walz",
+      jobTitle: "Chief Technology Officer",
+      companyName: "SpotOn",
+      message:
+        "Neferdata has such a huge impact on my inbox. I don't have to filter through so much noise, and instead get personalized insights about potentially interesting companies. I wish I had access to the tool earlier.",
+      classes: "",
+      companyLogo: spoton,
     },
     {
       imgSrc: Keith_Hadi_Avatar,
-      name: 'Keith Hadi',
-      jobTitle: 'VP of Vehicle Engineering',
-      companyName: 'May Mobility',
-      message: "Neferdata has completely transformed my email experience. It efficiently filters out unwanted emails, ensuring my inbox remains clutter-free. I no longer waste time sifting through irrelevant emails, and I can focus on what's truly important.",
-    classes: '',
-    companyLogo: maymobility
-    }
+      name: "Keith Hadi",
+      jobTitle: "VP of Vehicle Engineering",
+      companyName: "May Mobility",
+      message:
+        "Neferdata has completely transformed my email experience. It efficiently filters out unwanted emails, ensuring my inbox remains clutter-free. I no longer waste time sifting through irrelevant emails, and I can focus on what's truly important.",
+      classes: "",
+      companyLogo: maymobility,
+    },
   ];
 
   useEffect(() => {
@@ -37,10 +39,7 @@ function Slideshow() {
     }, delay);
 
     return () => clearInterval(interval);
-  }, [
-    testimonialData.length,
-
-  ]);
+  }, [testimonialData.length]);
 
   const transition = {
     duration: 0.1,
@@ -49,21 +48,11 @@ function Slideshow() {
     stiffness: 120,
   };
 
-
   const currentTestimonial = testimonialData[index];
 
   return (
     <div className=' w-full'>
-      {/* <div className='slideshowDots bg-black'>
-        {testimonialData.map((_, idx) => (
-          <div
-            key={idx}
-            className={`slideshowDot${index === idx ? " active" : ""}`}
-            onClick={() => {
-              setIndex(idx);
-            }}></div>
-        ))}
-      </div> */}
+ 
       <div className='slideshowSlider'>
         <div className='slide'>
           <AnimatePresence mode='wait'>
@@ -74,7 +63,8 @@ function Slideshow() {
               exit={{ opacity: 0 }}
               transition={transition}
               className={`w-full  text-white pb-[52px] mt-[30px]  flex justify-center items-center ${currentTestimonial.classes}`}>
-              <div className={`w-[80%] max-w-[1200px] flex gap-5 justify-center items-center max-md:flex-col`}>
+              <div
+                className={`w-[80%] max-w-[1200px] flex gap-5 justify-center items-center max-md:flex-col`}>
                 <div className='relative hover:scale-95 w-[200px] h-[200px] md:h-[300px] md:w-[350px] duration-500 cursor-pointer select-none'>
                   <img
                     src={currentTestimonial.imgSrc}
@@ -90,20 +80,18 @@ function Slideshow() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={transition}
-                  >
+                    transition={transition}>
                     <p className='md:text-2xl  text-lg font-semibold max-w-[900px]'>
                       {currentTestimonial.message}
                     </p>
                   </motion.blockquote>
-                  <div className='flex flex-col'>
+                  <div className='flex gap-0 flex-col'>
                     <motion.h3
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={transition}
-                      className='text-2xl font-semibold text-white'
-                    >
+                      className='font-semibold text-white'>
                       {currentTestimonial.name}
                     </motion.h3>
                     <motion.p
@@ -111,8 +99,7 @@ function Slideshow() {
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={transition}
-                      className='text-lg font-normal  opacity-70'
-                    >
+                      className='text-lg font-normal  text-gray-300 '>
                       {currentTestimonial.jobTitle}
                     </motion.p>
                     <motion.p
@@ -120,16 +107,18 @@ function Slideshow() {
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={transition}
-                      className='text-lg flex gap-2 font-light opacity-70'
-                    >
-<div className="flex gap-2 hover:bg-gray-900/20 p-2 rounded-full duration-300 cursor-pointer ">
-<span>
-                      <img src={currentTestimonial.companyLogo} alt={currentTestimonial.companyName} className='w-[30px] h-[30px] object-contain'/>
-                     </span>
-                    
+                      className='text-lg flex gap-2 font-light opacity-70'>
+                      <div className='flex gap-2 text-2xl  place-items-center font-bold hover:bg-gray-900/20 p-2 -ml-2 rounded-full duration-300 cursor-pointer '>
+                        <span>
+                          <img
+                            src={currentTestimonial.companyLogo}
+                            alt={currentTestimonial.companyName}
+                            className='w-[40px] rounded-full border-black h-[40px] object-contain'
+                          />
+                        </span>
 
-                    <span>  {currentTestimonial.companyName}</span>
-</div>
+                        <span> {currentTestimonial.companyName}</span>
+                      </div>
                     </motion.p>
                   </div>
                 </div>
