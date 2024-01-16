@@ -11,7 +11,7 @@ export default function Gallery2() {
   const NumbersAnalysis = [
     {
       persentage: "55%",
-      text: "of company apps are NOT used on a regular basis",
+      text: "of company applications are not used on a regular basis",
       color: "text-white",
       icon:<RiAppsFill/>
     },
