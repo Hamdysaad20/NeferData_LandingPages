@@ -23,13 +23,13 @@ const componentData = {
       theme: "dark",
       Icon: MicrosoftIcon,
       title: "Sign in with Microsoft",
-      link: import.meta.env.MS_LOGIN_URL,
+      link: import.meta.env.VITE_MS_LOGIN_URL,
     },
     {
-      theme: "primary",
+      theme: "primary", 
       Icon: GoogleIcon,
-      title: "Sign in with Google",
-      link: import.meta.env.GOOGLE_LOGIN_URL,
+      title: `Sign in with Google`,
+      link: import.meta.env.VITE_GOOGLE_LOGIN_URL,
     },
   ],
   termsOfService: "Terms of Service",
@@ -46,6 +46,9 @@ const LOTTIEanimationData = [
 ];
 
 function Hero() {
+
+  // print all env vars
+  console.log("console log", import.meta.env);
   return (
     <div className=' relative  '>
       <header className='pt-20   flex flex-col items-center '>

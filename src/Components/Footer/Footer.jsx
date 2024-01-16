@@ -116,10 +116,10 @@ function Footer() {
     {
       title: "Service",
       links: [
-        { url: import.meta.env.EVALUATE, title: "Product Evaluation" ,status:true },
-        { url: import.meta.env.EMAIL_URL, title: "Email Assistant"  ,status:true },
-        { url: import.meta.env.ANALYTICS_URL, title: "SaaS Analytics"  ,status:true },
-        { url: import.meta.env.EVALUATE, title: "SaaS Recommendations"  ,status:true },
+        { url: import.meta.env.VITE_EVALUATE_URL, title: "Product Evaluation" ,status:true },
+        { url: import.meta.env.VITE_EMAIL_URL, title: "Email Assistant"  ,status:true },
+        { url: import.meta.env.VITE_ANALYTICS_URL, title: "SaaS Analytics"  ,status:true },
+        { url: import.meta.env.VITE_EVALUATE_URL, title: "SaaS Recommendations"  ,status:true },
 
       ],
     },
