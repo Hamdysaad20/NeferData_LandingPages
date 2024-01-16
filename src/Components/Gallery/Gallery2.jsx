@@ -60,8 +60,7 @@ export default function Gallery2() {
         The right tools can unlock productivity & speed
         </div>
         <p className='md:text-2xl text-base   font-normal pt-4  text-ctenter '>
-        With Neferdata you can get full value from SaaS & position your biz for success
-
+        With Neferdata you can avoid common mistakes & take advantage of innovation
         </p>
       </div>
 
