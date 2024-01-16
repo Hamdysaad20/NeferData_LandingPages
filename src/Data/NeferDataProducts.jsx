@@ -45,7 +45,7 @@ const products = [
     index: 3,
     title: "Track Usage Trends",
     description:
-      "AI Usage Analytics: A smart AI-powered email assistant that helps you manage your inbox efficiently.",
+      "Quantify utilization of the tools you pay for & understand your actual licensing needs.",
     icon: <SiGoogleanalytics />,
     link: import.meta.env.VITE_ANALYTICS_URL,
 
