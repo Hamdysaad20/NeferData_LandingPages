@@ -57,7 +57,7 @@ const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
                 {activeProductIndex === index && (
                   <span className=' relative '>
                     <Link
-                      to={product.link? product.link : "https://neferdata.com/waitlist"}
+                      to={product.link? product.link : import.meta.env.WAITLIST_URL}
                       className='text-white   hover:text-black/40 duration-500 select-none underline  px-2 rounded-full text-sm font-semibold  cursor-pointer'
                       style={{
                         opacity: activeProductIndex === index ? 1 : 0,

@@ -31,7 +31,7 @@ const products = [
     ),
     description: "Make data-driven product decisions for your specific needs.",
     icon: <RiCompassDiscoverFill />,
-    link: "https://neferdata.com/evaluate",
+    link: import.meta.env.EVALUATION_URL,
 
   },
   {
@@ -39,7 +39,7 @@ const products = [
     title: "Manage Contracts",
     description: "Keep track of all contracts, licenses & manage renewals.",
     icon: <FaFileContract />,
-    link: "https://neferdata.com/login",
+    link: import.meta.env.CONTRACTS_URL,
   },
   {
     index: 3,
@@ -47,7 +47,7 @@ const products = [
     description:
       "AI Usage Analytics: A smart AI-powered email assistant that helps you manage your inbox efficiently.",
     icon: <SiGoogleanalytics />,
-    link: "https://neferdata.com/login",
+    link: import.meta.env.ANALYTICS_URL,
 
   },
   {
@@ -56,7 +56,7 @@ const products = [
     description:
       "Quantify your actual needs & utilization of tools you pay for.",
     icon: <BsHandIndexThumbFill />,
-    link: "https://neferdata.com/login",
+    link: import.meta.env.EMAIL_URL,
 
   },
   {
@@ -65,7 +65,7 @@ const products = [
     description:
       "Never miss out on important information & avoid distractions.",
     icon: <MdMarkEmailUnread />,
-    link: "https://neferdata.com/login",
+    link: import.meta.env.EMAIL_URL,
 
   },
   {
@@ -74,7 +74,7 @@ const products = [
     description:
       "Get insights on what others are using to stay ahead",
     icon: <SiNextra />,
-    link: "https://neferdata.com/login",
+    link: import.meta.env.EVALUATION_URL,
   }
 ];
 
