@@ -16,27 +16,24 @@ import ServersConnected2 from "../../Lottie/CloudYellow.json";
 function SelfHosted() {
   const products = [
     {
-      title: " Self-Hosted Option for Enhanced Privacy",
+      title: "Contribute to SaaS Market Transparency",
       description: (
         <span>
-          Explore a heightened level of security and privacy with our
-          self-hosted solution. Gain complete control over your data and
-          customize your environment for a personalized and secure user
-          experience.
+          Neferdata provides insights about SaaS marketplace. The insights are anonymized & can’t be traced back to individual businesses. Your data is never used to target ads or sold to vendors.
         </span>
       ),
       icon: <GrHostMaintenance />,
     },
     {
-      title: "Total Control Over Your Data",
+      title: "Total Control Of Your Data",
       description:
-        "Neferdata's dedication to empowering users with complete authority and oversight of their data within the platform, ensuring transparency, privacy, and personalized control over their information.",
+        "Neferdata's dedicated to empower users with complete authority and oversight of their data within the platform, ensuring transparency, privacy, and personalized control over their information.",
       icon: <FaDatabase />,
     },
     {
-      title: "Customization for a Tailored Environment",
+      title: "Enhanced Privacy with Dedicated Hosting",
       description:
-        "Neferdata's focus on providing personalized and adaptable solutions that cater to each user's specific needs and preferences, including AI-generated recommendations and deployment options for a customized experience.",
+        "Companies with increased security requirements can take advantage of privacy of a dedicated Neferdata instance in the 'Managed Service' or 'Self-Hosted' options.",
       icon: <BiSolidCustomize />,
     },
   ];
@@ -71,15 +68,13 @@ function SelfHosted() {
             }}
             className='text-4xl md:text-7xl text-black max-w-[1000px] pb-12 text-center font-bold relative leading-120%'>
             <div className='flex flex-col capitalize justify-center md:flex-row place-items-center'>
-              More Privacy? Choose self-Hosted
+            Commitment that goes beyond Certification
             </div>
             <p className='md:text-2xl text-base  font-normal pt-4 text-center '>
-              Experience even greater levels of security and privacy with our
-              self-hosted option. With full control over your data and the
-              ability to customize your environment.
+            Neferdata comes pre-packaged with world-class security features & commitment to privacy. For companies seeking more control we offer additional options.
             </p>
             <CTAsignIn
-              buttonText='Start With Self-Hosted'
+              buttonText='Get a Secure Instance'
               buttonTextSecondary='See Other Options'
               bg='bg-black'
               textColor='text-black'
