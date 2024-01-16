@@ -18,7 +18,7 @@ export default function Gallery2() {
     {
       persentage: "70%",
 
-      text: "of digital projects fail to deliver the expected biz value",
+      text: "of digital projects fail to deliver the expected business value",
       color: "text-white",
       icon:<BsBuildingFillDown/>
 
