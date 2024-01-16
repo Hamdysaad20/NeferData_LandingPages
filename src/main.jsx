@@ -25,13 +25,12 @@ export function Application() {
     <Router>
       <ScrollToTop />
         <Routes>
-        
-          <Route path="/" element={<App />}>
-            <Route index element={<LandingPage />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/mission" element={<Mission/>} />
-            <Route path="*" element={<NotFound />} /> 
+          <Route path="/website" element={<App />}>
+            <Route path="index.html" element={<LandingPage />} />
+            <Route path="pricing" element={<Pricing />} />
+            <Route path="mission" element={<Mission />} />
           </Route>
+          <Route path="/" element={<NotFound />} /> 
         </Routes>
     </Router> 
   );

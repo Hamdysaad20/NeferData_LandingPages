@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 // Define navigation links and their configurations as constants out of Navbar component for better performance
 const LINKS = [
-  { main: { link: "/", title: "Home" }, hasDropDown: false },
-  { main: { link: "/pricing", title: "Pricing" }, hasDropDown: false },
-  { main: { link: "/mission", title: "Mission" }, hasDropDown: false },
+  { main: { link: "/website/index.html", title: "Home" }, hasDropDown: false },
+  { main: { link: "/website/pricing", title: "Pricing" }, hasDropDown: false },
+  { main: { link: "/website/mission", title: "Mission" }, hasDropDown: false },
   
 ];
 

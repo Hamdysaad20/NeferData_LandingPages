@@ -23,13 +23,17 @@ const componentData = {
       theme: "dark",
       Icon: MicrosoftIcon,
       title: "Sign in with Microsoft",
-      link: import.meta.env.VITE_MS_LOGIN_URL,
+      link: () => {
+        window.location.href = import.meta.env.VITE_MS_LOGIN_URL;
+      },
     },
     {
       theme: "primary", 
       Icon: GoogleIcon,
       title: `Sign in with Google`,
-      link: import.meta.env.VITE_GOOGLE_LOGIN_URL,
+      link: () => {
+        window.location.href = import.meta.env.VITE_GOOGLE_LOGIN_URL;
+      },
     },
   ],
   termsOfService: "Terms of Service",
