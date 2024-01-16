@@ -85,13 +85,13 @@ function Slideshow() {
                       {currentTestimonial.message}
                     </p>
                   </motion.blockquote>
-                  <div className='flex flex-col'>
+                  <div className='flex gap-0 flex-col'>
                     <motion.h3
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={transition}
-                      className='text-2xl font-semibold text-white'>
+                      className='font-semibold text-white'>
                       {currentTestimonial.name}
                     </motion.h3>
                     <motion.p
@@ -99,7 +99,7 @@ function Slideshow() {
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={transition}
-                      className='text-lg font-normal  opacity-70'>
+                      className='text-lg font-normal  text-gray-300 '>
                       {currentTestimonial.jobTitle}
                     </motion.p>
                     <motion.p
@@ -108,12 +108,12 @@ function Slideshow() {
                       exit={{ opacity: 0 }}
                       transition={transition}
                       className='text-lg flex gap-2 font-light opacity-70'>
-                      <div className='flex gap-2 bg-gray-900/20 p-2 -ml-2 rounded-full duration-300 cursor-pointer '>
+                      <div className='flex gap-2 text-2xl  place-items-center font-bold hover:bg-gray-900/20 p-2 -ml-2 rounded-full duration-300 cursor-pointer '>
                         <span>
                           <img
                             src={currentTestimonial.companyLogo}
                             alt={currentTestimonial.companyName}
-                            className='w-[30px] rounded-full border-black h-[30px] object-contain'
+                            className='w-[40px] rounded-full border-black h-[40px] object-contain'
                           />
                         </span>
 
