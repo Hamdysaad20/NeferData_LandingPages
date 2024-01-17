@@ -15,9 +15,9 @@ function Slider() {
       imgSrc: Dario_Lencina,
       name: "Dario Lencina",
       jobTitle: "CTO and Co-Founder @Neferdata",
-      companyName: "NeferData",
+      companyName: "Neferdata",
       message:
-        "At NeferData, we're revolutionizing SaaS by democratizing tech. We match companies based on size, stage, and category, bringing  efficiency to the industry.",
+        "At Neferdata, we're revolutionizing SaaS by democratizing tech. We match companies based on size, stage, and category, bringing  efficiency to the industry.",
       classes: "Democratizing SaaS for Efficiency.",
       companyLogo: NeferData,
       link: "https://www.linkedin.com/in/darioalessandro",
