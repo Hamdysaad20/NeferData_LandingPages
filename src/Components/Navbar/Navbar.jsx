@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 const LINKS = [
-  { main: { link: "/", title: "Home" }, hasDropDown: false },
-  { main: { link: "/pricing", title: "Pricing" }, hasDropDown: false },
-  { main: { link: "/mission", title: "Mission" }, hasDropDown: false },
+  { main: { link: "/website/index.html", title: "Home" }, hasDropDown: false },
+  { main: { link: "/website/pricing", title: "Pricing" }, hasDropDown: false },
+  { main: { link: "/website/mission", title: "Mission" }, hasDropDown: false },
   
 ];
 
