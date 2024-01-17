@@ -7,5 +7,6 @@ export default defineConfig({
   build: {
     // Specify the directory to place assets
     assetsDir: 'website/assets',
+    assetsInclude: ['**/*.lottie'],
   },
 })
