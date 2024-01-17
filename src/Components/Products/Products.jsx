@@ -2,7 +2,7 @@ import { useEffect, useState, Suspense } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import ProductsCard from "./ProductsCard";
-
+// million-ignore
 const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
   
   const [activeProductIndex, setActiveProductIndex] = useState(0);

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { MdOutlineDone } from "react-icons/md";
 import Button from "../Button/PrimaryButton";
 import Sparkels from "../Spark/spark";
-
+// million-ignore
 const PricingCard = ({
   className,
   textColor,

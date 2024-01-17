@@ -1,15 +1,18 @@
+
 import logoImg from "../../assets/Images/logo.png";
 import PrimaryButton from "../Button/PrimaryButton";
 import NavbarLink from "./NavbarLink";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
+
+
 const LINKS = [
   { main: { link: "/website/index.html", title: "Home" }, hasDropDown: false },
   { main: { link: "/website/pricing", title: "Pricing" }, hasDropDown: false },
   { main: { link: "/website/mission", title: "Mission" }, hasDropDown: false },
 ];
-
+// million-ignore
 const Navbar = () => {
   const [isSideBarActive, setSideBarActivate] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
