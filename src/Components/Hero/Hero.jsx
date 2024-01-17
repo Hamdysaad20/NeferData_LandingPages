@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 const componentData = {
   title: "Maximize Your SaaS Investments",
   description:
-    "Our discovery and reporting tools help you get the most value out of your investments.",
+    "Our AI-powered discovery and reporting tools help you get the most value from your subscriptions.",
   signInButtons: [
     {
       theme: "dark",
@@ -91,7 +91,7 @@ function Hero() {
           </div>
           <p className='text-gray-50 text-[18px] max-lg:text-[10px] text-center'>
               By clicking Sign Up you&apos;re confirming that you agree with our{" "}
-              <Link  to='/terms-of-service' className='underline select-none cursor-pointer'>
+              <Link  to='/privacy-policy' className='underline select-none cursor-pointer'>
                 {componentData.termsOfService}
               </Link>{" "}
               and{" "}

@@ -41,7 +41,7 @@ const Scalability = ({
               buttonText={buttonText}
               buttonTextSecondary={buttonTextSecondary}
               bg={bg}
-              mainLink='/pricing'
+              mainLink={import.meta.env.VITE_WAITLIST_URL}
               secondaryLink='/pricing'
             />
           </div>

@@ -1,11 +1,9 @@
-import React from "react";
 import logoImg from "../../assets/Images/logo.png";
 import PrimaryButton from "../Button/PrimaryButton";
 import NavbarLink from "./NavbarLink";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
-// Define navigation links and their configurations as constants out of Navbar component for better performance
 const LINKS = [
   { main: { link: "/website/index.html", title: "Home" }, hasDropDown: false },
   { main: { link: "/website/pricing", title: "Pricing" }, hasDropDown: false },
@@ -13,7 +11,6 @@ const LINKS = [
   
 ];
 
-// Functional component for Navbar
 const Navbar = () => {
   const [isSideBarActive, setSideBarActivate] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +24,7 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY < prevScrollY) {
-        setIsScrolled(false); // Scroll up detected
+        setIsScrolled(false); 
       } else {
         setIsScrolled(true);
       }
@@ -110,7 +107,7 @@ const Navbar = () => {
   </div>
 
   {/* Call To Action (CTA) Button */}
-  <PrimaryButton onClick={null} title='Sign Up' />
+  <PrimaryButton onClick={import.meta.env.VITE_LOGIN_URL} title='Sign Up' />
 </div>
 
         <button
@@ -157,7 +154,7 @@ const Navbar = () => {
           </div>
 
           {/* Call To Action (CTA) Button */}
-          <PrimaryButton onClick={null} title='Sign Up' />
+          <PrimaryButton onClick={import.meta.env.VITE_LOGIN_URL} title='Sign Up' />
         </div>
       </div>
     </nav>

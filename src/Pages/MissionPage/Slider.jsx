@@ -3,6 +3,7 @@ import Kamil_Litman from "../../assets/Images/Founders/Kamil.jpeg";
 import NeferData from "../../assets/Images/logo.png";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const delay = 7000;
 
@@ -19,6 +20,7 @@ function Slider() {
         "At NeferData, we're revolutionizing SaaS by democratizing tech. We match companies based on size, stage, and category, bringing  efficiency to the industry.",
       classes: "Democratizing SaaS for Efficiency.",
       companyLogo: NeferData,
+      link: "https://www.linkedin.com/in/darioalessandro",
     },
     {
       imgSrc: Kamil_Litman,
@@ -29,6 +31,8 @@ function Slider() {
         "Data and transparency transform markets. Our hands-on experience with AI, big data, and knowledge graphs gives us a unique edge in bringing better SaaS data to the industry.",
       classes: "A Unique Edge in SaaS Evolution",
       companyLogo: NeferData,
+      link: "https://www.linkedin.com/in/kamil-litman/",
+
     },
   ];
 
@@ -98,7 +102,7 @@ function Slider() {
          
         </div>
          
-          <div
+          <Link to={FoundersNotes[1].link} target='_blank' rel='noopener noreferrer'
             className={`w-12 ring-black cursor-pointer select-none relative h-12 rounded-full overflow-hidden bg-white ${
               currentFoundersNotes === FoundersNotes[1]
                 ? "opacity-100 ring-2  scale-110 animate-pulse duration-1000"
@@ -109,8 +113,8 @@ function Slider() {
               alt=''
               className='w-full     h-full object-cover object-center'
             />
-          </div>
-          <div
+          </Link>
+          <Link to={FoundersNotes[0].link} target='_blank' rel='noopener noreferrer'
             className={`relative  ring-black cursor-pointer select-none w-12 h-12 rounded-full overflow-hidden bg-white ${
               currentFoundersNotes === FoundersNotes[0]
                 ? "opacity-100 ring-2  scale-110 animate-pulse duration-1000"
@@ -121,7 +125,7 @@ function Slider() {
               alt=''
               className='w-full h-full object-cover object-center'
             />
-          </div>
+          </Link>
           <div className="ml-2 text-sm place-content-center place-items-start grid text-left">
             <p className="text-white font-bold">{currentFoundersNotes.name}</p>
             <p className="text-gray-300">{currentFoundersNotes.jobTitle}</p>

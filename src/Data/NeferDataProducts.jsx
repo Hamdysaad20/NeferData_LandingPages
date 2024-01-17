@@ -29,9 +29,10 @@ const products = [
         
       </div>
     ),
-    description: "Make data-driven product decisions for your specific needs.",
+    description: "Make data-driven product decisions tailored to your specific needs.",
     icon: <RiCompassDiscoverFill />,
     link: import.meta.env.VITE_EVALUATION_URL,
+    linkName: "Try for free",
 
   },
   {
@@ -40,41 +41,39 @@ const products = [
     description: "Keep track of all contracts, licenses & manage renewals.",
     icon: <FaFileContract />,
     link: import.meta.env.VITE_CONTRACTS_URL,
+    linkName: "Sign up now",
   },
   {
     index: 3,
     title: "Track Usage Trends",
     description:
-      "AI Usage Analytics: A smart AI-powered email assistant that helps you manage your inbox efficiently.",
+      "Quantify utilization of the tools you pay for & understand your actual licensing needs.",
     icon: <SiGoogleanalytics />,
     link: import.meta.env.VITE_ANALYTICS_URL,
+    linkName: "Sign up now",
+
 
   },
   {
     index: 4,
-    title: "Manage Relationships",
-    description:
-      "Quantify your actual needs & utilization of tools you pay for.",
-    icon: <BsHandIndexThumbFill />,
-    link: import.meta.env.VITE_EMAIL_URL,
-
-  },
-  {
-    index: 5,
     title: "Email Assistant",
     description:
       "Never miss out on important information & avoid distractions.",
     icon: <MdMarkEmailUnread />,
     link: import.meta.env.VITE_EMAIL_URL,
+    linkName: "Sign up now",
+
 
   },
   {
-    index: 6,
+    index: 5,
     title: "Prepare for the Future",
     description:
       "Get insights on what others are using to stay ahead",
     icon: <SiNextra />,
     link: import.meta.env.VITE_EVALUATION_URL,
+    linkName: "Sign up now",
+
   }
 ];
 
