@@ -29,8 +29,8 @@ const App = () => {
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-        <div className='relative rounded-3xl  overflow-hidden '>
-          <div className='absolute h-full w-full bg-[#3092DB] z-0'>
+        <div className='relative rounded-b-3xl overflow-hidden '>
+          <div className='absolute h-full  w-full bg-[#3092DB] z-0'>
             <Suspense fallback={<div>Loading...</div>}>
               <SVGbg />
             </Suspense>
@@ -40,7 +40,7 @@ const App = () => {
           </motion.div>
         </div>
         <Suspense fallback={<div>Loading...</div>}>
-          <div className='py-12'>
+          <div className='py-12 bg-white rounded-b-3xl'>
             <Gallery2 />
           </div>
         </Suspense>
@@ -57,35 +57,36 @@ const App = () => {
           </div>
         </Suspense>
         <Suspense fallback={<div>Loading...</div>}>
-          <div className='py-12'>
+          <div className='py-12 bg-white'>
             <PrivacyCertifications />
           </div>
         </Suspense>
 
         <Suspense fallback={<div>Loading...</div>}>
-          <div className='py-12'>
+          <div className='py-12 bg-white'>
             <SelfHosted />
           </div>
         </Suspense>
 
         <Suspense fallback={<div>Loading...</div>}>
-          <div className='py-12 mt-12 rounded-t-3xl bg-[#3092DB]'>
+          <div className='py-12 mt-12 rounded-3xl bg-[#3092DB]'>
             <Testimonials />
           </div>
         </Suspense>
 
         <Suspense fallback={<div>Loading...</div>}>
-          <div className='py-12'>
+          <div className='py-12 bg-white'>
             <FAQs
               faqs='FAQs'
               faqsP=' Here are some of the most common questions we get asked. If you have
       other questions, please'
               questions={questions}
+              
             />
           </div>
         </Suspense>
 
-        <div className='pb-12 '>
+        <div className='pb-12 bg-white '>
           {" "}
           <Suspense fallback={<div>Loading...</div>}>
             <div className='py-12'>
