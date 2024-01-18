@@ -9,8 +9,9 @@ import GoogleIcon from "./GoogleSVG";
 // import SaaSLottie from "../../Lottie/SaaS.json";
 // import Contract from "../../Lottie/Contract.json";
 // import AIBot from "../../Lottie/AIBot.json";
-import ProductsCardData from "../../Data/ProductsCardData.json";
 // import future from "../../Lottie/WKQf1nhdyB.json";
+
+import ProductsCardData from "../../Data/ProductsCardData.json";
 import EmailLottie from "../../Lottie/dotlottie/Email.lottie";
 import AILottie from "../../Lottie/dotlottie/ai.lottie";
 import SaaSLottie from "../../Lottie/dotlottie/SaaS.lottie";
