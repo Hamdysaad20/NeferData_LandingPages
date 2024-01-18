@@ -127,7 +127,7 @@ function Footer() {
     {
       title: "Company",
       links: [
-        { url: "/mission", title: "Mission" ,status:true },
+        { url: "/website/mission", title: "Mission" ,status:true },
         { url: "/team", title: "Team" ,status:false},
         { url: "/careers", title: "Careers",status:false },
       ],
