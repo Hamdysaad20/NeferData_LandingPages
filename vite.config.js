@@ -7,7 +7,6 @@ export default defineConfig({
 
   plugins: [million.vite({ auto: true }), react()],
   build: {
-    // Specify the directory to place assets
     assetsDir: 'website/assets',
     assetsInclude: ['**/*.lottie'],
   },
