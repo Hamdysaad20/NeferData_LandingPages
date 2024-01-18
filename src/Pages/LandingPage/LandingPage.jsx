@@ -29,8 +29,8 @@ const App = () => {
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-        <div className='relative  overflow-hidden '>
-          <div className='absolute h-full w-full bg-[#3092DB] z-0'>
+        <div className='relative rounded-b-3xl overflow-hidden '>
+          <div className='absolute h-full  w-full bg-[#3092DB] z-0'>
             <Suspense fallback={<div>Loading...</div>}>
               <SVGbg />
             </Suspense>
@@ -69,7 +69,7 @@ const App = () => {
         </Suspense>
 
         <Suspense fallback={<div>Loading...</div>}>
-          <div className='py-12 mt-12 rounded-t-3xl bg-[#3092DB]'>
+          <div className='py-12 mt-12 rounded-3xl bg-[#3092DB]'>
             <Testimonials />
           </div>
         </Suspense>
