@@ -8,6 +8,9 @@ export default defineConfig({
   plugins: [million.vite({ auto: true }), react()],
   build: {
     assetsDir: 'website/assets',
-    assetsInclude: ['**/*.lottie'],
   },
+  assetsInclude: ['**/*.lottie'],
+  assetsInlineLimit: 0,
+ 
+
 })
