@@ -1,19 +1,18 @@
-import React from "react";
+
 import logoImg from "../../assets/Images/logo.png";
 import PrimaryButton from "../Button/PrimaryButton";
 import NavbarLink from "./NavbarLink";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
-// Define navigation links and their configurations as constants out of Navbar component for better performance
-const LINKS = [
-  { main: { link: "/", title: "Home" }, hasDropDown: false },
-  { main: { link: "/pricing", title: "Pricing" }, hasDropDown: false },
-  { main: { link: "/mission", title: "Mission" }, hasDropDown: false },
-  
-];
 
-// Functional component for Navbar
+
+const LINKS = [
+  { main: { link: "/website/index.html", title: "Home" }, hasDropDown: false },
+  { main: { link: "/website/pricing", title: "Pricing" }, hasDropDown: false },
+  { main: { link: "/website/mission", title: "Mission" }, hasDropDown: false },
+];
+// million-ignore
 const Navbar = () => {
   const [isSideBarActive, setSideBarActivate] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +26,7 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY < prevScrollY) {
-        setIsScrolled(false); // Scroll up detected
+        setIsScrolled(false);
       } else {
         setIsScrolled(true);
       }
@@ -65,8 +64,7 @@ const Navbar = () => {
             fontSize: isScrolled ? "4rem" : "3.5rem",
             lineHeight: "120%",
           }}
-          to='/'
-          >
+          to='/'>
           <img
             src={logoImg}
             alt='Company Logo'
@@ -89,29 +87,32 @@ const Navbar = () => {
             )}
           </div>
         </Link>
-       {/* Navigation Links and Action Button  */}
-<div className='md:flex hidden gap-8'>
-  {/* Navigation Links */}
-  <div
-    style={{
-      fontFamily:
-        'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
-      lineHeight: "120%",
-    }}
-    className=' items-center flex gap-8 text-[#121212] text-lg capitalize'>
-    {LINKS.map((link, idx) => (
-      <NavbarLink
-        main={link.main}
-        links={link.subLinks}
-        key={idx}
-        hasDropDown={link.hasDropDown}
-      />
-    ))}
-  </div>
+        {/* Navigation Links and Action Button  */}
+        <div className='md:flex hidden gap-8'>
+          {/* Navigation Links */}
+          <div
+            style={{
+              fontFamily:
+                'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
+              lineHeight: "120%",
+            }}
+            className=' items-center flex gap-8 text-[#121212] text-lg capitalize'>
+            {LINKS.map((link, idx) => (
+              <NavbarLink
+                main={link.main}
+                links={link.subLinks}
+                key={idx}
+                hasDropDown={link.hasDropDown}
+              />
+            ))}
+          </div>
 
-  {/* Call To Action (CTA) Button */}
-  <PrimaryButton onClick={null} title='Sign Up' />
-</div>
+          {/* Call To Action (CTA) Button */}
+          <PrimaryButton
+            onClick={import.meta.env.VITE_LOGIN_URL}
+            title='Sign Up'
+          />
+        </div>
 
         <button
           className={`max-lg:flex hidden flex-col w-6 justify-between h-5 max-md:h-4 max-md:w-5 overflow-hidden`}
@@ -157,7 +158,10 @@ const Navbar = () => {
           </div>
 
           {/* Call To Action (CTA) Button */}
-          <PrimaryButton onClick={null} title='Sign Up' />
+          <PrimaryButton
+            onClick={import.meta.env.VITE_LOGIN_URL}
+            title='Sign Up'
+          />
         </div>
       </div>
     </nav>

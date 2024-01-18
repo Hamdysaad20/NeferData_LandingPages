@@ -2,7 +2,7 @@ import { useEffect, useState, Suspense } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import ProductsCard from "./ProductsCard";
-
+// million-ignore
 const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
   
   const [activeProductIndex, setActiveProductIndex] = useState(0);
@@ -49,16 +49,16 @@ const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
               className={`flex flex-col   justify-start items-start transition-all  overflow-hidden ${
                 activeProductIndex === index ? "h-[150px] lg:h-28" : "h-8"
               }`}>
-              <span className='lg:text-2xl relative w-full font-semibold mb-2'>
+              <span className='lg:text-2xl  relative w-full font-semibold sm:mb-2'>
                 {product.title}
               </span>
-              <span className='text-base relative text-left text-white/80'>
+              <span className='sm:text-base relative text-xs text-left text-white/80'>
                 {product.description}
                 {activeProductIndex === index && (
                   <span className=' relative '>
                     <Link
                       to={product.link? product.link : import.meta.env.VITE_WAITLIST_URL}
-                      className='text-white   hover:text-black/40 duration-500 select-none underline  px-2 rounded-full text-sm font-semibold  cursor-pointer'
+                      className='text-white   hover:text-black/40 duration-500 select-none underline  px-2 rounded-full text-xs sm:text-sm font-semibold  cursor-pointer'
                       style={{
                         opacity: activeProductIndex === index ? 1 : 0,
                         transform: `translateY(${
@@ -67,7 +67,7 @@ const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
                         transition: "opacity 0.3s ease, transform 0.3s ease",
                         transitionDelay: `${index * 0.1}s`, // Add this line to delay the transition for each element
                       }}>
-                     Try it for free
+                      {product.linkName? product.linkName : "Try for free"}
                     </Link>
                   </span>
                 )}

@@ -1,4 +1,4 @@
-// import Lottie from "lottie-react";
+
 import PropTypes from "prop-types";
 import { DotLottiePlayer } from "@dotlottie/react-player";
 
@@ -33,6 +33,7 @@ function ProductsCard({ title, discription, LOTTIEanimationData }) {
             autoplay={!isMobile}
           >
             </DotLottiePlayer>
+
         </div>
 
         <div className="absolute bottom-5 text-center left-0 right-0 w-full">

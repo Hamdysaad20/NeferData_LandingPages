@@ -34,7 +34,7 @@ function Pricing() {
   },
   {
     className: "",
-    title: "Self-hosted",
+    title: "Self-Hosted",
     price: "Free",
     renew: "",
     features: [
@@ -67,7 +67,7 @@ function Pricing() {
             Neferdata Pricing Plans
           </h1>
           <p className='text-[24px] md:text-2xl text-base font-normal max-lg:text-[20px] max-mg:text-[18px] box-border px-[76px] max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
-            Standard, Self-hosted, and Managed Service. Upgrade anytime for advanced
+            Standard, Self-Hosted, and Managed Service. Upgrade anytime for advanced
             features and capabilities.
           </p>
         </div>
@@ -82,34 +82,34 @@ function Pricing() {
       <FAQs
         questions={[
           {
-            title: "Estimated monthly cloud costs for self-hosted Neferdata?",
+            title: "Which Neferdata offering is the right for me?",
             discription:
-              " The estimated monthly cloud costs for self-hosted Neferdata are around $185-$280, including Kubernetes/EKS, Cloud SQL/RDS, Redis cache, OpenAI Enterprise, and Local Llama2. These costs are estimates and may vary based on usage",
+              " All Neferdata hosting options offer the same AI-powered features to discover, evaluate and manage your SaaS subscriptions. If you want to ensure your data is separated we recommend the 'Managed Service' which is a worry-free option where we handle all maintenance for you wile ensuring highest level of privacy and security.",
           },
           {
             title:
-              "How does Neferdata ensure data privacy and security in Private Instance?",
+              "What are the features of Neferdata's free versions, and how are they different from the paid option?",
             discription:
-              "Neferdata stores sensitive data in the user's database, which only the user can access. Additionally, the body of emails is obfuscated after insights extraction, and data is never used for AI training with Enterprise OpenAI or local LLM model deployment. Users can also control what metadata gets retained, and insights sent to Neferdata are anonymized and cannot be traced back to an individual ",
+              "There is no difference in features between free and paid options of Neferdata. In the 'Global Instance' option your data is securely stored in a shared database, which might be acceptable for many companies. For those that require logical separation of data 'Self-Hosted' offers the ability to deploy Neferdata in the comfort of your own infrastructure, but it does not offer maintenance or support.",
           },
 
           {
-            title: "How does Neferdata protect user data privacy?",
+            title: "How does Neferdata ensure data privacy and security in private instance?",
 
             discription:
-              "Neferdata ensures the privacy of user data by extracting insights in an aggregated and anonymized manner. The insights are always anonymized and cannot be traced back to the user. Additionally, Neferdata invests in privacy features to safeguard confidential information, and user data is never utilized for targeted ads or sold to vendors. Users have the ability to review all insights generated from their data using online reports",
+              "Neferdata ensures the privacy of user data by extracting insights in an aggregated and anonymized manner. The insights are always anonymized and cannot be traced back to the user. Additionally, Neferdata invests in privacy features to safeguard confidential information, and user data is never utilized for targeted ads or sold to vendors. Users have the ability to review all insights generated from their data using online reports.",
           },
           {
             title:
-              "What is the role of AI in Neferdata's decision-making process?",
+              "How do I get my secure instance created?",
             discription:
-              " Neferdata emphasizes the use of AI to enhance and accelerate the decision-making process rather than replacing it. The company leverages AI to provide supercharged recommendations tailored to specific business needs, aiming to optimize workflow processes through well-applied AI ",
+              "In 'Managed Service' we will created the instance for you based on the provided information. This typically takes <1 working day. We will also manage, upgrade and support the instance. In 'Self-Hosted' we offer comprehensive documentation and Terraform/helm automation scripts that enable you to get started quickly. ",
           },
           {
             title:
-              "What are the features of Neferdata's free version, and how are they meant to be used?",
+              "How much does it cost to operate Neferdata Self-Hosted?",
             discription:
-              "The Neferdata free Standard grants users access to AI Email Assistant and Product Discovery features, ensuring control over stored metadata with no ads. It empowers users with AI productivity tools for data-driven decisions, contract management, relationship tracking, usage trend analysis, and future preparation.",
+              "The estimated monthly cloud costs for self-hosted Neferdata are around $200-$300, including Kubernetes/EKS, Cloud SQL/RDS, Redis cache, OpenAI Enterprise and/or local Llama2 infrastructure. These costs are estimates and may vary based on usage and your cloud provider pricing.",
           },
         ]}
         faqs='FAQs'

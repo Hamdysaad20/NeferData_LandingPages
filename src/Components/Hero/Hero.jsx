@@ -4,6 +4,9 @@ import Products from "../Products/Products";
 import products from "../../Data/NeferDataProducts";
 import MicrosoftIcon from "./MicrosoftSVG";
 import GoogleIcon from "./GoogleSVG";
+import ProductsCardData from "../../Data/ProductsCardData.json";
+
+
 // import EmailLottie from "../../Lottie/Email.json";
 // import AILottie from "../../Lottie/ai.json";
 // import SaaSLottie from "../../Lottie/SaaS.json";
@@ -11,14 +14,12 @@ import GoogleIcon from "./GoogleSVG";
 // import AIBot from "../../Lottie/AIBot.json";
 // import future from "../../Lottie/WKQf1nhdyB.json";
 
-import ProductsCardData from "../../Data/ProductsCardData.json";
 import EmailLottie from "../../Lottie/dotlottie/Email.lottie";
 import AILottie from "../../Lottie/dotlottie/ai.lottie";
 import SaaSLottie from "../../Lottie/dotlottie/SaaS.lottie";
 import Contract from "../../Lottie/dotlottie/Contract.lottie";
 import AIBot from "../../Lottie/dotlottie/AIBot.lottie";
 import future from "../../Lottie/dotlottie/WKQf1nhdyB.lottie";
-
 
 import { Link } from "react-router-dom";
 
@@ -32,13 +33,17 @@ const componentData = {
       theme: "dark",
       Icon: MicrosoftIcon,
       title: "Sign in with Microsoft",
-      link: import.meta.env.VITE_MS_LOGIN_URL,
+      link: () => {
+        window.location.href = import.meta.env.VITE_MS_LOGIN_URL;
+      },
     },
     {
       theme: "primary", 
       Icon: GoogleIcon,
       title: `Sign in with Google`,
-      link: import.meta.env.VITE_GOOGLE_LOGIN_URL,
+      link: () => {
+        window.location.href = import.meta.env.VITE_GOOGLE_LOGIN_URL;
+      },
     },
   ],
   termsOfService: "Terms of Service",

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { MdOutlineDone } from "react-icons/md";
 import Button from "../Button/PrimaryButton";
 import Sparkels from "../Spark/spark";
-
+// million-ignore
 const PricingCard = ({
   className,
   textColor,
@@ -91,7 +91,7 @@ const PricingCard = ({
 
 <div className='w-full grid place-items-center p-2'>
   <Button
-    onClick={() => window.location.href = buttonText === "Create Account" ? import.meta.env.VITE_LOGIN_URL : import.meta.env.VITE_WAITLIST_URL}
+    onClick={() => window.location.href = buttonText === "Create Account" ? import.meta.env.VITE_GOOGLE_LOGIN_URL : import.meta.env.VITE_WAITLIST_URL}
     classes={`w-full max-w-[280px] py-4 ${buttonText === 'See Documentation' || buttonText=== "Create Account" ? '!bg-transparent border-2 !text-black border-[#121212]/60 hover:!bg-sky-200 duration-500' : 'hover:bg-black/70 duration-700 !bg-black'}`}
     title={buttonText} 
   />
