@@ -101,17 +101,14 @@ function Hero() {
           </div>
           <p className='text-gray-50 text-[18px] max-lg:text-[10px] text-center'>
               By clicking Sign Up you&apos;re confirming that you agree with our{" "}
-              <Link  to='/privacy-policy' className='underline select-none cursor-pointer'>
+              <a  href={import.meta.env.VITE_TOS} className='underline select-none cursor-pointer'>
                 {componentData.termsOfService}
-              </Link>{" "}
+              </a>{" "}
               and{" "}
-              <Link to='/privacy-policy'
-
-
-              
+              <a href={import.meta.env.VITE_PRIVACY_POLICY}              
               className='underline select-none cursor-pointer'>
                 {componentData.privacyPolicy}
-              </Link>
+              </a>
               .
             </p>
         </div>

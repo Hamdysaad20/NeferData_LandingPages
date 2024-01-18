@@ -114,7 +114,7 @@ function Slider() {
               className='w-full     h-full object-cover object-center'
             />
           </Link>
-          <Link to={FoundersNotes[0].link} target='_blank' rel='noopener noreferrer'
+          <a href={FoundersNotes[0].link} target='_blank' rel='noopener noreferrer'
             className={`relative  ring-black cursor-pointer select-none w-12 h-12 rounded-full overflow-hidden bg-white ${
               currentFoundersNotes === FoundersNotes[0]
                 ? "opacity-100 ring-2  scale-110 animate-pulse duration-1000"
@@ -125,7 +125,7 @@ function Slider() {
               alt=''
               className='w-full h-full object-cover object-center'
             />
-          </Link>
+          </a>
           <div className="ml-2 text-sm place-content-center place-items-start grid text-left">
             <p className="text-white font-bold">{currentFoundersNotes.name}</p>
             <p className="text-gray-300">{currentFoundersNotes.jobTitle}</p>
