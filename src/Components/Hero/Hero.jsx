@@ -34,7 +34,7 @@ const componentData = {
       Icon: MicrosoftIcon,
       title: "Sign in with Microsoft",
       link: () => {
-        window.location.href = import.meta.env.VITE_MS_LOGIN_URL;
+        window.location.href = import.meta.env.VITE_MICROSOFT_LOGIN_URL;
       },
     },
     {
@@ -42,7 +42,7 @@ const componentData = {
       Icon: GoogleIcon,
       title: `Sign in with Google`,
       link: () => {
-        window.location.href = import.meta.env.VITE_GOOGLE_LOGIN_URL;
+        window.location.href = import.meta.env.VITE_LOGIN_RUL;
       },
     },
   ],
