@@ -1,5 +1,5 @@
-// import Lottie from "lottie-react";
-import '@dotlottie/player-component';
+import Lottie from "lottie-react";
+// import '@dotlottie/player-component';
 
 import PropTypes from "prop-types";
 
@@ -26,7 +26,7 @@ function ProductsCard({ title, discription, LOTTIEanimationData }) {
     <div className="absolute w-full h-full">
       <div className="bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer p-4 relative rounded-3xl h-full">
         <div className="w-full text-center place-items-center absolute bottom-10 justify-center flex p-12 rounded h-full">
-          <lottie-player
+          <Lottie
             animationData={LOTTIEanimationData}
             className={`w-full h-full scale-75 ${isMobile ? "paused" : ""}`}
             loop={1}
