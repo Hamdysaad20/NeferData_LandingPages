@@ -37,13 +37,13 @@ export default function Gallery2() {
 
       <div className='bg-[#3092DB] my-12 p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
         <DotLottiePlayer
-          aria-label='icon by lordicon - thanks lordicon! you saved me https://lordicon.com/'
+          aria-label='icon by lordicon  - thanks lordicon! you saved me https://lordicon.com/'
           src={lighting}
           style={{ width: 100, height: 100 }}
-          className='scale-[0.8]'          
+          className='scale-[0.8] animate-pulse'          
           loop
           autoplay
-          speed={3}
+          speed={1}
         >
           </DotLottiePlayer>
       </div>
