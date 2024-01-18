@@ -62,7 +62,6 @@ const LOTTIEanimationData = [
 function Hero() {
 
   // print all env vars
-  console.log("console log", import.meta.env);
   return (
     <div className=' relative  '>
       <header className='pt-20   flex flex-col items-center '>

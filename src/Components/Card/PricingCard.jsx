@@ -89,6 +89,7 @@ const PricingCard = ({
         </ul>
 
 
+
 <div className='w-full grid place-items-center p-2'>
   <Button
     onClick={() => window.location.href = buttonText === "Create Account" ? import.meta.env.VITE_LOGIN_RUL : import.meta.env.VITE_WAITLIST_URL}
