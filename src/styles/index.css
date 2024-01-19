@@ -11,3 +11,16 @@ body {
   line-height: 1.8;
   /* background-color: #3092DB; */
 }
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}

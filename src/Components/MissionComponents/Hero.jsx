@@ -1,8 +1,11 @@
 import logo from "../../assets/Images/logo.png";
 import WeareNeferdata from "../../assets/Images/Founders/WeareNeferdata.gif";
 import WeareNeferdataIMG from "../../assets/Images/Founders/WeareNeferdata.jpeg";
+import { useState } from "react";
 
 function Hero() {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   return (
     <div className=' relative '>
       <header
@@ -32,8 +35,7 @@ function Hero() {
                 lineHeight: "120%",
               }}
               className='text-3xl md:text-7xl font-bold leading-120%'>
-Better way to get value from your SaaS investments
-
+              Better way to get value from your SaaS investments
             </h1>
             <p className='text-[24px] max-lg:text-[20px] font-medium  box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
               AI-Powered Tools Tailored for You - Right, Personalized, and
@@ -55,16 +57,24 @@ Better way to get value from your SaaS investments
 
             {/* Video player */}
             <div className='w-full md:aspect-video aspect-[0.9] relative h-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden box-border'>
+              {!isImageLoaded && (
+                <img
+                  src={WeareNeferdataIMG}
+                  alt=''
+                  className='w-full  overflow-hidden h-full object-cover rounded-3xl object-center'
+                />
+              )}
               <img
+               alt=''
+                className={` w-full  overflow-hidden h-full object-cover rounded-3xl object-center  ${!isImageLoaded && "hidden"}`}
+                width={30}
                 src={WeareNeferdata}
+                onLoad={() => setIsImageLoaded(true)}
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = WeareNeferdataIMG;
                 }}
-                alt=''
-                className='w-full  overflow-hidden h-full object-cover rounded-3xl object-center'
               />
-
               <a
                 href='https://www.youtube.com/watch?v=rnkIFg07HYI&t'
                 target='_blank'

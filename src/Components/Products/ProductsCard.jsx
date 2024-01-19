@@ -24,13 +24,23 @@ function ProductsCard({ title, discription, LOTTIEanimationData }) {
   return (
     <div className="absolute w-full h-full">
       <div className="bg-[#3092DB] duration-700 hover:scale-[.97] cursor-pointer p-4 relative rounded-3xl h-full">
-        <div className="w-full text-center place-items-center absolute bottom-10 justify-center flex p-12 rounded h-full">
+        <div
+      style={{
+       
+       
+        animation: 'bounce 7s infinite',
+      }}
+        
+        className="w-full text-center place-items-center absolute bottom-10 justify-center flex p-12 rounded h-full">
           <DotLottiePlayer
             src={LOTTIEanimationData}
             className={`w-full h-full scale-75 ${isMobile ? "paused" : ""}`}
             loop
             speed={0.5}
             autoplay={!isMobile}
+            worker = {true}
+hover = {true}
+
           >
             </DotLottiePlayer>
 

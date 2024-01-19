@@ -59,6 +59,9 @@ function FeaturesGrid() {
                       loop
                       className='w-full h-full opacity-40 scale-125 absolute '
                       style={{ width: "100%", height: "100%" }}
+                      hover={true}
+                      worker = {true}
+
                     />
                   </div>  
                 </div>
@@ -85,6 +88,9 @@ function FeaturesGrid() {
                       loop
                       className='w-full h-full scale-110 absolute '
                       style={{ width: "100%", height: "100%" }}
+                      hover={true}
+                      worker = {true}
+
                     />
                   </div>
                 </div>
@@ -114,6 +120,9 @@ function FeaturesGrid() {
                       loop
                       className='w-full h-full opacity-40 scale-100 absolute '
                       style={{ width: "100%", height: "100%" }}
+                      hover={true}
+                      worker = {true}
+                  
                       useRef={lottieRef}
                     />
                 </div>
