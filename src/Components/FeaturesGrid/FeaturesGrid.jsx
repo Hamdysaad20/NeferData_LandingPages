@@ -1,9 +1,13 @@
 import BGasset from "./BGasset";
 import Smallasste from "./Smallasste";
-import Lottie from "lottie-react";
-import ServersConnected from "../../Lottie/CloudYellow.json";
-import ServersConnected2 from "../../Lottie/ai.json";
-import ServersConnected3 from "../../Lottie/story.json";
+import { DotLottiePlayer } from "@dotlottie/react-player";
+// import ServersConnected from "../../Lottie/CloudYellow.json";
+// import ServersConnected2 from "../../Lottie/ai.json";
+// import ServersConnected3 from "../../Lottie/story.json";
+import ServersConnected from "../../Lottie/dotlottie/CloudYellow.lottie";
+import ServersConnected2 from "../../Lottie/dotlottie/ai.lottie";
+import ServersConnected3 from "../../Lottie/dotlottie/SelfHosted.lottie";
+
 
 import { useRef, useEffect } from "react";
 import gridData from "../../Pages/LandingPage/gridData.json";
@@ -49,13 +53,15 @@ function FeaturesGrid() {
                   <div
                     className='absolute md:-bottom-4 -bottom-10  -right-20  md:-right-28 flex justify-center items-center'
                     style={{ width: "70%", height: "100%" }}>
-                    <Lottie
-                      animationData={ServersConnected2}
+                    <DotLottiePlayer
+                      src={ServersConnected2}
                       autoplay
                       loop
                       className='w-full h-full opacity-40 scale-125 absolute '
                       style={{ width: "100%", height: "100%" }}
-                      useRef={lottieRef}
+                      hover={true}
+                      worker = {true}
+
                     />
                   </div>  
                 </div>
@@ -76,12 +82,15 @@ function FeaturesGrid() {
                   <div
                     className='absolute md:-bottom-4 -bottom-10  -right-20  md:-right-28 flex justify-center items-center'
                     style={{ width: "70%", height: "100%" }}>
-                    <Lottie
-                      animationData={ServersConnected}
+                    <DotLottiePlayer
+                      src={ServersConnected}
                       autoplay
                       loop
                       className='w-full h-full scale-110 absolute '
                       style={{ width: "100%", height: "100%" }}
+                      hover={true}
+                      worker = {true}
+
                     />
                   </div>
                 </div>
@@ -105,12 +114,15 @@ function FeaturesGrid() {
                 </div>
 
                 <div className='absolute md:-bottom-4 sm:-bottom-12 h-[60%]  -bottom-4   sm:h-[85%] lg:h-[70%] lg:w-[70%] xl:w-[70%] xl:h-[80%] md:h-[60%] md:w-[80%]  -right-4 flex justify-center items-center'>
-                <Lottie
-                      animationData={ServersConnected3}
+                <DotLottiePlayer
+                      src={ServersConnected3}
                       autoplay
                       loop
                       className='w-full h-full opacity-40 scale-100 absolute '
                       style={{ width: "100%", height: "100%" }}
+                      hover={true}
+                      worker = {true}
+                  
                       useRef={lottieRef}
                     />
                 </div>

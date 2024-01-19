@@ -1,5 +1,5 @@
 import logoImg from "../../assets/Images/logo.png";
-import Lottie from "lottie-react";
+import { DotLottiePlayer } from "@dotlottie/react-player";
 import FooterAnimated from "../../Lottie/bgfooter.json";
 import { Link } from "react-router-dom";
 
@@ -174,12 +174,12 @@ function Footer() {
   return (
     <footer className='bg-[#3092DB] rounded-t-[30px] overflow-hidden w-full relative'>
       <div className='absolute lg:block hidden -top-10  lg:top-10 opacity-10 left-0  w-full h-[100px] z-10'>
-        <Lottie
-          animationData={FooterAnimated}
+        <DotLottiePlayer
+          src={FooterAnimated}
           className='scale-[1] '
-          setSpeed={1}
-          loop={true}
-          autoplay={true}
+          speed={1}
+          loop
+          autoplay
         />
       </div>
 

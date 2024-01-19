@@ -1,7 +1,6 @@
-import UseAnimations from "react-useanimations";
-import infinity from "react-useanimations/lib/infinity";
-import Lottie from "lottie-react";
-import lighting from "../../Lottie/lighting.json";
+
+import { DotLottiePlayer } from "@dotlottie/react-player";
+import lighting from "../../Lottie/dotlottie/lighting.lottie";
 import { RiAppsFill } from "react-icons/ri";
 import { BsBuildingFillDown } from "react-icons/bs";
 import { FaTools } from "react-icons/fa";
@@ -37,15 +36,16 @@ export default function Gallery2() {
     <section className='w-[90%]  max-md:w-full max-w-[1500px] flex justify-center flex-col items-center mx-auto'>
 
       <div className='bg-[#3092DB] my-12 p-2 shadow-2xl shadow-blue-700 rounded-3xl h-54'>
-        <Lottie
-          aria-label='icon by lordicon - thanks lordicon! you saved me https://lordicon.com/'
-          animationData={lighting}
+        <DotLottiePlayer
+          aria-label='icon by lordicon  - thanks lordicon! you saved me https://lordicon.com/'
+          src={lighting}
           style={{ width: 100, height: 100 }}
-          className='scale-[0.8]'
-          setSpeed={1}
-          loop={true}
-          autoplay={true}
-        />
+          className='scale-[0.8] animate-pulse'          
+          loop
+          autoplay
+          speed={1}
+        >
+          </DotLottiePlayer>
       </div>
 
       <div
