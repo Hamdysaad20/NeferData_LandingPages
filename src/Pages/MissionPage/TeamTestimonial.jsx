@@ -1,8 +1,11 @@
 import Slider from "./Slider";
-import Kamil_on_Stage from "../../assets/Images/Founders/KamilStage.png";
 import KamilGift from "../../assets/Images/Founders/kamil.gif";
+import kamilIMGstage from "../../assets/Images/Founders/kamilIMGstage.png";
+import { useState } from "react";
 
 function TeamTestimonial() {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   return (
     <div className='w-full flex flex-col justify-center items-center gap-6'>
       <div className='w-full flex justify-center mb-0 p-2'>
@@ -14,16 +17,31 @@ function TeamTestimonial() {
               target='_blank'
               rel='noopener noreferrer'
               className=' h-full w-full cursor-pointer hover:opacity-80 duration-1000 hover:contrast-150  p-4 px-2  md:col-span-2  relative flex justify-center items-center'>
+               
+               
+                {!isImageLoaded && (
                 <img
+                  src={kamilIMGstage}
+                  alt=''
+                  className='w-full  overflow-hidden h-full object-cover rounded-3xl object-center'
+                />
+              )}
+               
 
-                    src={ KamilGift}
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = Kamil_on_Stage;
-                    }}
-                    alt=''
-                    className='w-full  overflow-hidden h-full object-cover rounded-3xl object-center'
-                  />
+              <img
+               alt=''
+                className={` w-full  overflow-hidden h-full object-cover rounded-3xl object-center  ${!isImageLoaded && "hidden"}`}
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = kamilIMGstage;
+                }}
+                src={KamilGift}
+                onLoad={() => setIsImageLoaded(true)}
+               
+              />
+
+
+
 
               <div className='absolute top-0 left-0 w-full h-full rounded-3xl   bg-opacity-50 flex justify-center items-center gap-2'>
                 <div                     style={{
