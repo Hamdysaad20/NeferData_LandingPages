@@ -1,0 +1,5 @@
+{
+    "watch": ["./src", "SecondComponent.jsx", "ThirdComponent.jsx"],
+    "ext": "js, jsx, css, jpg",
+    "exec": "./build_website.sh ../"
+}

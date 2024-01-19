@@ -56,8 +56,8 @@ const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
                 {product.description}
                 {activeProductIndex === index && (
                   <span className=' relative '>
-                    <Link
-                      to={product.link? product.link : import.meta.env.VITE_WAITLIST_URL}
+                    <a
+                      href={product.link? product.link : import.meta.env.VITE_WAITLIST_URL}
                       className='text-white   hover:text-black/40 duration-500 select-none underline  px-2 rounded-full text-xs sm:text-sm font-semibold  cursor-pointer'
                       style={{
                         opacity: activeProductIndex === index ? 1 : 0,
@@ -68,7 +68,7 @@ const Products = ({ products, bg ,LOTTIEanimationData,ProductsCardData}) => {
                         transitionDelay: `${index * 0.1}s`, // Add this line to delay the transition for each element
                       }}>
                       {product.linkName? product.linkName : "Try for free"}
-                    </Link>
+                    </a>
                   </span>
                 )}
               </span>

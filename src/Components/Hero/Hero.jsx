@@ -34,7 +34,7 @@ const componentData = {
       Icon: MicrosoftIcon,
       title: "Sign in with Microsoft",
       link: () => {
-        window.location.href = import.meta.env.VITE_MS_LOGIN_URL;
+        window.location.href = import.meta.env.VITE_MICROSOFT_LOGIN_URL;
       },
     },
     {
@@ -42,7 +42,7 @@ const componentData = {
       Icon: GoogleIcon,
       title: `Sign in with Google`,
       link: () => {
-        window.location.href = import.meta.env.VITE_GOOGLE_LOGIN_URL;
+        window.location.href = import.meta.env.VITE_LOGIN_RUL;
       },
     },
   ],
@@ -62,7 +62,6 @@ const LOTTIEanimationData = [
 function Hero() {
 
   // print all env vars
-  console.log("console log", import.meta.env);
   return (
     <div className=' relative  '>
       <header className='pt-20   flex flex-col items-center '>
@@ -101,17 +100,14 @@ function Hero() {
           </div>
           <p className='text-gray-50 text-[18px] max-lg:text-[10px] text-center'>
               By clicking Sign Up you&apos;re confirming that you agree with our{" "}
-              <Link  to='/privacy-policy' className='underline select-none cursor-pointer'>
+              <a  href={import.meta.env.VITE_TOS} className='underline select-none cursor-pointer'>
                 {componentData.termsOfService}
-              </Link>{" "}
+              </a>{" "}
               and{" "}
-              <Link to='/privacy-policy'
-
-
-              
+              <a href={import.meta.env.VITE_PRIVACY_POLICY}              
               className='underline select-none cursor-pointer'>
                 {componentData.privacyPolicy}
-              </Link>
+              </a>
               .
             </p>
         </div>
