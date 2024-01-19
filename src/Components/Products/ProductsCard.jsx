@@ -31,7 +31,7 @@ function ProductsCard({ title, discription, LOTTIEanimationData }) {
         animation: 'bounce 7s infinite',
       }}
         
-        className="w-full text-center place-items-center absolute bottom-10 justify-center flex p-12 rounded h-full">
+        className="w-full text-center zio place-items-center absolute bottom-10 justify-center flex p-12 rounded h-full">
           <DotLottiePlayer
             src={LOTTIEanimationData}
             className={`w-full h-full scale-75 ${isMobile ? "paused" : ""}`}
