@@ -64,7 +64,7 @@ const Navbar = () => {
             fontSize: isScrolled ? "4rem" : "3.5rem",
             lineHeight: "120%",
           }}
-          to='/'>
+          to='/website/index.html'>
           <img
             src={logoImg}
             alt='Company Logo'

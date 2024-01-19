@@ -189,7 +189,7 @@ function Footer() {
             <div className='text-white w-auto '>
               <div className='flex items-center -mt-4 w-auto'>
                 <Link
-                  to='/'
+                  to='/website/index.html'
                   className='flex items-center gap-2 cursor-pointer hover:bg-gray-900/30 duration-700 rounded-2xl w-auto p-4'>
                   <img
                     src={logoImg}
